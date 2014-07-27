@@ -6,6 +6,7 @@ Some material is taken from http://www.slowenisch.uni-hamburg.de/
 Descension coach - about 1100 words are taken from wikipedia
 Vocabulary coach - 900 words
 ...
+An update
 
 FIXME:
 Collect more material and enhance the visual experience
