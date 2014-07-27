@@ -1,0 +1,82 @@
+td.noun{
+  text-align: right;
+}
+
+.noun.nom {
+    background-color: #69F59F;
+}
+.noun.gen{
+    background-color: #FFFF00;
+}
+.noun.dat{
+    background-color: #DC4AF0;
+}
+.noun.acc{
+    background-color: #FA3939;
+}
+.noun.loc{
+    background-color: #0EF0EC;
+}
+.noun.ins{
+    background-color: #4792FC;
+}
+input#i{
+    transition-property:background-color;
+    transition-duration: 2s;
+}
+.false{
+    background-color: red;
+}
+.right{
+    background-color: green;
+}
+
+.casechoices{
+  position: fixed;
+  list-style: none;
+}
+
+.memopic{
+  max-height: 100px;
+  max-width: 100px;
+  margin: auto;
+}
+pic-item{
+	margin: 0px;
+}
+.thumbnail{
+  width:120px;
+  height:120px;
+  text-align: center;
+display: table-cell;
+vertical-align: middle;
+}
+
+.falsemarked{
+  border: 4px inset red;
+}
+.rightmarked{
+  border: 4px inset lightgreen;
+}
+
+.empty{
+  background-color: #F6F6F6;
+}
+.verb{
+  border: 1px solid black;
+}
+.pronoun{
+  border: 1px dashed black;
+}
+.adjective{
+  border: 1px dotted black;
+}
+.preposition{
+  border: 3px double black;
+}
+.btn{
+  cursor: pointer;
+}
+.selectedcase{
+  border: 4px double black;
+}

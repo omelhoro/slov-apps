@@ -1,0 +1,30 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="./word_form.html">
+<polymer-element name='wordf-app'> <template>
+<link rel="stylesheet" href='/static/css/bootstrap_navbar.min.css'>
+<link rel="stylesheet" href='/static/css/bootstrap_popover.min.css'>
+<link rel="stylesheet" href="/static/css/bootstrap_table.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap_buttons.min.css">
+<link rel="stylesheet" href="/static/css/selfpoly.css">
+<style>
+word-form {
+  cursor: pointer;
+}
+</style>
+<nav class='navbar navbar-default'>
+  <ul class="nav navbar-nav" on-click='{{filter}}'>
+    <template repeat='{{pos in poss}}'>
+    <li class='btn posfilter' data-fltr='{{pos}}'>{{pos}}</li>
+    </template>
+  </ul>
+</nav>
+<nav class='navbar navbar-default'>
+  <ul class="nav navbar-nav" on-change='{{changeText}}'>
+    <template repeat='{{les in less|enumerate}}'>
+    <li class='btn posfilter'><input type='radio'
+      data-les='{{les.value}}' name='text' checked>{{lessTitle[les.index]}}</li>
+    </template>
+  </ul>
+</nav>
+<div id='text'></div>
+</template> <script type='application/dart' src='wordf_app.dart'></script> </polymer-element>

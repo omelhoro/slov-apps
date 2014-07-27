@@ -1,0 +1,37 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel='import' href='wordf_app.html'>
+
+<polymer-element name='marknoun-app' extends='wordf-app'>
+<template>
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/selfpoly.css">
+<style>
+.col-md-1{
+float:left;}
+</style>
+
+<div class="row">
+  <div class='col-md-1'>
+    <div class='panel-body'>
+    <ul class='casechoices list-group'>
+      <template repeat='{{c in casus}}'>
+      <li class='list-group-item noun {{c.substring(0,3).toLowerCase()}}'>{{c}}</li>
+      </template>
+    <li> <button on-click={{checkall}}>Check all</button></li>
+    <template repeat='{{stat in stats.keys}}'>
+    <li>{{stat}}<span class="label {{stats[stat][0]}}">{{stats[stat][1]}}</span></li>
+    </template>
+    </ul>
+    <ul class='stats'></ul>
+    </div>
+  </div>
+  <div class='col-lg-6 panel panel-default'>
+    <div class="panel-heading">Text</div>
+    <div class='panel-body'>
+    <shadow></shadow>
+<img src='/static/wasd.png' height='100px'/>
+    </div>
+  </div>
+</div>
+
+</template> <script type="application/dart" src='marknoun_app.dart'></script> </polymer-element>

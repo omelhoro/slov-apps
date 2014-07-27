@@ -1,0 +1,21 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="../flexlib/desc_app.html">
+<link rel="import" href="../excslib/excs_app.html">
+<link rel="import" href="../voclib/voc_app.html">
+<link rel="import" href="../ctextlib/wordf_app.html">
+<link rel="import" href="../ctextlib/marknoun_app.html">
+<link rel="import" href="../memolib/memo_app.html">
+
+<polymer-element name='apps-panel'><template>
+<link rel="stylesheet" href='/static/css/bootstrap_navs.min.css'>
+<link rel="stylesheet" href='/static/css/selfpoly.css'>
+<nav>
+  <ul class="nav nav-pills">
+    <template repeat="{{app in apps.keys}}">
+    <li class='btn {{curApp==app ? "active": ""}}' on-click='{{renderApp}}'
+      data-apptagname='{{app}}'><a>{{apps[app]}}</a></li>
+    </template>
+  </ul>
+</nav>
+<div id='appfield'></div>
+</template> <script type="application/dart" src='apps_panel.dart'></script> </polymer-element>

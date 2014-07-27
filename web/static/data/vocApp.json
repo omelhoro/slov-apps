@@ -1,0 +1,8012 @@
+[
+ {
+  "les": "1", 
+  "nativeWord": "April", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "apr\u00edl (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Architekt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "arhit\u00e9kt (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Auto", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00e1vto (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Banane", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ban\u00e1na (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Bank", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "b\u00e1nka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Wort", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "bes\u00e9da (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Vokabelliste", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "besed\u00ed\u0161\u010de (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Biologie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "biolog\u00edja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Zentrum", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "c\u00e9nter (-tra)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Zigarette", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "cigar\u00e9ta (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Ziel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "c\u00edlj (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Tscheche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010c\u00e9h (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Kartoffelchips", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010d\u00edps (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Schokolade", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010dokol\u00e1da (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Dezember", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dec\u00eamber (-bra)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Diplom", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dipl\u00f3ma (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Disko", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "d\u00edsko (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "\u00d6konomie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ekonom\u00edja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Euro", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00e9vro (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Europa", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Evr\u00f3pa (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Fakult\u00e4t", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "fakult\u00e9ta (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Februar", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "f\u00e9bruar (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Philosophie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "filozof\u00edja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Galerie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "galer\u00edja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Garage", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gar\u00e1\u017ea (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Geographie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "geograf\u00edja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Hallo", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "hal\u00f3", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Hobby", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "h\u00f3bi (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Hotel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "hot\u00e9l (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Idee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "id\u00eaja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Internet", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00edntern\u00e9t (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Ingenieur", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "in\u017een\u00edr (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Aussprache", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "izgovarj\u00e1va (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Januar", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "j\u00e1nuar (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Joghurt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "j\u00f3gurt (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Juni", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "j\u00fanij (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Cappuccino", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kapu\u010d\u00edno (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Karte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "k\u00e1rta (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Kino", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "k\u00edno (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Lektion", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "l\u00e9kcija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Lektor, Sprachlehrer", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "l\u00e9ktor (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Zitrone", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "lim\u00f3na (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Literatur", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "literat\u00fara (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Mai", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "m\u00e1j (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Mama", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "m\u00e1ma (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Museum", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "muz\u00eaj (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "nerv\u00f6s", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "nerv\u00f3zen -zna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "neu", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "n\u00f2v, n\u00f4va, n\u00f4vo", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "November", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nov\u00eamber (-bra)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Oktober", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "okt\u00f3ber (-bra)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Oper", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00f3pera (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Organisation", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "organiz\u00e1cija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Papier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pap\u00edr (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Pizza", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "p\u00edca (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Professor", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prof\u00e9sor (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Radio", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "r\u00e1dio (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Republik", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "rep\u00fablika (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Russe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "R\u00fas (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Sandwich", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "s\u00e9ndvi\u010d (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "September", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sept\u00eamber (-bra)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Slowenien", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Slov\u00e9nija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "slowenisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "slov\u00e9nski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Shampoo", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161amp\u00f3n (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Sport", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161p\u00f3rt (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Student", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161tud\u00e8nt (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Telefon", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "telef\u00f3n (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Test", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "t\u00e9st (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Turist", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "tur\u00edst (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Union", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "un\u00edja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Universit\u00e4t", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "univ\u00earza (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Uhr, Stunde", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00fara (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Vegetarier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vegetarij\u00e1nec (-nca)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Wein", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "v\u00edno (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Visa", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "v\u00edza (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Zebra", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "z\u00e9bra (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Simbabwe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Zimbabve (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Sofa", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "z\u00f3fa (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "1", 
+  "nativeWord": "Jargon", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u017earg\u00f3n (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Bus- (in Komposita)", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "avtobusni, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "dass", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "da", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Tag", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dan (dneva)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "heute", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "danes", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Geschenk", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "darilo (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "geben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "dati, da", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "gut", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "dobro", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Familie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dru\u017eina (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Tochter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "h\u010derka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "gehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "iti iskat", 
+  "fullpos": "Verb, pf / impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "sch\u00f6n", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "lepo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "denken", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "misliti, -i", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Ehemann", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mo\u017e (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "auf, an", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "na", 
+  "fullpos": "Pr\u00e4position +Akk ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Vater", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "o\u010de (-eta)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "besuchen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "obiskati, obi\u0161\u010de (+Akk.)", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Kind", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "otrok (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "schreiben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pisati, pi\u0161e", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "anrufen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "poklicati, -kli\u010de", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Haltestelle", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "postaja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "einladen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "povabiti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "vergessen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pozabiti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "kennen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "poznati, -zna", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "sagen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "praviti, -i", 
+  "fullpos": "Verb, impf / pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Freund", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prijatelj (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "kommen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "priti, pride", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Geburts-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "rojstni, -a,-o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "nat\u00fcrlich", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "seveda", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Sohn", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sin (-a) (Pl. sinovi)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "schlecht", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "slabo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "erinnern an", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "spomniti, -i (na+Akk)", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "fragen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "spra\u0161evati, -\u0161uje", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Eltern", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "star\u0161i (-ev)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m, Pl. "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Einladung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vabilo (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Vase", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vaza (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "immer", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "vedno", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "froh", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "vesel, -a,-o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Rose", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vrtnica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "alle", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "vsi", 
+  "fullpos": "Pronom ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "f\u00fcr, hinter", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "za", 
+  "fullpos": "Pr\u00e4position (+Akk) ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Fest, Party", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zabava (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "danken", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zahvaliti se, -i se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "7", 
+  "nativeWord": "Ehefrau", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u017eena (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Zeit", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010das (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Zeitung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010dasopis (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "schwarz", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "\u010drn -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "nach", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "do", 
+  "fullpos": "Pr\u00e4position, Gen. ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "nach Hause", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "domov", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Essay", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "esej (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Fakult\u00e4t", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "fakulteta (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Galerie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "galerija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "erz\u00e4hlen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "govoriti, -i", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "gehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "hoditi, -i", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "gehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "iti, gre", 
+  "fullpos": "Verb, impf/pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "aus, von", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "iz", 
+  "fullpos": "Pr\u00e4position, Gen. ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Ausflug", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "izlet (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "morgen", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "jutri", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "wohin", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "kam", 
+  "fullpos": "Interrogativpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "weil", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "ker", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Literatur-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "knji\u017eeven -vna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Kartoffel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "krompir (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Brot", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kruh (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m/Sg "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "K\u00fcche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kuhinja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Kultur-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "kulturni -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "k\u00f6nnen, kann", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "lahko", 
+  "fullpos": "Modalwort ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Jahr", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "leto (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Monat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mesec (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "schreiben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "napisati, napi\u0161e", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "der, die, das n\u00e4chste", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "naslednji -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "deutsche Sprache", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nem\u0161\u010dina (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "\u00fcber", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "o", 
+  "fullpos": "Pr\u00e4position, Lok. ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "versprechen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "obljubiti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "organisieren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "organizirati, -a", 
+  "fullpos": "Verb, impf/pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "denn", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "pa", 
+  "fullpos": "Partikel ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Schriftsteller", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pisatelj (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Bett", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "postelja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Weg", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pot (-i)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Reise", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "potovanje (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "sagen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "povedati, pove", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "in Ordnung", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "prav", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Problem", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "problem (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Professor", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "profesor (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "schlecht", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "slab -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "slowenisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "slovenski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Spaghetti", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161paget (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "dieser, diese, dieses", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "ta, ta, to", 
+  "fullpos": "Demonstrativpronomen, m/f/n ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "dort", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "tam", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "hoffen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "upati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "in", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "v", 
+  "fullpos": "Pr\u00e4position, Akk. ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "sich freuen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "veseliti se, -i se", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Wetter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vreme (-mena)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "warum", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zakaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "interessant", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zanimivo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "fr\u00fch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zgodaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "bekannt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "znan -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "daneben, mit-", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "zraven", 
+  "fullpos": "Pr\u00e4position, Gen. ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "Schnitzel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zrezek (-zka)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "13", 
+  "nativeWord": "schon", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "\u017ee", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Geldautomat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "bankomat (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "in der N\u00e4he", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "blizu", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Kirche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "cerkev (-kve)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Schuh", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010develj (-vlja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Philharmonie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "filharmonija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "gehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "hoditi, hodi", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Flur", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "hodnik (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "suchen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "iskati , i\u0161\u010de", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "S\u00fcden", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jug (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Kiosk", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kiosk (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "wo", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "kje", 
+  "fullpos": "Interrogativpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Bad", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kopalnica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Apotheke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "lekarna (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Rathaus", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "magistrat (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Br\u00fccke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "most (-u)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Unbekannte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "neznanec (-nca)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "na", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "no", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "neben", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "ob", 
+  "fullpos": "Pr\u00e4position + Lok ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "entschuldigen, verzeihen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "oprostiti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "auf, herum", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "po", 
+  "fullpos": "Pr\u00e4position +Lok ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Ferien", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "po\u010ditnice (-\u00f8)", 
+  "fullpos": "Substantiv, pl ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Schublade", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "predal (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "bei", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "pri", 
+  "fullpos": "Pr\u00e4position + Lok ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Pullover", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pulover (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Norden", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sever (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "unten", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "spodaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Denkmal", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "spomenik (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Stuhl", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "stol (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Seite", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "stran (-i)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Sache", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "stvar (-i)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "dieser, diese, dieses", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "tisti, -a, -o", 
+  "fullpos": "Demonstrativpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Gesch\u00e4ft", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "trgov\u00edna (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Stra\u00dfe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00falica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "sehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "v\u00eddeti, -i", 
+  "fullpos": "Verb, impf / pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Osten", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vzh\u00f2d (-\u00f3da)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "anfangen, beginnen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "za\u010d\u00e9ti, -\u010dn\u00e8", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Westen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zah\u00f2d (-\u00f3da)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "8", 
+  "nativeWord": "Bahn-Bahnhof", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "\u017eel\u00e9zni\u0161ka post\u00e1ja (-e, -e)", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Leser", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "br\u00e1lec, -lca", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Artikel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010dl\u00e1nek, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Teil", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "d\u00e9l, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "erreichen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "dos\u00e9\u010di, dos\u00e9\u017ee", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Herausgeber", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "izdaj\u00e1telj, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Sprache", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "j\u00eazik, -\u00edka", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Literatur", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "knji\u017e\u00e9vnost, -i", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Monographie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "monograf\u00edja, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Preis, Pr\u00e4mie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nagr\u00e1da-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Staatspreis", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dr\u017e\u00e1vna nagr\u00e1da, -e, -e", 
+  "fullpos": "Adjektiv/Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "umfassen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "obs\u00e9gati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "sich entscheiden", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "odlo\u010d\u00edti se, odl\u00f3\u010di se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Werk", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00f3pus, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Schriftsteller", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pis\u00e1telj, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "verleihen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "podel\u00edti, -\u00ed", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Kapitel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pogl\u00e1vje, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "oft", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pog\u00f3sto", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "neben", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "p\u00f3leg", 
+  "fullpos": "Pr\u00e4position, Gen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "anbieten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "ponud\u00edti, pon\u00fadi", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "Vermittlung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "posredov\u00e1nje, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "sich widmen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "posv\u00e9\u010dati se, -a se", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "16", 
+  "nativeWord": "verursachen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "povzro\u010d\u00edti, povzro\u010d\u00ed", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "aber, sondern", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "a\u0300mpak", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "lesen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "bra\u0301ti, b\u00eare", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "Tag", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "da\u0301n (dne\u0301va)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "machen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "d\u00e9lati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "vormittags", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "dop\u00f4ldne", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "und", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "\u00edn", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "Rad fahren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "koles\u00e1riti, -i", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "als", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "ko\u0300t", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "zuerst", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "n\u00e1jprej", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "Kellnerin", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nat\u00e1karica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "sich anziehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "obl\u00e9\u010di se, obl\u00e9\u010de se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "schreiben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pis\u00e1ti, p\u00ed\u0161e", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "tanzen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "ples\u00e1ti, pl\u00e9\u0161e", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "sich unterhalten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pogov\u00e1rjati se, -a se", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "nachmittags", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pop\u00f4ldne", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "dann", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "potem", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "gern", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "rad -a, -o", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "malen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "slikati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "Ski fahren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "smu\u010dati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "duschen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "stu\u0161irati se, -a se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "studieren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "\u0161tudirati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "turnen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "telovaditi, -i", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "auch", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "tudi", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "jeder", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "vsak -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "aufstehen, sich erheben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "vstati, vstane", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "sich unterhalten, sich vergn\u00fcgen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zabavati se, -a se", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "Fr\u00fchst\u00fcck", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zajtrk (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "fr\u00fchst\u00fccken", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zajtrkovati, zajtrkuje", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "morgens, am Morgen", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zjutraj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "k\u00f6nnen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "znati, zna", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "4", 
+  "nativeWord": "abends, am Abend", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zve\u010der", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Markth\u00e4ndlerin / Gem\u00fcsefrau", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "branjevka, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Kirsche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010de\u0161nja, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Bohne", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "fi\u017eol, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Weintrauben", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "grozdje, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Birne", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "hru\u0161ka, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Apfel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jabolko, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Erdbeere", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jagoda, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Jogurt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jogurt, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "oh", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "joj", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "etwas", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "kaj (\u010desa)", 
+  "fullpos": "Pronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Kilogramm (umgspr.)", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kila, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Kilogramm", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kilogram, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Kiwi", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kivi, -ja", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "wieviel, wie viele", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "koliko", 
+  "fullpos": "Interrogativpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Karotte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "korenje, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Kartoffel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "krompir, -ja", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Brot", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kruh, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Liter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "liter, litra", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Wassermelone", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "lubenica, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Mandarine", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mandarina, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Aprikose", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "marelica, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Milch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mleko, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Paprika", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "paprika, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Tomate", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "paradi\u017enik, -a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Petersilie", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "peter\u0161ilj, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Orange", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pomaran\u010da, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Verk\u00e4uferin", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prodajalka, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Obst", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sadje, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Pflaume", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sliva, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Salat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "solata, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "schade", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "\u0161koda", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Spinat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161pina\u010da, -e", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "so", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "takole", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Markt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "tr\u017enica, -e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "mehr", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ve\u010d", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "Kohl", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zelje, -a", 
+  "fullpos": "Substantiv, Sg ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "leider", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "\u017eal", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "11", 
+  "nativeWord": "w\u00fcnschen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "\u017eeleti, -i", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Bar", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "b\u00e1r (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "wei\u00df", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "b\u00e9l -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "beige", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "b\u00e9\u017e (auch beige)(unver\u00e4nderlich)", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "wessen", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "\u010dig\u00e1v -a, -o", 
+  "fullpos": "Interrogativpronom ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "dick", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "d\u00eabel deb\u00e9la, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "rechte Seite", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "d\u00e9sna (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "philosophisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "filoz\u00f3fski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Haus", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "h\u00ed\u0161a (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "oh", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "j\u00f2j", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "was", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "k\u00e1j, \u010d\u00e9sa", 
+  "fullpos": "Fragepronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "wie", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "kak\u00f3", 
+  "fullpos": "Fragepronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "wie, was f\u00fcr ein", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "k\u00e1k\u0161en -\u0161na, -o", 
+  "fullpos": "Interrogativpronom ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "chinesisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "kit\u00e1jski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Buch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "knj\u00edga (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "sch\u00f6n", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "l\u00e9p -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "linke Seite", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "l\u00e9va (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "lila", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "l\u00edla (unver\u00e4nderlich)", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "klein", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "m\u00e1jhen -hna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Stadt-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "m\u00e9stni -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Stadt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "m\u00e9sto (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Tisch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "m\u00edza (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "blau", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "m\u00f3der -dra, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "modern", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "mod\u00earen -rna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "mein", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "m\u00f3j, m\u00f4ja , -e", 
+  "fullpos": "Possessivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "national", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "n\u00e1roden -dna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "neu", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "n\u00f2v, n\u00f4va, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "offen, ge\u00f6ffnet", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "odp\u0155t, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Fenster", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00f4kno (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Schrank", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "om\u00e1ra (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Dichter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "p\u00e9snik (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "billig, preiswert", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "poc\u00e9ni (unver\u00e4nderlich)", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Regal", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pol\u00edca (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "leer", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pr\u00e1zen -zna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "ger\u00e4umig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "prost\u00f3ren -rna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "rot", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "rd\u00e8\u010d, rd\u00e9\u010da, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Fluss", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "r\u00e9ka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Restaurant", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "restavr\u00e1cija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "braun", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "rj\u00e0v, rj\u00e1va, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "rosa", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "r\u00f3za (unver\u00e4nderlich)", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Blume", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "r\u00f3\u017ea (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "gelb", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "rum\u00e8n, rum\u00eana, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "nur", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "sam\u00f3", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "grau", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "s\u00edv -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Zimmer", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "s\u00f4ba (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Wohnung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "stanov\u00e1nje (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "alt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "st\u00e0r, st\u00e1ra, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Geb\u00e4ude", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "st\u00e1vba (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Stuhl", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "st\u00f2l (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "Platz, Markt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "t\u0155g (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "das", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "t\u00e1, t\u00e1, t\u00f3", 
+  "fullpos": "Demonstrativpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "dort", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "t\u00e0m", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "d\u00fcnn", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "t\u00e1nek -nka, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "dein", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "tv\u00f3j, tv\u00f4ja, -e", 
+  "fullpos": "Possessivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "gro\u00df", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "v\u00ealik, vel\u00edka, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "hinten", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "z\u00e1daj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "gr\u00fcn", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zel\u00e8n, zel\u00eana, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "3", 
+  "nativeWord": "oben", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zg\u00f4raj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Oma", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "b\u00e1bica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Text", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "besed\u00edlo (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Zeit", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010d\u00e0s (\u010d\u00e1sa)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Chile", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010c\u00edle (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Opa", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "d\u00e9dek (-dka)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Arbeit", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "d\u00e9lo (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "sich treffen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "dob\u00edti se, -\u00ec se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Langeweile", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "d\u00f3lg\u010das (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Film-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "f\u00edlmski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Franzose", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Franc\u00f3z (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Akkordeon", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "harm\u00f3nika (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "(herum) gehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "hod\u00edti, h\u00f3di", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Ausflug", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "izl\u00e8t (-\u00e9ta)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Jacke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "j\u00e1kna (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Herbst", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jes\u00e9n (-i)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "im Herbst", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "jes\u00e9ni", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "trotzdem", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "klj\u00fab t\u00e9mu", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "als", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "ko", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Ende", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "k\u00f4nec (-nca)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Pferde-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "k\u00f4njski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Kulisse", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kul\u00edsa (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "kaufen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "kup\u00edti, k\u00fapi", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Schiff", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "l\u00e1dja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "voriges Jahr", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "l\u00e1ni", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "in diesem Jahr", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "l\u00e9tos", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Ljubljanaer", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ljublj\u00e1nski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Luxus-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "l\u00faksuzen -zna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Imbiss", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "m\u00e1lica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Matrosen-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "morn\u00e1rski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Auftritt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nast\u00f2p (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "auftreten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "nast\u00f3pati -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "ein (gewisser), eine (gewisse), ein (gewisses)", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "n\u00e9k -a, -o", 
+  "fullpos": "Pronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "fr\u00fcher", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "nek\u00f3\u010d", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "nie", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "nik\u00f3li", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Besuch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ob\u00edsk (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "besuchen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "obisk\u00e1ti, ob\u00ed\u0161\u010de", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Form", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "obl\u00edka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "ausgezeichnet", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "odl\u00ed\u010dno", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "sich anschauen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "ogl\u00e9dati si, -a si", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "lecker", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ok\u00fasen -sna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "beschreiben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "opisov\u00e1ti, -\u00faje", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "machen, erledigen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "opr\u00e1viti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Park", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "park-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "bringen, f\u00fchren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "peljati, pelje", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Gedicht, Lied", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pesem-smi", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "zeigen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pokazati, poka\u017ee", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "werden", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "postati, postane", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Bummel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "potepanje-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Passagier-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "potni\u0161ki-a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "einladen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "povabiti, povabi", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Vorlesung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "predavanje-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "singen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "prepevati, -a", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "\u00dcbersetzungsarbeit", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prevajanje-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "\u00fcbersetzen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "prevajati, -a", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "verbringen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pre\u017eiveti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "dargestellt", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "prikazan-a, -o", 
+  "fullpos": "Partizip ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Hafen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pristani\u0161\u010de-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "frei", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "prost-a,-o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Ausstellung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "razstava-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Schwanz", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "rep-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "echt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "res", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Fisch-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ribji-a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "denn", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "saj", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Cousine", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sestri\u010dna-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Lager", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "skladi\u0161\u010de-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Bild", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "slika-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Nachbar", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sosed-eda", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Spaziergang", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sprehod-oda", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "wohnen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "stanovati-uje", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "stehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "stati,stoji", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "noch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "\u0161e", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Woche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "teden-dna", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "dorthin", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "tja", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Tasche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "torba-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Gesch\u00e4ft", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "trgovina-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "unterrichten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "u\u010diti-i", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "verwenden", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "uporabiti-i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "verwenden", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "uporabljati-a", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Stundenplan", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "urnik-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "manchmal", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "v\u010dasih", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "\u00f6fter", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ve\u010dkrat", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "viel", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "veliko", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Freude", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "veselje-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "sehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "videti, vidi", 
+  "fullpos": "Verb, imp und pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "hingehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zahajati-a", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "anspruchsvoll", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zahteven-vna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "interessant", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zanimiv-a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "voll", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zapolnjen-a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "jetzt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zdaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "sehr", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zelo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Geschichte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zgodba-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Geschichts-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zgodovinski-a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "Sehensw\u00fcrdigkeit", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "znamenitost-i", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "9", 
+  "nativeWord": "leben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "\u017eiveti-i", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "alkoholische Getr\u00e4nke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "alkoholne pija\u010de", 
+  "fullpos": "Substantiv /pl ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Milchkaffee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "bela kava", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Wei\u00dfwein", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "belo vino", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "w\u00fcrde", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "bi", 
+  "fullpos": "Partikel, (Konditionalmorphem) ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "alkoholfreie Getr\u00e4nke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "(-ih/-\u00f8)", 
+  "fullpos": "Substantiv /pl ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Kn\u00f6del", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "cmok (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Tee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010daj (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Cevapcici", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010devap\u010di\u010di", 
+  "fullpos": "Substantiv, pl ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Espresso", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ekspreso (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Eintopf", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "enolon\u010dnica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Strudel\u00e4hnliche S\u00fc\u00dfspeise mit Mohn, Quark und \u00c4pfel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gibanica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Gulasch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gola\u017e (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Rinderbr\u00fche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "goveja juha", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Danke", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "hv\u00e1la", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "haben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "im\u00e9ti, im\u00e0", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "bitte!", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "izv\u00f3li, -ta, -te", 
+  "fullpos": "Imperativ ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "w\u00e4hlen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "izv\u00f3liti, -i", 
+  "fullpos": "Verb, pf und impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Apfelsaft", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jabol\u010dni sok", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Apfelstrudel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jabol\u010dni zavitek", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Speisen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jedi", 
+  "fullpos": "Substantiv, pl ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Eintopf aus sauren R\u00fcben", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jota (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Suppe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "juha (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Kakao", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kakav (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Kamillentee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kamili\u010dni \u010daj", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Cappuccino", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kapu\u010dino (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Kaffee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kava (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Kaffee mit Sahne", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kava s smetano", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Navette-R\u00fcbchen (saure R\u00fcben - wird wie Sauerkraut zubereitet)", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kisla repa (-e, -e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Sauerkraut", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kislo zelje (-ega, -a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Coca Cola", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kokakola (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "slowenische Cola", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kokta (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Kotelett", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kotlet (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Krainer Wurst", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kranjska klobasa (-e, -e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Cremeschnitte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "krem\u0161nita (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "hungrig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "l\u00e1\u010den -\u010dna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "k\u00f6nnen Sie/ kannst du?", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "lahk\u00f3", 
+  "fullpos": "Modalausdruck ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Eiskaffee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ledena kava", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Eistee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ledeni \u010daj", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Limonade", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "limonada (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Lindenbl\u00fctentee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "lipov \u010daj", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "kalt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "m\u0155zel -zla, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "kleines Bier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "malo pivo", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Gemischter Salat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "me\u0161ana solata", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Mineralwasser", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mineralna voda", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Milch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mleko (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Palatschinken", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pala\u010dinka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Ofenkartoffel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pe\u010den krompir", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Pizza", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "P\u00fcree", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pire (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Bier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pivo (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "zahlen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pl\u00e1\u010dati, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Orangensaft", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pomaran\u010dni sok", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Pommes", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pomfri (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Hefestrudel mit verschiedenen F\u00fcllungen, z.B. Walnuss, Estragon, Mohn", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "potica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "in Ordnung", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pr\u00e0v", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "schwarzer Tee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pravi \u010daj", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "bitten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pros\u00edti, pr\u00f3si", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Parmaschinken", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pr\u0161ut (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Mineralwassermarke, auch Synonym f\u00fcr Mineralwasser", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "radenska (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Rotwein", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "rde\u010de vino", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Gerstengraupensuppe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ri\u010det (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Risotto", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ri\u017eota (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Rum", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "rum (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Fr\u00fcchtetee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sadni \u010daj", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Sandwich", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sendvi\u010d (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "nat\u00fcrlich", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "sev\u00e9da", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Topfenstrudel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sirov zavitek", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Nachspeisen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sladice", 
+  "fullpos": "Substantiv, pl ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Eiscreme", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sladoled (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Saft", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sok (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Saft", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "s\u00f3k (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Salat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "solata (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "helles Bier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "svetlo pivo", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Spaghetti", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161pageti", 
+  "fullpos": "Substantiv, pl ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Teigrolle mit s\u00fc\u00dfer oder herzhafter F\u00fcllung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161trukelj (-klja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "sofort", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "tak\u00f3j", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "dunkles Bier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "temno pivo", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "gezapftes Bier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "to\u010deno pivo", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Heisse Getr\u00e4nke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "topli napitki", 
+  "fullpos": "Substantiv /pl ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Torte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "torta (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "hier", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "t\u00fakaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "in Slowenien produzierte Biermarken", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Zlatorog pivo", 
+  "fullpos": "Substantiv (Eigennamen) ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "gro\u00dfes Bier", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "veliko pivo", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Wein", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vino (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Wasser", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "v\u00f4da (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Hei\u00dfe Schokolade (sehr dickfl\u00fcssig)", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vro\u010da \u010dokolada (-e/-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "alles", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "vs\u00e8", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "mit oder ohne (Sahne)", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "z ali brez", 
+  "fullpos": "Redewendung ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "zumachen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zapr\u00e9ti, -\u00e8", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Strudel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zavitek (-tka)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Gr\u00fcner Salat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zelena solata", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "gr\u00fcner Tee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zeleni \u010daj", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Gem\u00fcsesuppe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zelenjavna juha", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Gem\u00fcseteller", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "(-ega -a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "leider", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "\u017e\u00e0l", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "5", 
+  "nativeWord": "Getreidebrei", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u017eganci", 
+  "fullpos": "Substantiv, pl ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "jung", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ml\u00e1d, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "lange", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "d\u00f3lgo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "flei\u00dfig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "d\u00e9laven, -vna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "klug", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "p\u00e1meten, -tna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Auto (im Dual und Plural anstelle von avto gebraucht)", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "avtomob\u00edl (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Zeitung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010dasop\u00eds (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "-", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "\u010dez", 
+  "fullpos": "Pr\u00e4position", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "regnen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "de\u017eev\u00e1ti, de\u017e\u00faje", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "nach Hause", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "dom\u00f4v", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "philosophisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "filoz\u00f3fski, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "schnell", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "h\u00edtro", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Information", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "inform\u00e1cija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Kaffee", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "k\u00e1va (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Mittagessen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kos\u00edlo (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Kartoffel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kromp\u00edr (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Brot", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kr\u00f9h (kr\u00faha)", 
+  "fullpos": "Substantiv/Sg ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "K\u00fcche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "k\u00fahinja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Boot", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "l\u00e1djica (-e)", 
+  "fullpos": "Substantiv/Diminutiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Zitronenlimonade", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "limon\u00e1da (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Flu\u00df durch Ljubljana", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Ljublj\u00e1nica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Marmelade", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "marmel\u00e1da (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Butter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "m\u00e1slo (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Br\u00fccke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "m\u00f3st (-\u00fa)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "-", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "nad", 
+  "fullpos": "Pr\u00e4position", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Wolke", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "oblak (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "sich auf den Weg machen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "odpraviti se, -i se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "So\u00dfe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "omaka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "parken", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "parkirati, -a", 
+  "fullpos": "Verb, pf / impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "gebraten, Ofen-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pe\u010den, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "trinken", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "piti, pije", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "warten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "po\u010dakati, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "-", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "pod", 
+  "fullpos": "Pr\u00e4position", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "rufen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "poklicati, pokli\u010de", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "gew\u00f6hnlich", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ponavadi", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Montag", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ponedeljek (-ljka)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "h\u00f6ren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "poslu\u0161ati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "(sich) stellen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "postaviti (se), -i (se)", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "im Winter", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pozimi", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "-", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "pred", 
+  "fullpos": "Pr\u00e4position", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Freundin", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prijateljica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "zubereiten, vorbereiten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pripraviti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Platz", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prostor (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "gerade", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ravno", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "er, sie, es selbst", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "sam, -a, -o", 
+  "fullpos": "Pronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "zusammen", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "skupaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Slawistik", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "slavistika (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "unterwegs", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "spotoma", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "geschickt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "spretno", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "frisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "sve\u017e, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Fernsehen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "televizija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Tourist-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "turisti\u010dni, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Stunde", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ura (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "m\u00fcde", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "utr\u00fajen, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Abendessen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ve\u010derja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "aber", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "vendar", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Vitamin", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vitamin (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "zur\u00fcckkehren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "vrniti se, vrne se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "anfangen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "za\u010deti, za\u010dne", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "fahren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zapeljati, zapelje", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "schl\u00e4frig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zaspan, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "gesund", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zdrav, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "Schnitzel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zr\u00e9zek (-zka)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "6", 
+  "nativeWord": "erfahren", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zv\u00e9deti, zv\u00e9", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Fibel (erstes Lesebuch)", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "abecednik (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Author", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "avtor (-ja)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Bibel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "biblija (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "lesen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "brati, bere", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "ehemalige Zuckerfabrik in Ljubljana", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Cukrarna (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Kurzgeschichte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010drtica (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Dezember", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "december (-bra)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Arbeit, Werk", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "delo (-a)", 
+  "fullpos": "Substantiv, n ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Landschaft s\u00fcdlich von Ljubljana", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Dolenjska (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Februar", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "februar (-ja)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Landschaft nordwestlich von Ljubljana", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Gorenjska (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "slowenischer Name f\u00fcr Graz", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Gradec (-dca)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "sich nennen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "imenovati se, imenujem se", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "herausgeben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "izdati, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "stammen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "izvirati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Sprache", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jezik (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "was f\u00fcr ein/eine/ein, wie", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "kak\u0161en, -\u0161na, -o", 
+  "fullpos": "Interrogativpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "wann", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "kdaj", 
+  "fullpos": "Interrogativpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Buch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "knjiga (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Wurzel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "korenina (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Kultur", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kultura (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Mutter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mati, matere", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Moderne", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "moderna (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "mein, meine, mein", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "moj, -a, -e", 
+  "fullpos": "Possesivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "schreiben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "napisati, napi\u0161em", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Titel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "naslov (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "sein, seine, sein", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "njegov, -a, -o", 
+  "fullpos": "Possesivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "ihr, ihre, ihre", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "njen, -a, -o", 
+  "fullpos": "Possesivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "von", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "od", 
+  "fullpos": "Pr\u00e4position, Gen. ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Gedicht", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pesem (-smi)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Gedicht-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pesni\u0161ki, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "schreiben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pisati, pi\u0161em", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Brief", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pismo (-a)", 
+  "fullpos": "Substantiv, n ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "adelig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "plemi\u0161ki, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Dichtung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "poezija (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "kennen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "poznati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "sp\u00e4ter", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pozneje", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Feiertag", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "praznik (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "sich vorstellen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "predstavljati si, -a si", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Vertreter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "predstavnik (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "\u00fcbersetzen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "prevesti, prevede", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "\u00dcbersetzung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prevod (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Prosa", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "proza (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "geboren werden", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "roditi se, -i se", 
+  "fullpos": "Verb, impf/pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "slowenisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "slovenski, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "slowenische Sprache", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sloven\u0161\u010dina (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "sich erinnern", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "spomniti se, -i se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Heilige Schrift", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Sveto pismo (-ega -a)", 
+  "fullpos": "Substantiv, n ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "sterben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "umreti, -e", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "alle", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "vsi, vseh / vse, vseh", 
+  "fullpos": "Pronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Anfang", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "za\u010detek (-tka)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Sammlung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zbirka (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "k\u00f6nnen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "znati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "leben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "\u017eiveti, \u017eivi", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "12", 
+  "nativeWord": "Leben", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u017eivljenje (-a)", 
+  "fullpos": "Substantiv, n ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Tsch\u00fc\u00df", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "ad\u00edjo", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "\u00d6sterreich", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u00c1vstrija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "sein", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "b\u00edti, je", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "mehr", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "b\u00f4lj", 
+  "fullpos": "Adverb, Komparativ ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Tag", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "d\u00e1n (dn\u00e9va)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "gut", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "d\u00f3ber, d\u00f4bra, d\u00f4bro", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "gut", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "d\u00f4bro", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Staat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dr\u017e\u00e1va (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Wien", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "D\u00fanaj (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Frau", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gosp\u00e1 (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Herr", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gosp\u00f3d (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Fr\u00e4ulein", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gospod\u00ed\u010dna (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Haus-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "h\u00ed\u0161ni -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Dank", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "hv\u00e1la (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Name, Vorname", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "im\u00e9 (-ena)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "haben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "im\u00e9ti, im\u00e1", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "gehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "\u00edti, gr\u00e9", 
+  "fullpos": "Verb, pf / impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "ziemlich", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "k\u00e0r", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Ort", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kr\u00e0j , kr\u00e1ja", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Kuratorin", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "k\u00fastosinja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "leicht", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "l\u00e1hek -hka, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Jahr", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "l\u00e9to (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "mein", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "m\u00f3j , m\u00f4ja, m\u00f4je", 
+  "fullpos": "Possessivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Adresse", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nasl\u00f2v (-\u00f4va)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Auf Wiedersehen!", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "nasv\u00eddenje oder na sv\u00eddenje", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Kellner", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nat\u00e1kar (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Deutschland", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "N\u00e9m\u010dija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "ihr", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "nj\u00e9n -a, -o", 
+  "fullpos": "Possessivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "ihr (beider)", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "nj\u00fan -a, -o", 
+  "fullpos": "Possessivpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Nacht", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "n\u00f3\u010d (-i)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Journalist", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "nov\u00ednar (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "das erste Mal", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "p\u0453vi\u010d", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Beruf", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pokl\u00edc (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "f\u00fchren, geleiten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "popelj\u00e1ti, pop\u00e9lje", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Gru\u00df, Begr\u00fc\u00dfung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pozdr\u00e0v (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "gr\u00fc\u00dfen, begr\u00fc\u00dfen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pozdr\u00e1vljati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Jurist", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pr\u00e1vnik (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Ort in Slowenien", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Pr\u00e9valje (\u00f8)", 
+  "fullpos": "Substantiv ", 
+  "gen": "Pl. f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "allzu viel", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "prev\u00e8\u010d", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Nachname", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pri\u00edmek (-mka)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "kommen, gehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pr\u00edti, pr\u00edde", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Ordnung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "r\u00e9d (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Sohn", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "s\u00edn (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "schlecht", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "slab\u00f3", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Sonne", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "s\u00f3nce (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Nachbar", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "s\u00f4sed (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Mitsch\u00fcler", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "so\u0161\u00f3lec (-lca)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "geehrt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "spo\u0161tov\u00e1n -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "treffen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "sr\u00e9\u010dati, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "alt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "st\u00e0r , st\u00e1ra, st\u00e1ro", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Alter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "st\u00e1rost (-i)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Onkel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "str\u00edc (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "super", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "s\u00faper", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Sch\u00fcler", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161\u00f3lar (-ja)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Nummer", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161tev\u00edlka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "so", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "tak\u00f3", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "anrufen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "telefon\u00edrati, -a + Dativ", 
+  "fullpos": "Verb, pf / impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Telefon-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "telef\u00f3nski -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Lehrerin", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "u\u010d\u00edteljica (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "K\u00fcnstler", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "um\u00e9tnik (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Abend", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ve\u010d\u00e9r (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "sehen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "v\u00eddeti, v\u00eddi", 
+  "fullpos": "Verb, pf / impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "aus", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "z", 
+  "fullpos": "Pr\u00e4position (+Gen) ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Hallo", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "zdr\u00e1vo", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "sehr", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zel\u00f3", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "leben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "\u017eiv\u00e9ti, \u017eiv\u00ed", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "2", 
+  "nativeWord": "Hallo", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "\u017e\u00edvjo oder \u017e\u00edvijo", 
+  "fullpos": "Interjektion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Alpen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Alpe (-\u00f8)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f/Pl "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Alpen-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "alpski, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "\u00d6sterreich", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Avstrija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "besser", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "bolj\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "sogar", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "celo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Mitglied", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u010dlan (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "l\u00e4nger", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "dalj\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "gut", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "dober, -bra, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "lang", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "dolg, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Tal", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dolina (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Staat", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "dr\u017eava (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "europ\u00e4isch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "Evropski, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Haupt-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "glavni, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Berg", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gora (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Gast", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "gost (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Italien", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "Italija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "unter", 
+  "pos_freq": 18, 
+  "pos": "prep", 
+  "foreignWord": "izmed", 
+  "fullpos": "Pr\u00e4position, Gen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Adria-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "jadranski, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "H\u00f6hle, Grotte", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jama (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "S\u00fcdwesten", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "jugozahod (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "als, wie", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "kot", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "sch\u00f6ner", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "lep\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "liegen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "le\u017eati, le\u017ei", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Leute (Pl. von Mensch)", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ljudje (ljudi)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m/Pl "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "kleiner", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "manj\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Grenze", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "meja (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Grenz-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "mejni, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "messen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "meriti, -i", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Stadt", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "mesto (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Meter", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "meter (-tra)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "jung", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "mlad, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "j\u00fcnger", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "mlaj\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "st\u00e4rker", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "mo\u010dnej\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "blau", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "moder, -dra, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "gewaltig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "mogo\u010den, -\u010dna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Meer", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "morje (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "niedrig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "nizek, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "niedriger", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ni\u017eji, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "offen", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "odprt, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "etwa", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "okrog", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Getr\u00e4nk", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pija\u010da (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "unterirdisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "podzemski, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "sich r\u00fchmen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pohvaliti se, -i se", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "landschaftlich", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pokrajinsko", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "vollberechtigt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "polnopraven, -vna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "stolz", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ponosen, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Urwald", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pragozd (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "echt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pravi, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Einwohner", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prebivalec (-lca)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Einwohnerin", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prebivalka (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "\u00dcbergang", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "prehod (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "ungef\u00e4hr", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pribli\u017eno", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "verkehrsreich", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "prometen, -tna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "verkehrsreicher", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "prometnej\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "gern", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "rad, -a, -o", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Ebene", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ravnina (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "vielf\u00e4ltig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "raznolik, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "rot", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "rde\u010d, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Nord-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "severni, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Nordosten", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "severovzhod (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Nordwesten", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "severozahod (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "ansonsten", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "sicer", 
+  "fullpos": "Konjunktion ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "slowenisch-kroatisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "slovensko-hrva\u0161ki, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Nachbar-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "sosednji, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Zentrum", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "sredi\u0161\u010de (-a)", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "alt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "star, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "\u00e4lter", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "starej\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "so viel", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "toliko", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "fremd", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "tuj, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "Union", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "unija (-e)", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "erfolgreich", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "uspe\u0161en, -\u0161na, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "erfolgreicher", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "uspe\u0161nej\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "gr\u00f6\u00dfer", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ve\u010dji, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "wissen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "vedeti, ve", 
+  "fullpos": "Verb/impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "gro\u00df", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "velik, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "hoch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "visok, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "alle", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "vsi, vse, vsa", 
+  "fullpos": "Pronomen / Pl ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "interessant", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zanimiv, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "14", 
+  "nativeWord": "interessanter", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zanimivej\u0161i, -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Agentur", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ag\u00e9ncija (-e)", 
+  "fullpos": "Substantiv, f ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "ganz", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "c\u00e9l, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "geben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "d\u00e1ti, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "hinzuf\u00fcgen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "dod\u00e1ti, -\u00e1", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Bohne", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "fi\u017e\u00f4l (fi\u017e\u00f3la)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "fertig", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "got\u00f4vo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "K\u00fchlschrank", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "hlad\u00edlnik (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Internet", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "intern\u00e9t (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "bitte!", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "izvoli, -ta, -te", 
+  "fullpos": "Imperativ ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "w\u00e4hlen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "izvol\u00edti, -m", 
+  "fullpos": "Verb, pf, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Katalog", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "katal\u00f3g (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "sauer", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "k\u00edsel, -la, -lo", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "finden", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "n\u00e1jti, n\u00e1jde", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "machen, tun", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "nared\u00edti, -\u00ed", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "danach, anschlie\u00dfend", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "nat\u00f3", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "nicht haben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "ne imeti, n\u00edma", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "abtropfen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "odced\u00edti, -\u00ed", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "gesch\u00e4lt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "ol\u00fapljen, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Ferien", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "po\u010d\u00edtnice, (-\u00d8)", 
+  "fullpos": "Substantiv, f, PL ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "st\u00f6bern;", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pobrskati, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "anschauen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pogl\u00e9dati, -m", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "anrufen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pokl\u00edcati, pokl\u00ed\u010de", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Sommer", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pol\u00e9tje, (-a)", 
+  "fullpos": "Substantiv, n ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "anbieten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pon\u00fajati, -a", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "besonders", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pos\u00e9bej", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "salzen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "posol\u00edti, -\u00ed", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "ben\u00f6tigen, brauchen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "potrebov\u00e1ti, potreb\u00faje", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "richtig, echt", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "pr\u00e1vi, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Vorlesung", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "pred\u00e1vanje, (-a)", 
+  "fullpos": "Substantiv, n ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "zubereiten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "pripr\u00e1viti, -i", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "kochen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "sk\u00fahati, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "zusammen, gemeinsam", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "sk\u00fapaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "noch (noch heute)", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "\u0161e (\u0161e danes)", 
+  "fullpos": "Partikel ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "touristisch", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "tur\u00edsti\u010den, -a, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "nehmen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "vz\u00e9ti, vz\u00e1me, vzemi!", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "interessant", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zanim\u00edvo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "Kohl, Sauerkraut", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "z\u00e9lje, (-a)", 
+  "fullpos": "Substantiv, m ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "zusammen mischen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zm\u00e9\u0161ati, -a", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "15", 
+  "nativeWord": "am Abend, abends", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zve\u010d\u00e9r", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "sich f\u00fcrchten", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "bati se, boji se", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "gut", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "dober -bra, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "zu Hause", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "doma", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Fakult\u00e4t (umgangssprachlich)", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "faks-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "\u00dcbel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "hudo-ega", 
+  "fullpos": "Substantiv ", 
+  "gen": "n "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Suppe", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "juha-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "(et)was", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "kaj, \u010desa", 
+  "fullpos": "Indefinitpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Kartoffel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "krompir-ja", 
+  "fullpos": "Substantiv ", 
+  "gen": "m/Sg "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "K\u00fcche", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "kuhinja-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "nicht haben", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "ne imeti, nima", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "nichts", 
+  "pos_freq": 28, 
+  "pos": "pron", 
+  "foreignWord": "ni\u010d, ni\u010desar", 
+  "fullpos": "Indefinitpronomen ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Besuch", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "obisk-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "\u00f6ffnen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "odpreti-e", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Schrank", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "omara-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Regal", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "polica-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "M\u00e4dchen, M\u00e4del - umgangssprachlich", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "punca-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Truthahn", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "puranji -a, -e", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Rezept", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "recept-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Reis", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ri\u017e-a", 
+  "fullpos": "Substantiv ", 
+  "gen": "m/Sg "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "nur", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "samo", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "(fertig) kochen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "skuhati -am", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Sahne", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "smetana-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f/Sg "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Zimmer", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "soba-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "(fertig) backen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "spe\u010di, spe\u010de", 
+  "fullpos": "Verb, pf ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Eltern", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "star\u0161i-\u0161ev", 
+  "fullpos": "Substantiv ", 
+  "gen": "m/Pl "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Schade", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "\u0161koda-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "vier", 
+  "pos_freq": 32, 
+  "pos": "mix", 
+  "foreignWord": "\u0161tirje, \u0161tiri", 
+  "fullpos": "Numerale ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Tante", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "teta-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "hier", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "tukaj", 
+  "fullpos": "Adverb ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Abendessen", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "ve\u010derja-e", 
+  "fullpos": "Substantiv ", 
+  "gen": "f "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "sich freuen", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "veseliti se, vesel\u00ed se", 
+  "fullpos": "Verb, imp ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "T\u00fcr", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "vrata-\u00f8", 
+  "fullpos": "Substantiv ", 
+  "gen": "n/Pl "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Gem\u00fcse-", 
+  "pos_freq": 208, 
+  "pos": "adj", 
+  "foreignWord": "zelenjaven-vna, -o", 
+  "fullpos": "Adjektiv ", 
+  "gen": "-"
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "Schnitzel", 
+  "pos_freq": 459, 
+  "pos": "noun", 
+  "foreignWord": "zrezek-zka", 
+  "fullpos": "Substantiv ", 
+  "gen": "m "
+ }, 
+ {
+  "les": "10", 
+  "nativeWord": "klingeln", 
+  "pos_freq": 145, 
+  "pos": "verb", 
+  "foreignWord": "zvoniti-i", 
+  "fullpos": "Verb, impf ", 
+  "gen": "-"
+ }
+]

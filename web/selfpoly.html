@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample app</title>
+<script src="packages/web_components/platform.js"></script>
+<script src="packages/web_components/dart_support.js"></script>
+<link rel="stylesheet" href="/static/css/selfpoly.css">
+<!--
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+<link rel='import' href='./appslib/apps_panel1.html'>
+    <link rel="import" href="./clicklib/clickcounter.html">
+<link rel="import" href="./flexlib/desc_app.html">
+<link rel="import" href="./voclib/voc_app.html">
+<link rel="import" href="./excslib/excs_app.html">
+  <memo-app></memo-app>
+<script type="application/dart" src="selfpoly.dart"></script>
+-->
+<link rel='import' href='./appslib/apps_panel.html'>
+<script type="application/dart">export 'package:polymer/init.dart';</script>
+<script src="packages/browser/dart.js"></script>
+</head>
+<body>
+<div class='container'>
+  <apps-panel></apps-panel>
+  <div id='apps'></div>
+</div>
+</body>
+</html>

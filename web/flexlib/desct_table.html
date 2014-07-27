@@ -1,0 +1,31 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="flex_inp.html">
+<polymer-element name="desct-table"> <template>
+<link rel="stylesheet" href='/static/css/bootstrap_popover.min.css'>
+<link rel="stylesheet" href="/static/css/bootstrap_table.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap_buttons.min.css">
+<link rel="stylesheet" href="/static/css/selfpoly.css">
+<style>
+td {
+  padding: 10px;
+  width: 20%;
+}
+</style>
+<table class="table">
+  <tr>
+    <th class='case'><span class='transl badge' data-lang='English'>En</span>
+      <span class='transl badge' data-lang='Deutsch'>De</span>
+      <button class='btn btn-default' on-click={{checkall}}>Check
+        all</button></th>
+    <th>Singular</th>
+    <th>Dual</th>
+    <th>Plural</th>
+  </tr>
+  <tr template repeat='{{r in curParadigm | enumerate}}'>
+    <td
+      class='noun {{casusOrder[r.index].substring(0,3).toLowerCase()}}'>{{casusOrder[r.index]}}</td>
+    <td template repeat='{{td in r.value]}}'><flex-inp
+        stem='{{td[0]}}' flx='{{td[1]}}' hid={{td[2]}}></flex-inp></td>
+  </tr>
+</table>
+</template> <script type="application/dart" src="desct_table.dart"></script> </polymer-element>

@@ -1,0 +1,14 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="desct_table.html">
+<link rel="import" href="../lib/filter.html">
+<link rel="import" href="../lib/inpool_label.html">
+
+<polymer-element name="desc-app" extends='filter-tmp'> <template>
+
+<shadow></shadow>
+<inpool-label nip={{nInPool1}}></inpool-label>
+
+<input type='number' value={{ninputs}} />
+  <desct-table curParadigm='{{curParadigm}}' casusOrder='{{casusOrder}}' wordData='{{curTask}}'  > </desct-table>
+</template> <script type="application/dart" src="desc_app.dart"></script> </polymer-element>
+
