@@ -3,23 +3,18 @@ import 'dart:html';
 import 'dart:convert';
 import '../globals.dart';
 import '../lib/filter.dart';
+import '../lib/filter-item.dart';
 
 @CustomTag("excs-app")
 class ExcsApp extends Filter {
   List<CheckboxInputElement> lesFilter, posFilter;
   List<Map<String, dynamic>> curDb, oriDb;
-  Map<String,String> lesCats=LESLABELS;
-  Map<String,String> posMap=POSLABELS;
   @observable Map<String,dynamic> curTask;
 
-  @observable int nInPool1 = 0;
-  set nInPool(int i) {
-    nInPool1 = i;
-    (shadowRoots["filter-tmp"].querySelector(".nextpar") as ButtonElement).disabled = nInPool1 == 0;
-  }
+  @observable int nInPool = 0;
 
   ExcsApp.created() : super.created() {
-    filters={"lesfilter":LESLABELS,'posfilter':POSLABELS};
+    //filters={"lesfilter":LESLABELS,'posfilter':POSLABELS};
     reqDb();
   }
   reqDb() => HttpRequest.getString("/static/data/excsApp.json").then(setDb);
@@ -38,15 +33,17 @@ class ExcsApp extends Filter {
   }
 
   filter(Event e) {
-    lesFilter = shadowRoots["filter-tmp"].querySelectorAll('.lesfilter');
-    posFilter = shadowRoots["filter-tmp"].querySelectorAll('.posfilter');
-    assert(lesFilter.length>0 && posFilter.length >0);
-    assert(e.target is CheckboxInputElement);
-    CheckboxInputElement t = e.target;
+    FilterItem lesFilter = shadowRoot.querySelector('#lessons-filter');
+    FilterItem posFilter = shadowRoot.querySelector('#pos-filter');
+    assert(lesFilter is FilterItem && posFilter is FilterItem);
+    assert(lesFilter.activeCats is Set && posFilter.activeCats is Set);
+    //assert(lesFilter.length>0 && posFilter.length >0);
+    //assert(e.target is CheckboxInputElement);
+    //CheckboxInputElement t = e.target;
     List<int> validLessons = [];
-    for (var lesInp in lesFilter) if (lesInp.checked) validLessons.addAll(LESSECMAP[lesInp.dataset["fltr"]]);
-    var validPos = posFilter.where((e) => e.checked).map((e) => e.dataset['fltr']).toList();
-    curDb = (t.checked ? oriDb : curDb).where((elm) => validPos.contains(elm['pos'] as String) &&
+    for (String lesInp in lesFilter.activeCats) validLessons.addAll(LESSECMAP[lesInp]);
+    //var validPos = posFilter.where((e) => e.checked).map((e) => e.dataset['fltr']).toList();
+    curDb = ((e.target as FilterItem).isSubset ? curDb : oriDb).where((elm) => posFilter.activeCats.contains(elm['pos'] as String) &&
         validLessons.contains(int.parse(elm['les'] as String))).toList();
     nInPool=curDb.length;
   }

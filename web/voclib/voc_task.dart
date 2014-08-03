@@ -20,10 +20,12 @@ class Task extends PolymerElement {
   }
 
   checkMulti() {
-    List<InputElement> inp = shadowRoot.querySelectorAll(".multiinput");
-    List<InputElement> checked = inp.where((e) => e.checked).toList();
-    if (checked.isEmpty) window.alert("Nothing selected"); else checked[0].dataset["sol"] == "true"
-        ? checked[0].classes.add("right") : checked[0].classes.add("false");
+    InputElement inp = shadowRoot.querySelector(".multiinput:checked");
+    LabelElement word= inp.nextElementSibling;
+    //List<InputElement> checked = inp.where((e) => e.checked).toList();
+    if (inp==null) window.alert("Nothing selected"); else inp.dataset["sol"] == "true"
+        //inp.
+        ? word.classes.addAll(["label","label-success"]) : word.classes.addAll(["label", "label-danger"]);
   }
 
   check(Event e) {

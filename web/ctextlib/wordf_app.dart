@@ -2,43 +2,42 @@ import 'package:polymer/polymer.dart';
 import 'dart:html';
 import 'dart:convert';
 import '../lib/filter.dart';
+import '../lib/filter-item.dart';
 import './word_form.dart';
 
 @CustomTag("wordf-app")
 class WordfApp extends Filter {
-  Map<String,Map<String,String>> oriDb;
-  Map<String,String> curTask;
+  Map<String, Map<String, String>> oriDb;
+  Map<String, String> curTask;
   static Map<String, Map<String, String>> grammarAtrs;
-  List<String> poss = ["Verb", "Adjective", "Noun", "Pronoun", "Preposition"];
-  @published List<String> less;
-  @published List<String> lessTitle;
+  Map<String, String> textMap = toObservable({});
   DivElement textField;
   WordfApp.created() : super.created() {
     setTextField();
-    //reqDb();
   }
 
-  setTextField()=>textField=shadowRoot.querySelector("#text");
+  setTextField() => textField = shadowRoot.querySelector("#text");
 
   reqDb() => HttpRequest.getString("/static/data/tagged_text.json").then(reqDb1);
 
-  reqDb1(String texts) => HttpRequest.getString("/static/data/engtags_dict.json").then(setDbPre(
-      texts));
+  reqDb1(String texts) => HttpRequest.getString("/static/data/engtags_dict.json").then(setDbPre(texts));
 
   setDbPre(String textval) {
     setDb(String value) {
       assert(value != "");
       oriDb = JSON.decode(textval);
-      less = oriDb.keys.toList();
-      lessTitle=less.map((e)=>oriDb[e]["title"]).toList();
+      for (String k in oriDb.keys) textMap[k] = oriDb[k]["title"];
       grammarAtrs = JSON.decode(value);
-      setText(less.last);
-      print("Text ready");
+      setTextFirst(textMap.keys.last);
     }
     return setDb;
   }
+
+  void setTextFirst(String s) {
+    shadowRoot.querySelector("#texts").click();
+  }
+
   domReady() {
-    print("Use dom1");
     reqDb();
   }
   WordForm _createWordForm(SpanElement sp) {
@@ -53,37 +52,34 @@ class WordfApp extends Filter {
         });
     return wf;
   }
-  detached(){
+  detached() {
     super.detached();
     WordForm.allForms = [];
   }
 
   void setText(String k) {
-    final NodeValidatorBuilder parser = new NodeValidatorBuilder.common()..allowElement('word-form',
-        attributes: ['gramTagSl', 'gramTagEn', 'lemma', 'tonal']);
+    WordForm.allForms = [];
+    final NodeValidatorBuilder parser = new NodeValidatorBuilder.common()..allowElement('word-form', attributes: ['gramTagSl', 'gramTagEn', 'lemma', 'tonal']);
     curTask = oriDb[k];
     Element task = new Element.html(curTask["body"], validator: parser);
+    textField.children.add(task);
     textField.children = [task];
   }
   changeText(Event e) {
     assert(e.target is RadioButtonInputElement);
     RadioButtonInputElement t = e.target;
-    WordForm.allForms = [];
     setText(t.dataset["les"]);
     shadowRoot.querySelectorAll(".active").forEach((Element e) => e.classes.remove("active"));
   }
 
   filter(Event e) {
-    Element et = e.target;
-    if (et is LIElement) {
-      et.classes.contains("active") ? et.classes.remove("active") : et.classes.add("active");
-      Set<String> posFilters = shadowRoot.querySelectorAll(".posfilter.active").map((Element e) =>
-          e.dataset["fltr"]).toSet();
-      List<dynamic> fs = shadowRoots['wordf-app'].querySelectorAll("word-form");
-      WordForm.allForms.forEach((WordForm e) {
-        e.isSelected = posFilters.contains(e.grammarAtrs["Pos"]);
-      });
-    }
+    FilterItem textFilter = shadowRoot.querySelector("#texts");
+    FilterItem posFilter = shadowRoot.querySelector("#pos-mark");
+    assert(textFilter is FilterItem && posFilter is FilterItem);
+    assert(textFilter.activeCats is Set && posFilter.activeValues is Set);
+    if ((e.target as FilterItem).id == 'texts') setText(textFilter.activeCats.first);
+    // else {
+    WordForm.allForms.forEach((e) => e.isSelected = posFilter.activeValues.contains(e.grammarAtrs["Pos"]));
+    //}
   }
-
 }

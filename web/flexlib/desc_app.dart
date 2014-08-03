@@ -1,59 +1,52 @@
 import 'package:polymer/polymer.dart';
 import 'dart:convert';
 import 'dart:async';
+import 'dart:math' show Random;
 import 'dart:html';
 import '../globals.dart';
 import '../lib/filter.dart';
+//import '../lib/inpool_label.dart';
+import '../lib/filter-item.dart';
 
 @CustomTag('desc-app')
 class DescApp extends Filter {
   List<Map<String, dynamic>> DESCS;
   List<Map<String, dynamic>> subDESCS;
   Map<String, List<List<String>>> FLEXS;
-  List<String> casusOrder = CASUS.values.toList();
-  int _inputs = 4;
-  List<CheckboxInputElement> genFilters;
-  @observable Map<String,dynamic> curTask;
-
-  @observable int nInPool1 = 0;
-
-  set nInPool(int n) {
-    (shadowRoots["filter-tmp"].querySelector(".nextpar") as ButtonElement).disabled = n == 0 ? true
-        : false;
-    nInPool1 = n;
-    return n;
-  }
-
+  @observable List<List<String>> firstTdOrder;
+  bool isWordCentric;
+  double probabCase = 0.25;
+  @observable Map<String, dynamic> curTask;
+  @observable int nInPool = 0;
   @observable List<List<String>> curParadigm;
-  @observable set ninputs(v) {
-    v = v.toString();
-    try {
-      _inputs = int.parse(v);
-    } catch (e) {
-      _inputs = 4;
-    }
-  }
-  @observable int get ninputs => _inputs;
 
   DescApp.created() : super.created() {
-    filters={"genfilter":GENMAP};
     reqDb();
   }
-
   Future reqDb({String src: "/static/data/descApp.json"}) => HttpRequest.getString(src).then(setDb);
+
+  setLevel(Event evt) {
+    print((evt.target as SelectElement).value);
+    probabCase = double.parse((evt.target as SelectElement).value);
+
+  }
 
   setDb(String value) {
     var DB = JSON.decode(value);
     FLEXS = DB["flexions"];
     DESCS = DB["words"];
+    DESCS.shuffle();
     subDESCS = DESCS;
-    next();//call first paradigm
+    shadowRoot.querySelector(".wordcentric").click();
   }
-  _setHideRandom(List<dynamic> lst, List<List<int>> poss) {
-    poss.shuffle();
-    poss.take(ninputs).map((e) => lst[e[0]][e[1]][2] = true).toList(
-        );//set hidden (3.element) to true
-    return lst;
+
+
+  changeMod(Event evt) {
+    assert(evt.target is ButtonElement);
+    ButtonElement b = evt.target;
+    isWordCentric = b.classes.contains("wordcentric");
+    //isWordCentric? b.classes.add("active");
+    next();
   }
 
   _built_par(Map wordMap) {
@@ -63,42 +56,56 @@ class DescApp extends Filter {
     bool unreg = wordMap["hasStemAlt"];
     List<List<String>> fullPar = wordMap["stem"];
     var casVals = CASUS.values.toList();
+    Random rand = new Random();
     List<dynamic> stemWithFlexions = [];
     List<List<int>> possibleInputs = [];
-    for (var i = 0; i < flx.length; i++) {
+    for (var i = 0; i < flx[0].length; i++) {//[1,2,3] [4,5,6] [7,8,9] ->
       var sublist = [];
       stemWithFlexions.add(sublist);
-      for (var j = 0; j < flx[0].length; j++) if (numerus.contains(i)) {
-        var itm = [!unreg ? nomStem : fullPar[i][j], flx[i][j], false];
+      for (var j = 0; j < flx.length; j++) if (numerus.contains(j)) {
+        var itm = [!unreg ? nomStem : fullPar[j][i], flx[j][i], rand.nextDouble() < probabCase ? true : false];
         sublist.add(itm);
         possibleInputs.add([i, j]);
       } else {
-        var itm = ["", flx[i][j], false];
+        var itm = ["", flx[j][i], false];
         sublist.add(itm);
       }
     }
-    var transposed = transpose(_setHideRandom(stemWithFlexions, possibleInputs));
-    return transposed;
+    if (isWordCentric) return stemWithFlexions; else {
+      int rowIx = rand.nextInt(stemWithFlexions.length);
+      List<List<dynamic>> r = stemWithFlexions[rowIx];
+      List<String> caseKeys = caseMap.keys.toList();
+      return [[caseKeys[rowIx], nomStem], r];
+    }
   }
   filter(Event e) {
-    genFilters = shadowRoots["filter-tmp"].querySelectorAll(".genfilter");
-    assert(e.target is CheckboxInputElement);
-    List<String> activeGens = genFilters.where((e) => e.checked == true).map((e) => e.dataset["fltr"]).toList();
-    subDESCS = activeGens.length > 0 ? ((e.target as CheckboxInputElement).checked ? DESCS :
-        subDESCS).where((e) => activeGens.contains(e["genus"])).toList() : [];
+    assert(e.target is FilterItem);
+    FilterItem genF = shadowRoot.querySelector("#genus-filter");
+    Set<String> activeGens = genF.activeCats;
+    print(activeGens);
+    subDESCS = activeGens.length > 0 ? (genF.isSubset ? subDESCS : DESCS).where((e) => activeGens.contains(e["genus"])).toList() : [];
     subDESCS.shuffle();
     nInPool = subDESCS.length;
   }
 
   void next() {
-    try {
-      curTask = subDESCS.removeLast();
+    if (isWordCentric) {
+      try {
+        curTask = subDESCS.removeLast();
+        nInPool = subDESCS.length;
+      } on NoSuchMethodError catch (e) {
+        curTask = DESCS[0];
+        nInPool = DESCS.length;
+      } finally {
+        firstTdOrder = caseMap.keys.map((e) => [e, caseMap[e]]).toList();
+        curParadigm = _built_par(curTask);
+      }
+    } else {
+      var taskList = subDESCS.take(10).map((e) => _built_par(e));
+      subDESCS.removeRange(0, 10);
+      firstTdOrder = taskList.map((e) => [e[0][0], e[0][1]]).toList();
+      curParadigm = taskList.map((e) => e[1]).toList();
       nInPool = subDESCS.length;
-    } on NoSuchMethodError catch (e) {
-      curTask = DESCS[0];
-      nInPool = DESCS.length;
-    } finally {
-      curParadigm = _built_par(curTask);
     }
   }
 }

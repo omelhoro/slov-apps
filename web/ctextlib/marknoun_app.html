@@ -6,32 +6,52 @@
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
 <link rel="stylesheet" href="/static/css/selfpoly.css">
 <style>
-.col-md-1{
-float:left;}
+.menu {
+	position: fixed;
+	z-index: 1;
+}
+
+.stats {
+	display: inline-flex;
+}
+
+.text {
+	padding-top: 80px;
+}
 </style>
-
-<div class="row">
-  <div class='col-md-1'>
-    <div class='panel-body'>
-    <ul class='casechoices list-group'>
-      <template repeat='{{c in casus}}'>
-      <li class='list-group-item noun {{c.substring(0,3).toLowerCase()}}'>{{c}}</li>
-      </template>
-    <li> <button on-click={{checkall}}>Check all</button></li>
-    <template repeat='{{stat in stats.keys}}'>
-    <li>{{stat}}<span class="label {{stats[stat][0]}}">{{stats[stat][1]}}</span></li>
-    </template>
-    </ul>
-    <ul class='stats'></ul>
-    </div>
-  </div>
-  <div class='col-lg-6 panel panel-default'>
-    <div class="panel-heading">Text</div>
-    <div class='panel-body'>
-    <shadow></shadow>
-<img src='/static/wasd.png' height='100px'/>
-    </div>
-  </div>
+<div class='menu row'>
+	<div class='col-lg-12'>
+		<ul class='stats list-group'>
+			<li class='list-group-item'>
+				<form>
+					<select class='noun {{curCaseClass}} form-control'
+						on-click={{updateCase}}>
+						<option template repeat='{{c in caseMap.keys}}' class='noun {{c}}'
+							value={{c}}>{{caseMap[c]}}</option>
+					</select>
+				</form>
+			</li>
+			<template repeat='{{stat in stats.keys}}'>
+			<li class='list-group-item'>{{stat}}<span
+				class="label {{stats[stat][0]}}">{{stats[stat][1]}}</span></li>
+			</template>
+			<li class='list-group-item'>
+				<button class='btn' on-click={{checkall}}>Check all</button>
+			</li>
+		</ul>
+	</div>
 </div>
-
-</template> <script type="application/dart" src='marknoun_app.dart'></script> </polymer-element>
+<div class='text'>
+	<p class='manual'>
+		Use
+		<code>A & D</code>
+		to select words and
+		<code>W & S</code>
+		to select cases. Press
+		<code>SPACE</code>
+		for setting the case.
+	</p>
+	<shadow></shadow>
+</div>
+<!--  <img src='/static/wasd.png' height='100px'/>--> </template> <script
+	type="application/dart" src='marknoun_app.dart'></script> </polymer-element>

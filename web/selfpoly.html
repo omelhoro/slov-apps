@@ -13,12 +13,15 @@
 <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
 <link rel='import' href='./appslib/apps_panel1.html'>
     <link rel="import" href="./clicklib/clickcounter.html">
-<link rel="import" href="./flexlib/desc_app.html">
-<link rel="import" href="./voclib/voc_app.html">
 <link rel="import" href="./excslib/excs_app.html">
-  <memo-app></memo-app>
 <script type="application/dart" src="selfpoly.dart"></script>
+<link rel="import" href="./voclib/voc_app.html">
+<link rel="import" href="./ctextlib/wordf_app.html">
+
+<link rel="import" href="./flexlib/desc_app.html">
+  <marknoun-app></marknoun-app>
 -->
+<link rel="import" href="./ctextlib/marknoun_app.html">
 <link rel='import' href='./appslib/apps_panel.html'>
 <script type="application/dart">export 'package:polymer/init.dart';</script>
 <script src="packages/browser/dart.js"></script>
@@ -26,6 +29,7 @@
 <body>
 <div class='container'>
   <apps-panel></apps-panel>
+  <marknoun-app></marknoun-app>
   <div id='apps'></div>
 </div>
 </body>

@@ -5,7 +5,7 @@ import 'dart:html';
 @CustomTag('desct-table')
 class DescTable extends PolymerElement {
   @published List<List<dynamic>> curParadigm;
-  @published List<String> casusOrder;
+  @published List<String> firstTdOrder;
   @published Map<String,dynamic> wordData;
 
   DescTable.created() : super.created() {

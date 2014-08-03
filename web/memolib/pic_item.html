@@ -6,7 +6,7 @@
 <template if={{isVisible}}> <template if='{{isPic}}'>
 <a class="thumbnail"> <img class='memopic'
 	src="/static/data/memory/pics/{{picSrc}}.jpg" alt="...">
-</a></template> <template if='{{!isPic}}'> <a class="thumbnail"><span class='tst'>{{picText}}</span>
+</a></template> <template if='{{!isPic}}'> <a class=""><span class='tst'>{{picText}}</span>
 </a> </template> </template> <template if='{{!isVisible}}'> <a class="thumbnail"><img
 	class='memopic' src="/static/data/memory/pics/secret.jpg" alt="...">
 </a> </template> </template> <script type="application/dart" src='pic_item.dart'></script> </polymer-element>

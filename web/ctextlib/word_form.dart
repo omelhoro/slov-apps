@@ -10,7 +10,7 @@ class WordForm extends PolymerElement {
   @published get isSelected => isSelected0;
   @published set isSelected(bool c) {
     assert(c is bool);
-    assert(grammarAtrs !=null);
+    assert(grammarAtrs != null);
     isSelected0 = c;
     String pos = grammarAtrs['Pos'].toLowerCase();
     String caseWord = pos == "noun" ? grammarAtrs['Case'].substring(0, 3).toLowerCase() : "";
@@ -21,13 +21,15 @@ class WordForm extends PolymerElement {
   @published String gramTagSl, gramTagEn, lemma, tonal;
   @published Map<String, String> grammarAtrs;
 
-  WordForm.created() : super.created(){
+  WordForm.created() : super.created() {
+    //print(WordForm.allForms.length);
     allForms.add(this);
   }
-  attached(){
-    grammarAtrs=WordfApp.grammarAtrs.putIfAbsent(gramTagEn, () => {
-            "Pos": "SENT"
-          });
+
+  attached() {
+    grammarAtrs = WordfApp.grammarAtrs.putIfAbsent(gramTagEn, () => {
+      "Pos": "SENT"
+    });
   }
 
   domReady() {
@@ -36,9 +38,8 @@ class WordForm extends PolymerElement {
         (el) => "Grammar", html: true, content: (el) => this.atrsTab == null ? tableFromAtrs(grammarAtrs) :
         this.atrsTab));
         */
-    SpanElement elm= shadowRoot.querySelector("span#word");
-    Tooltip.wire(elm, () => new Tooltip(elm,placement: (e) => "top", trigger: "hover", title:
-        (el) => lemma, html: true));
+    SpanElement elm = shadowRoot.querySelector("span#word");
+    Tooltip.wire(elm, () => new Tooltip(elm, placement: (e) => "top", trigger: "hover", title: (el) => lemma, html: true));
   }
 
   String tableFromAtrs(Map atrs) {

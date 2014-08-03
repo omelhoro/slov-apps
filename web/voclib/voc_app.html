@@ -1,14 +1,25 @@
 <link rel='import' href='packages/polymer/polymer.html'>
 <link rel='import' href='../lib/filter.html'>
+<link rel='import' href='../lib/filter-item.html'>
 <link rel='import' href='../lib/inpool_label.html'>
 <link rel='import' href='voc_task.html'>
 
-<polymer-element name='voc-app' extends='filter-tmp' > <template>
-<!-- <link rel="stylesheet" href="/static/css/bootstrap.min.css"> -->
+<polymer-element name='voc-app' extends='filter-tmp'>
+<template> <!-- <link rel="stylesheet" href="/static/css/bootstrap.min.css"> 
 <shadow></shadow>
-<inpool-label nip={{nInPool1}}></inpool-label>
-
+-->
+<div class='row'>
+	<div class='col-lg-6'>
+		<filter-item id='lessons-filter' title='Lessons'
+			filtermap='{{lesCats}}' ischeckbtn=true on-click={{filter}}></filter-item>
+	</div>
+	<div class='col-lg-6'>
+		<filter-item id='pos-filter' title='Part of Speech'
+			filtermap='{{posMap}}' ischeckbtn=true on-click={{filter}}></filter-item>
+	</div>
+</div>
+<inpool-label nip={{nInPool}} on-click={{next}}></inpool-label>
 <p>
-  <word-voc wordMap='{{curTask}}' alternatives='{{alternatives}}'></word-voc>
+	<word-voc wordMap='{{curTask}}' alternatives='{{alternatives}}'></word-voc>
 </p>
 </template> <script type='application/dart' src='voc_app.dart'></script> </polymer-element>

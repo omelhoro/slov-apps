@@ -9,10 +9,14 @@
 <polymer-element name='apps-panel'><template>
 <link rel="stylesheet" href='/static/css/bootstrap_navs.min.css'>
 <link rel="stylesheet" href='/static/css/selfpoly.css'>
+<style>
+.item{
+cursor: pointer;}
+</style>
 <nav>
   <ul class="nav nav-pills">
     <template repeat="{{app in apps.keys}}">
-    <li class='btn {{curApp==app ? "active": ""}}' on-click='{{renderApp}}'
+    <li class='item {{curApp==app ? "active": ""}}' on-click='{{renderApp}}'
       data-apptagname='{{app}}'><a>{{apps[app]}}</a></li>
     </template>
   </ul>

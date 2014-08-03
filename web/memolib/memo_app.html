@@ -10,7 +10,18 @@
 .col-md-1 {
 	float: left;
 }
+table{
+margin: auto;}
 </style>
+<table>
+<tr class="row" template repeat='{{row in rows}}'>
+	<td class='td' template repeat='{{pic in row}}' >
+		<pic-item picSrc='{{pic[0]}}' picText={{pic[1]}} isPic={{pic[2]}}
+			on-click={{pickPic}}></pic-item>
+	</td>
+</tr>
+</table>
+<!--  
 <template repeat='{{row in rows}}'>
 <div class="row">
 	<template repeat='{{pic in row}}'>
@@ -20,4 +31,6 @@
 	</div>
 	</template>
 </div>
-</template> </template> <script type="application/dart" src='memo_app.dart'></script> </polymer-element>
+</template> 
+-->
+</template> <script type="application/dart" src='memo_app.dart'></script> </polymer-element>

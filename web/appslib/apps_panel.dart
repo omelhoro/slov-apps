@@ -4,7 +4,7 @@ import 'dart:html';
 class AppsPanel extends PolymerElement {
   @observable String curApp;
   Map<String, String> apps = {
-    "desc-app": "Desclension",
+    "desc-app": "Descension",
     "voc-app": "Vocabulary",
     "excs-app": "Exercises",
     "wordf-app": "Texts (Show)",

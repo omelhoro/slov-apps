@@ -1,15 +1,26 @@
 <link rel="import" href="packages/polymer/polymer.html">
 <link rel='import' href='excs_task.html'>
 <link rel="import" href="../lib/filter.html">
+<link rel="import" href="../lib/filter-item.html">
 <link rel="import" href="../lib/inpool_label.html">
 
 <polymer-element name='excs-app' extends='filter-tmp'>
 <template>
-
-
+<!-- 
 <shadow></shadow>
-<inpool-label nip={{nInPool1}}></inpool-label>
+ -->
+<div class='row'>
+  <div class='col-lg-6'>
+    <filter-item id='lessons-filter' title='Lessons'
+      filtermap='{{lesCats}}' ischeckbtn=true on-click={{filter}}></filter-item>
+  </div>
+  <div class='col-lg-6'>
+    <filter-item id='pos-filter' title='Part of Speech'
+      filtermap='{{posMap}}' ischeckbtn=true on-click={{filter}}></filter-item>
+  </div>
+</div>
 
+<inpool-label nip={{nInPool}} on-click='{{next}}' ></inpool-label>
 <task-excs taskMap='{{curTask}}'></task-excs>
 </template>
 <script type="application/dart" src='excs_app.dart' ></script>
