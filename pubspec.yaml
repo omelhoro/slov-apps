@@ -4,7 +4,7 @@ dependencies:
   bootjack: any
   browser: any
   dquery: any
-  polymer: '>=0.11.0 <0.12.0'
+  polymer: '>=0.13.0'
 transformers:
 - polymer:
     entry_points: web/selfpoly.html
