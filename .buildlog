@@ -468,3 +468,48 @@ build.dart --machine --changed=web/voclib/voc_app.dart
 
 build.dart finished [297 ms]
 
+---
+build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build/web/appslib/apps_panel.html --...
+
+build.dart finished [446 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [303 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [302 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [310 ms]
+
+---
+build.dart --machine --changed=web/flexlib/desc_app.html
+
+build.dart finished [297 ms]
+
+---
+build.dart --machine --changed=web/voclib/voc_app.html
+
+build.dart finished [310 ms]
+
+---
+build.dart --machine --changed=web/voclib/voc_task.html
+
+build.dart finished [307 ms]
+
+---
+build.dart --machine --changed=web/appslib/apps_panel.html
+
+build.dart finished [323 ms]
+
+---
+build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build/web/appslib/apps_panel.html --...
+
+build.dart finished [384 ms]
+

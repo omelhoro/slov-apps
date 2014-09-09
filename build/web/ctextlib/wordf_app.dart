@@ -28,9 +28,9 @@ class WordfApp extends Filter {
 
   setTextField() => textField = shadowRoot.querySelector("#text");
 
-  reqDb() => HttpRequest.getString("/static/data/tagged_text.json").then(reqDb1);
+  reqDb() => HttpRequest.getString("./static/data/tagged_text.json").then(reqDb1);
 
-  reqDb1(String texts) => HttpRequest.getString("/static/data/engtags_dict.json").then(setDbPre(texts));
+  reqDb1(String texts) => HttpRequest.getString("./static/data/engtags_dict.json").then(setDbPre(texts));
 
   setDbPre(String textval) {
     setDb(String value) {

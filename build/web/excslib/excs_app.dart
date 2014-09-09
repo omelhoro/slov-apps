@@ -18,7 +18,7 @@ class ExcsApp extends Filter with ChangeNotifier  {
     //filters={"lesfilter":LESLABELS,'posfilter':POSLABELS};
     reqDb();
   }
-  reqDb() => HttpRequest.getString("/static/data/excsApp.json").then(setDb);
+  reqDb() => HttpRequest.getString("./static/data/excsApp.json").then(setDb);
 
   setDb(String value) {
     assert(value!="");

@@ -19404,7 +19404,7 @@ var $$ = {};
       receiver._excs_app$__$nInPool = this.notifyPropertyChange$3(receiver, C.Symbol_nInPool, receiver._excs_app$__$nInPool, t1);
     },
     ExcsApp$created$0: function(receiver) {
-      W.HttpRequest_getString("/static/data/excsApp.json", null, null).then$1(this.get$setDb(receiver));
+      W.HttpRequest_getString("./static/data/excsApp.json", null, null).then$1(this.get$setDb(receiver));
     },
     static: {ExcsApp$created: function(receiver) {
         var t1, t2, t3, t4, t5, t6, t7;
@@ -20844,7 +20844,7 @@ var $$ = {};
       }
     }, "call$1", "get$renderGrid", 2, 0, 77, 94],
     MemoApp$created$0: function(receiver) {
-      W.HttpRequest_getString("/static/data/vocApp.json", null, null).then$1(this.get$setDb(receiver));
+      W.HttpRequest_getString("./static/data/vocApp.json", null, null).then$1(this.get$setDb(receiver));
     },
     static: {MemoApp$created: function(receiver) {
         var t1, t2, t3, t4, t5, t6, t7, t8;
@@ -28482,7 +28482,7 @@ var $$ = {};
       receiver._voc_app$__$nInPool = this.notifyPropertyChange$3(receiver, C.Symbol_nInPool, receiver._voc_app$__$nInPool, t1);
     },
     VocApp$created$0: function(receiver) {
-      W.HttpRequest_getString("/static/data/vocApp.json", null, null).then$1(this.get$setDb(receiver));
+      W.HttpRequest_getString("./static/data/vocApp.json", null, null).then$1(this.get$setDb(receiver));
     },
     static: {VocApp$created: function(receiver) {
         var t1, t2, t3, t4, t5, t6, t7;
@@ -28611,13 +28611,13 @@ var $$ = {};
       return t1;
     },
     reqDb1$1: [function(receiver, texts) {
-      return W.HttpRequest_getString("/static/data/engtags_dict.json", null, null).then$1(this.setDbPre$1(receiver, texts));
+      return W.HttpRequest_getString("./static/data/engtags_dict.json", null, null).then$1(this.setDbPre$1(receiver, texts));
     }, "call$1", "get$reqDb1", 2, 0, 3, 162],
     setDbPre$1: function(receiver, textval) {
       return new R.WordfApp_setDbPre_setDb(receiver, textval);
     },
     domReady$0: function(receiver) {
-      W.HttpRequest_getString("/static/data/tagged_text.json", null, null).then$1(this.get$reqDb1(receiver));
+      W.HttpRequest_getString("./static/data/tagged_text.json", null, null).then$1(this.get$reqDb1(receiver));
     },
     detached$0: function(receiver) {
       A.Polymer.prototype.detached$0.call(this, receiver);
