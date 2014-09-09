@@ -1,0 +1,15 @@
+<link rel='import' href='packages/polymer/polymer.html'>
+<link rel='import' href='./filter-item.html'>
+<polymer-element name='filter-panel'> <template>
+<link rel="stylesheet" href="/static/css/bootstrap_list.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+<div class='row'>
+	<template if='{{filtermapList!=null}}'> <template
+		repeat='{{filtermap in filtermapList}}'>
+	<div class='col-lg-{{colWidth}}'>
+		<filter-item filtermap='{{filtermap}}'></filter-item>
+	</div>
+	</template> </template>
+</div>
+</template> <script type='application/dart' src='filter-panel.dart'></script> </polymer-element>

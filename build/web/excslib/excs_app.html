@@ -1,0 +1,18 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel='import' href='excs_task.html'>
+<link rel="import" href="../lib/filter.html">
+<link rel="import" href="../lib/filter-panel.html">
+<link rel="import" href="../lib/inpool_label.html">
+
+<polymer-element name='excs-app' extends='filter-tmp'>
+<template>
+<!-- 
+<shadow></shadow>
+ -->
+ <filter-panel filtermapList='{{[lesCats,posMap]}}' on-click={{filter}} ></filter-panel>
+
+<inpool-label nip={{nInPool}} on-click='{{next}}' ></inpool-label>
+<task-excs taskMap='{{curTask}}'></task-excs>
+</template>
+<script type="application/dart" src='excs_app.dart' ></script>
+</polymer-element>

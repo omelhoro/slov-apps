@@ -1,0 +1,34 @@
+<link rel='import' href='packages/polymer/polymer.html'>
+<polymer-element name='filter-item'> <template>
+<link rel="stylesheet" href="/static/css/bootstrap_list.min.css">
+<style>
+.hide{
+visibility: hidden;
+}
+
+h4{
+transition: all .25s ease;
+}
+h4:hover{
+background-color:olive; 
+}
+.filter-list{
+transition:visibility .5s;
+}
+</style>      
+<template if='{{filtermap!=null}}'>
+<h4 on-click={{toggleHide}}> {{filtermap["meta"]["title"]}}</h4>
+<ul class='filter-list list-group hide'>
+<template repeat='{{cat in filtermap["cats"].keys}}'>
+  <li class='list-group-item' >
+  <label>
+   <input
+      class='filter-inp' name='{{filtermap["meta"]["id"]}}' checked
+      type='{{filtermap["meta"]["type"]}}' value='{{cat}}' >{{filtermap["cats"][cat]}}
+  </label>
+  </li>
+</template>
+</ul>
+</template>
+
+</template> <script type='application/dart' src='filter-item.dart'></script> </polymer-element>

@@ -1,0 +1,176 @@
+/*for menu*/
+g:hover{
+    opacity: 0.5;
+}
+
+
+
+/*for case_text*/
+.noun{
+border: 1px solid black;
+}
+
+.selected{
+    border: 2px dashed black;
+}
+
+body{
+    width: 800px;
+}
+
+body{
+    line-height: 170%;
+}
+img{
+    width: 200px;
+}
+
+.case{
+    display:block;
+}
+
+span.nom{
+    background-color: #69F59F;
+}
+span.gen{
+    background-color: #FFFF00;
+}
+span.dat{
+    background-color: #DC4AF0;
+}
+span.acc{
+    background-color: #FA3939;
+}
+span.loc{
+    background-color: #0EF0EC;
+}
+span.ins{
+    background-color: #4792FC;
+}
+
+span.false{
+    border: 2px solid #FF0000;
+    
+}
+.correct{
+    border: 2px solid #008000;
+    
+}
+
+/*for case_trainer*/
+.case_rows > td{
+     width: 130px;
+     height: 40px;
+    
+}
+td.missing{
+    background-color: #F6F6F6;
+}
+.header td:not(:first-child){
+    background-color: #CCCCCC;
+    text-align: center;
+    
+}
+#freq_pars{
+    width: 300px;
+}
+.ui-icon{
+    margin: 0 auto;
+    background-color: #66FFFF;
+    border-radius: 15px;
+}
+.case#nom{
+    background-color: #69F59F;
+}
+.case#gen{
+    background-color: #FFFF00;
+}
+.case#dat{
+    background-color: #DC4AF0;
+}
+.case#acc{
+    background-color: #FA3939;
+}
+.case#loc{
+    background-color: #66FFFF;
+}
+.case#ins{
+    background-color: #4792FC;
+}
+
+
+.case{
+     width: 100px ; 
+    text-align: right;
+    padding-right: 5px;
+
+}
+
+/*for voc_trainer*/
+.history{
+    float:left;
+    text-align: center;
+    width: 150px;
+}
+
+td{
+    padding-left: 10px;
+
+}
+
+#history_right{
+    border-right: 1px solid black;
+}
+
+
+/*for correcter*/
+.corrector{
+    background-color: #AAAAAA;
+}
+
+
+#exercises{
+    line-height: 160%;
+}
+span:not(.noun){
+    display: block;
+}
+.hidden{
+    visibility: hidden;
+}
+.false{
+    color: white;
+    background-color: #F76548;
+}
+.right{
+    color: white;
+    background-color: #72B42D;
+    
+}
+#tsk_de{
+    visibility: hidden;
+}
+
+/*for memory app*/
+img.mem_pic {
+  width: 150px;
+  height: 150px;
+
+}
+img.mem_txt{
+    width: 150px;
+  height: 150px;
+}
+.solved{
+      width: 150px;
+  height: 150px;
+  border: 1px solid green;
+
+}
+.tt{
+  opacity: 0.0;
+}
+
+/*for sent order*/
+ul.sortable { list-style-type: none; margin: 0; padding: 0; margin-bottom: 0px; }
+.sortable >li {padding: 5px 5px;margin: 0px 5px}
