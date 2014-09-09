@@ -418,3 +418,13 @@ build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build
 
 build.dart finished [293 ms]
 
+---
+build.dart --machine --changed=web/selfpoly.html
+
+build.dart finished [314 ms]
+
+---
+build.dart --machine --changed=web/excslib/excs_app.dart
+
+build.dart finished [293 ms]
+
