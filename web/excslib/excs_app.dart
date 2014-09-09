@@ -4,6 +4,7 @@ import 'dart:convert';
 import '../globals.dart';
 import '../lib/filter.dart';
 import '../lib/filter-item.dart';
+import '../lib/filter-panel.dart';
 
 @CustomTag("excs-app")
 class ExcsApp extends Filter {
@@ -32,18 +33,16 @@ class ExcsApp extends Filter {
     nInPool=curDb.length;
   }
 
-  filter(Event e) {
-    FilterItem lesFilter = shadowRoot.querySelector('#lessons-filter');
-    FilterItem posFilter = shadowRoot.querySelector('#pos-filter');
+  filterDelegate() {
+    FilterPanel p= shadowRoot.querySelector('filter-panel');
+    FilterItem lesFilter=p.filters["les-filter"]; 
+    FilterItem posFilter=p.filters["pos-filter"]; 
+    var posActive=posFilter.activeCats;
     assert(lesFilter is FilterItem && posFilter is FilterItem);
     assert(lesFilter.activeCats is Set && posFilter.activeCats is Set);
-    //assert(lesFilter.length>0 && posFilter.length >0);
-    //assert(e.target is CheckboxInputElement);
-    //CheckboxInputElement t = e.target;
     List<int> validLessons = [];
     for (String lesInp in lesFilter.activeCats) validLessons.addAll(LESSECMAP[lesInp]);
-    //var validPos = posFilter.where((e) => e.checked).map((e) => e.dataset['fltr']).toList();
-    curDb = ((e.target as FilterItem).isSubset ? curDb : oriDb).where((elm) => posFilter.activeCats.contains(elm['pos'] as String) &&
+    curDb = ( lesFilter.isSubset && posFilter.isSubset ? curDb : oriDb).where((elm) => posActive.contains(elm['pos'] as String) &&
         validLessons.contains(int.parse(elm['les'] as String))).toList();
     nInPool=curDb.length;
   }

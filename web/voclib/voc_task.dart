@@ -3,34 +3,31 @@ import 'dart:html';
 
 @CustomTag("word-voc")
 class Task extends PolymerElement {
-  @observable bool isSingleView = true;
+  @published bool isSingleView;
   @published List<String> alternatives;
   @published Map<String, dynamic> wordMap;
 
   Task.created() : super.created();
 
-  checkSingle() {
-    InputElement inp = shadowRoot.querySelector(".singleinput");
-    assert(inp is InputElement);
-    if (inp.dataset["sol"] == inp.value) inp.classes
-        ..add("right")
-        ..remove("false"); else inp.classes
-        ..add("false")
-        ..remove("right");
+  checkMulti(Event evt) {
+    TableCellElement t = evt.target;
+    t.dataset["sol"] == "true" ? t.classes.add("success") : t.classes.add("danger");
   }
 
-  checkMulti() {
-    InputElement inp = shadowRoot.querySelector(".multiinput:checked");
-    LabelElement word= inp.nextElementSibling;
-    //List<InputElement> checked = inp.where((e) => e.checked).toList();
-    if (inp==null) window.alert("Nothing selected"); else inp.dataset["sol"] == "true"
-        //inp.
-        ? word.classes.addAll(["label","label-success"]) : word.classes.addAll(["label", "label-danger"]);
+  checkSingle(Event evt) {
+    InputElement t = evt.target;
+    if (t.dataset["sol"] == t.value) {
+      t.parent.classes
+          ..remove("has-error")
+          ..add("has-success");
+    } else {
+      t.parent.classes
+          ..remove("has-success")
+          ..add("has-error");
+    }
   }
 
-  check(Event e) {
-    isSingleView ? checkSingle() : checkMulti();
-  }
+
   reset(List<String> l) {
     InputElement el = shadowRoot.querySelector(".singleinput");
     el.value = "";
@@ -39,8 +36,6 @@ class Task extends PolymerElement {
         ..remove("false"); //has a dummy argument for updating when alternatives got updated
   }
   switchView() {
-    shadowRoot.querySelector(".singleinp").hidden = isSingleView;
-    shadowRoot.querySelector(".multiinp").hidden = !isSingleView;
     isSingleView = !isSingleView;
   }
   checkall() {

@@ -1,83 +1,101 @@
-td.noun{
-  text-align: right;
-}
+td.noun {
+  text-align: right; }
+
+td.nom {
+  background: linear-gradient(to right, white, #69f59f); }
 
 .noun.nom {
-	background: linear-gradient(to right,white,  #69F59F);
-    background-color: #69F59F;
-}
-.noun.gen{
-	background: linear-gradient(to right,white,  #FFFF00);
-    background-color: #FFFF00;
-}
-.noun.dat{
-	background: linear-gradient(to right,white,  #DC4AF0);
-    background-color: #DC4AF0;
-}
-.noun.acc{
-	background: linear-gradient(to right,white,  #FA3939);
-    background-color: #FA3939;
-}
-.noun.loc{
-	background: linear-gradient(to right,white,  #0EF0EC);
-    background-color: #0EF0EC;
-}
-.noun.ins{
-	background: linear-gradient(to right,white,  #4792FC);
-    background-color: #4792FC;
-}
-input#i{
-    transition-property:background-color;
-    transition-duration: 2s;
-}
-.false{
-    background-color: red;
-}
-.right{
-    background-color: green;
-}
+  background-color: #69f59f; }
 
-img.memopic{
+td.gen {
+  background: linear-gradient(to right, white, yellow); }
+
+.noun.gen {
+  background-color: yellow; }
+
+td.dat {
+  background: linear-gradient(to right, white, #dc4af0); }
+
+.noun.dat {
+  background-color: #dc4af0; }
+
+td.acc {
+  background: linear-gradient(to right, white, #fa3939); }
+
+.noun.acc {
+  background-color: #fa3939; }
+
+td.loc {
+  background: linear-gradient(to right, white, #0ef0ec); }
+
+.noun.loc {
+  background-color: #0ef0ec; }
+
+td.ins {
+  background: linear-gradient(to right, white, #4792fc); }
+
+.noun.ins {
+  background-color: #4792fc; }
+
+input#i {
+  transition-property: background-color;
+  transition-duration: 2s; }
+
+input {
+  transition-property: background-color;
+  transition-duration: 2s; }
+
+.false {
+  background-color: red; }
+
+.right {
+  background-color: green; }
+
+img.memopic {
   max-height: 100px;
   max-width: 100px;
-  margin: auto;
-}
-pic-item{
-	margin: 0px;
-}
-.thumbnail{
-  width:120px;
-  height:120px;
+  margin: auto; }
+
+pic-item {
+  margin: 0px; }
+
+.thumbnail {
+  width: 120px;
+  height: 120px;
   text-align: center;
-display: table-cell;
-vertical-align: middle;
-}
+  display: table-cell;
+  vertical-align: middle; }
 
-.falsemarked{
-  border: 4px inset red;
-}
-.rightmarked{
-  border: 4px inset lightgreen;
-}
+.falsemarked {
+  border: 4px inset red; }
 
-.empty{
-  background-color: #F6F6F6;
+.rightmarked {
+  border: 4px inset lightgreen; }
+
+.empty {
+  background-color: #F6F6F6; }
+
+.verb {
+  border: 1px solid black; }
+
+.pronoun {
+  border: 1px dashed black; }
+
+.adjective {
+  border: 1px dotted black; }
+
+.preposition {
+  border: 3px double black; }
+
+.btn {
+  cursor: pointer; }
+
+.selectedcase {
+  border: 4px double black; }
+@font-face {
+  font-family: cool_font;
+  src: url('../fonts/nexalight.otf');
 }
-.verb{
-  border: 1px solid black;
-}
-.pronoun{
-  border: 1px dashed black;
-}
-.adjective{
-  border: 1px dotted black;
-}
-.preposition{
-  border: 3px double black;
-}
-.btn{
-  cursor: pointer;
-}
-.selectedcase{
-  border: 4px double black;
+html{
+	font-family: cool_font;
 }

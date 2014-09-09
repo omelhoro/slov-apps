@@ -1,13 +1,14 @@
 <link rel="import" href="packages/polymer/polymer.html">
 <link rel="import" href="./word_form.html">
 <link rel="import" href="../lib/filter.html">
-<link rel="import" href="../lib/filter-item.html">
+<link rel="import" href="../lib/filter-panel.html">
 <polymer-element name='wordf-app' extends="filter-tmp"> <template>
 <link rel="stylesheet" href='/static/css/bootstrap_navbar.min.css'>
 <link rel="stylesheet" href='/static/css/bootstrap_popover.min.css'>
 <link rel="stylesheet" href="/static/css/bootstrap_table.min.css">
 <link rel="stylesheet" href="/static/css/bootstrap_buttons.min.css">
 <link rel="stylesheet" href="/static/css/selfpoly.css">
+<!-- 
 <style>
 word-form {
 }
@@ -20,7 +21,6 @@ word-form {
 <filter-item id='pos-mark' title="Mark POS" filtermap='{{posMap}}'  ischeckbtn=true on-click={{filter}}></filter-item>
 </div>
 </div>
-<!-- 
 <nav class='navbar navbar-default'>
 	<ul class="nav navbar-nav" on-click='{{filter}}'>
 		<template repeat='{{pos in poss}}'>
@@ -40,5 +40,6 @@ word-form {
 	</ul>
 </nav>
  -->
+ <filter-panel filtermapList='{{[textMap,posMap]}}' on-click={{filter}}></filter-panel>
 <div id='text'></div>
 </template> <script type='application/dart' src='wordf_app.dart'></script> </polymer-element>

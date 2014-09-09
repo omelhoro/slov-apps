@@ -4,52 +4,68 @@ import 'dart:convert';
 import 'dart:math' show Random;
 import '../globals.dart';
 import '../lib/filter.dart';
+import './voc_task.dart';
+import '../lib/inpool_label.dart';
 import '../lib/filter-item.dart';
+import '../lib/filter-panel.dart';
+//import 'dart:async';
+
 
 @CustomTag("voc-app")
-class VocApp extends Filter{
+class VocApp extends Filter {
   List<Map<String, dynamic>> curDb, oriDb;
-  @observable Map<String,dynamic> curTask;
-  @observable List<String> alternatives;
+  Task curTask;
+  List<String> alternatives;
   @observable int nInPool = 0;
 
-  VocApp.created(): super.created(){
+  VocApp.created() : super.created() {
     reqDb();
   }
 
   reqDb() => HttpRequest.getString("/static/data/vocApp.json").then(setDb);
 
   setDb(String value) {
-    assert(value!="");
+    assert(value != "");
     oriDb = JSON.decode(value);
     curDb = oriDb;
-    next();
+    shadowRoot.querySelector("inpool-label").click();
   }
 
-  void next() {
-    curTask= curDb.removeLast();
-    alternatives=[];
-    for (var i=0;i < 3 ;i++){
-      int ix=new Random().nextInt(oriDb.length);
-      alternatives.add(oriDb[ix]["nativeWord"]);
+  void next(Event evt) {
+    if ((evt.target is InpoolLabel || (evt.path.first as Element).classes.contains("next")) && curDb.length > 0) {
+      Map<String,dynamic> wordMap= curDb.removeLast();
+      alternatives = [];
+      for (var i = 0; i < 3; i++) {
+        int ix = new Random().nextInt(oriDb.length);
+        alternatives.add(oriDb[ix]["nativeWord"]);
+      }
+      alternatives
+          ..add(wordMap["nativeWord"])
+          ..shuffle();
+      Task lastTask=curTask;
+      curTask= (new Element.tag("word-voc") as Task)
+          ..isSingleView= lastTask!=null ? lastTask.isSingleView : true
+          ..wordMap = wordMap
+          ..alternatives = alternatives
+          ..onClick.listen(next);
+      shadowRoot.querySelector(".task").children = [curTask];
+      nInPool = curDb.length;
     }
-    alternatives.add(curTask["nativeWord"]);
-    alternatives.shuffle();
-    assert(alternatives.length >0);
-    nInPool=curDb.length;
-
   }
 
-  filter(Event e) {
-    FilterItem lesFilter = shadowRoot.querySelector('#lessons-filter');
-    FilterItem posFilter = shadowRoot.querySelector('#pos-filter');
+  filterDelegate() {
+    print("Am Filtering");
+    FilterPanel p= shadowRoot.querySelector('filter-panel');
+    FilterItem posFilter=p.filters["pos-filter"]; 
+    FilterItem lesFilter= p.filters["les-filter"];
     List<int> validLessons = [];
-    for (String lesInp in lesFilter.activeCats){ print(lesInp);validLessons.addAll(LESSECMAP[lesInp]);};
-    print(lesFilter.activeCats);
-    curDb = ((e.target as FilterItem).isSubset ? curDb : oriDb).where((elm) => posFilter.activeCats.contains(elm['pos'] as String) &&
-        validLessons.contains(int.parse(elm['les'] as String))).toList();
+    var posActive = posFilter.activeCats;
+    var lesActive = lesFilter.activeCats;
+    for (String lesInp in lesActive) validLessons.addAll(LESSECMAP[lesInp]);
+    curDb = (posFilter.isSubset && lesFilter.isSubset ? curDb : oriDb)
+        .where((elm) => posActive.contains(elm['pos'] as String) && validLessons.contains(int.parse(elm['les'] as String))).toList();
     curDb.shuffle();
-    nInPool=curDb.length;
+    nInPool = curDb.length;
   }
 
 }

@@ -55,7 +55,7 @@ df_lit5=vocab_df[vocab_df["pos_freq"]<5]
 
 
 les_js=json.dumps(map(lambda x: dict(x[1]),vocab_df.iterrows()),indent=1)
-
+vocab_df.to_csv("../vocApp.csv")
 
 with open("../vocApp.json","w+")  as f:
     f.write(les_js)

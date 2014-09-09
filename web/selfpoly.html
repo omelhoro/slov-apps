@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sample app</title>
+<title>Slovenian learning apps</title>
 <script src="packages/web_components/platform.js"></script>
 <script src="packages/web_components/dart_support.js"></script>
 <link rel="stylesheet" href="/static/css/selfpoly.css">
@@ -15,21 +15,26 @@
     <link rel="import" href="./clicklib/clickcounter.html">
 <link rel="import" href="./excslib/excs_app.html">
 <script type="application/dart" src="selfpoly.dart"></script>
-<link rel="import" href="./voclib/voc_app.html">
 <link rel="import" href="./ctextlib/wordf_app.html">
 
-<link rel="import" href="./flexlib/desc_app.html">
-  <marknoun-app></marknoun-app>
--->
+  
 <link rel="import" href="./ctextlib/marknoun_app.html">
+<link rel="import" href="./voclib/voc_app.html">
+  <memo-app></memo-app>
+-->
+<link rel="import" href="./memolib/memo_app.html">
 <link rel='import' href='./appslib/apps_panel.html'>
 <script type="application/dart">export 'package:polymer/init.dart';</script>
 <script src="packages/browser/dart.js"></script>
 </head>
 <body>
+<style>
+.container{
+    width: 100%;
+    max-width: 800px;}
+</style>
 <div class='container'>
   <apps-panel></apps-panel>
-  <marknoun-app></marknoun-app>
   <div id='apps'></div>
 </div>
 </body>

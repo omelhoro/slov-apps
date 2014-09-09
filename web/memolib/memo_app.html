@@ -7,16 +7,16 @@
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
 <link rel="stylesheet" href="/static/css/selfpoly.css">
 <style>
-.col-md-1 {
-	float: left;
-}
 table{
-margin: auto;}
+margin:auto;}
+td{
+padding:5px;}
 </style>
-<table>
+<button class="render btn btn-default" on-click={{renderGrid}}>New round!</button>
+<table class=''>
 <tr class="row" template repeat='{{row in rows}}'>
 	<td class='td' template repeat='{{pic in row}}' >
-		<pic-item picSrc='{{pic[0]}}' picText={{pic[1]}} isPic={{pic[2]}}
+		<pic-item picMap={{pic[0]}} isPic={{pic[1]}}
 			on-click={{pickPic}}></pic-item>
 	</td>
 </tr>

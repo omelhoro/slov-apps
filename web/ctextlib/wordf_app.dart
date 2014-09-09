@@ -1,8 +1,10 @@
 import 'package:polymer/polymer.dart';
 import 'dart:html';
+import 'dart:async';
 import 'dart:convert';
 import '../lib/filter.dart';
 import '../lib/filter-item.dart';
+import '../lib/filter-panel.dart';
 import './word_form.dart';
 
 @CustomTag("wordf-app")
@@ -10,7 +12,15 @@ class WordfApp extends Filter {
   Map<String, Map<String, String>> oriDb;
   Map<String, String> curTask;
   static Map<String, Map<String, String>> grammarAtrs;
-  Map<String, String> textMap = toObservable({});
+  String curText;
+  Map<String, Map<String, dynamic>> textMap = toObservable({
+    "meta": {
+      "title": "Texts",
+      "id": "text-filter",
+      "type": "radio"
+    },
+    "cats": {}
+  });
   DivElement textField;
   WordfApp.created() : super.created() {
     setTextField();
@@ -26,15 +36,15 @@ class WordfApp extends Filter {
     setDb(String value) {
       assert(value != "");
       oriDb = JSON.decode(textval);
-      for (String k in oriDb.keys) textMap[k] = oriDb[k]["title"];
+      for (String k in oriDb.keys) textMap["cats"][k] = oriDb[k]["title"];
       grammarAtrs = JSON.decode(value);
-      setTextFirst(textMap.keys.last);
+      setTextFirst();
     }
     return setDb;
   }
 
-  void setTextFirst(String s) {
-    shadowRoot.querySelector("#texts").click();
+  void setTextFirst() {
+    filterDelegate();
   }
 
   domReady() {
@@ -62,7 +72,6 @@ class WordfApp extends Filter {
     final NodeValidatorBuilder parser = new NodeValidatorBuilder.common()..allowElement('word-form', attributes: ['gramTagSl', 'gramTagEn', 'lemma', 'tonal']);
     curTask = oriDb[k];
     Element task = new Element.html(curTask["body"], validator: parser);
-    textField.children.add(task);
     textField.children = [task];
   }
   changeText(Event e) {
@@ -72,14 +81,26 @@ class WordfApp extends Filter {
     shadowRoot.querySelectorAll(".active").forEach((Element e) => e.classes.remove("active"));
   }
 
-  filter(Event e) {
-    FilterItem textFilter = shadowRoot.querySelector("#texts");
-    FilterItem posFilter = shadowRoot.querySelector("#pos-mark");
+  filterDelegate() {
+    FilterPanel p = shadowRoot.querySelector('filter-panel');
+    FilterItem textFilter = p.filters["text-filter"];
+    FilterItem posFilter = p.filters["pos-filter"];
+    var posActive = posFilter.activeValues;
     assert(textFilter is FilterItem && posFilter is FilterItem);
     assert(textFilter.activeCats is Set && posFilter.activeValues is Set);
-    if ((e.target as FilterItem).id == 'texts') setText(textFilter.activeCats.first);
-    // else {
-    WordForm.allForms.forEach((e) => e.isSelected = posFilter.activeValues.contains(e.grammarAtrs["Pos"]));
-    //}
+    Set<String> activeText=textFilter.activeCats;
+    String filterText = activeText.isNotEmpty ? activeText.last : textMap["cats"].keys.last;
+    if (curText != filterText) {
+      curText = filterText;
+      setText(curText);
+    }
+    if (WordForm.allForms.isEmpty) {
+      var timer = new Timer(const Duration(milliseconds: 500), () {
+        print("NOW");
+        WordForm.allForms.forEach((e) => e.isSelected = posActive.contains(e.grammarAtrs["Pos"]));
+      });
+    } else {
+      WordForm.allForms.forEach((e) => e.isSelected = posActive.contains(e.grammarAtrs["Pos"]));
+    }
   }
 }

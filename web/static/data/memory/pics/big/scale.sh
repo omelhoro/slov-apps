@@ -1,1 +1,1 @@
-for i in $( ls *.jpg); do  convert -resize 300 $i ../$i; done
+for i in $( ls *g); do  convert -resize 300 $i ../$i; done

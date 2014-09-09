@@ -3,8 +3,7 @@ import './wordf_app.dart';
 import 'dart:html';
 import './word_form.dart';
 import '../lib/filter-item.dart';
-import '../globals.dart' show CASUS;
-import 'dart:math' show min, max;
+import '../lib/filter-panel.dart';
 import 'dart:async';
 
 
@@ -12,7 +11,6 @@ import 'dart:async';
 class NounMarker extends WordfApp {
   List<WordForm> allNouns;
   List<LIElement> allCases;
-  List<String> casus = CASUS.values.toList();
   int curIx,
       curCaseIx = 0;
   @observable String curCaseClass;
@@ -23,12 +21,21 @@ class NounMarker extends WordfApp {
     "False": ["label-danger", 0]
   });
   var keyListener;
+  Map<String, int> nounMovers = {
+    "back": 65,
+    "next": 68
+  };
+  Map<String, int> caseMovers = {
+    "back": 87,
+    "next": 83
+  };
   NounMarker.created() : super.created() {
   }
   SelectElement caseSelector;
   setSelection(bool isSet, bool isNoun) {
     if (isNoun) isSet ? allNouns[curIx].classes.add("selectedcase") : allNouns[curIx].classes.remove("selectedcase"); else {
-      caseSelector.selectedIndex = curCaseIx;
+      caseSelector = shadowRoots["marknoun-app"].querySelector("select");
+ caseSelector.selectedIndex = curCaseIx;
       caseSelector.click();
     }
     //isSet ?  allCases[curCaseIx].classes.add("selectedcase") : allCases[curCaseIx].classes.remove("selectedcase");
@@ -36,8 +43,9 @@ class NounMarker extends WordfApp {
   domReady() {
     super.domReady();
     keyListener = window.onKeyUp.listen(moveSelection);
-    shadowRoots["wordf-app"].querySelector("#pos-mark").remove();
-    caseSelector = shadowRoots["marknoun-app"].querySelector("select")..click();
+    (shadowRoots['wordf-app'].querySelector("filter-panel") as FilterPanel).filters["pos-filter"].remove();
+    //shadowRoots["wordf-app"].querySelector("#pos-mark").remove();
+    //caseSelector = shadowRoots["marknoun-app"].querySelector("select")..click();
   }
   setTextField() => textField = shadowRoots['wordf-app'].querySelector("#text");
 
@@ -74,9 +82,6 @@ class NounMarker extends WordfApp {
     stats["Correct"][1] = correctTags;
     stats["False"][1] = marked.length - correctTags;
   }
-  void setTextFirst(String s) {
-    setText(s);
-  }
 
   setText(String k) {
     super.setText(k);
@@ -87,33 +92,39 @@ class NounMarker extends WordfApp {
       allNouns = WordForm.allForms.where((WordForm e) => e.grammarAtrs["Pos"] == "Noun").toList();
       allCases = shadowRoots["marknoun-app"].querySelectorAll(".noun");
       assert(allNouns.length != 0 && allCases.length != 0);
-      print(allNouns.length);
       setSelection(true, true);
       setSelection(true, false);
     });
   }
-  filter(Event e) {
-    FilterItem textFilter = shadowRoots['wordf-app'].querySelector("#texts");
-    setText(textFilter.activeCats.first);
+  filterDelegate() {
+    FilterItem textFilter = (shadowRoots['wordf-app'].querySelector("filter-panel") as FilterPanel).filters["text-filter"];
+    Set<String> activeText=textFilter.activeCats ;
+    String filterText = activeText.isNotEmpty ? activeText.last : textMap["cats"].keys.last;
+    setText(filterText);
+  }
+
+  void moveCase(bool next) {
+    int curPoolLength = caseMap["cats"].length;
+    setSelection(false, false);
+    curCaseIx += next ? 1 : -1;
+    curCaseIx = curCaseIx >= curPoolLength ? 0 : (curCaseIx < 0 ? curPoolLength - 1 : curCaseIx);
+    setSelection(true, false);
+  }
+  void moveNoun(bool next) {
+    int curPoolLength = allNouns.length;
+    setSelection(false, true);
+    curIx += next ? 1 : -1;
+    curIx = curIx >= curPoolLength ? 0 : (curIx < 0 ? curPoolLength - 1 : curIx);
+    setSelection(true, true);
   }
 
   void moveSelection(KeyboardEvent event) {
     int char = event.keyCode;
-    bool isNoun = [65, 68].contains(char);
-    bool isCase = [83, 87].contains(char);
-    if (isNoun || isCase) {
-      int curPoolLength = isNoun ? allNouns.length : casus.length;
-      List<int> keyPool = isNoun ? [65, 68] : [83, 87];
-      Function f = isNoun ? min : max;
-      var localIx = isNoun ? curIx : curCaseIx;
-      setSelection(false, isNoun);
-      print(localIx);
-      localIx += char == f(keyPool[0], keyPool[1]) ? -1 : 1;
-      localIx = localIx >= curPoolLength ? 0 : localIx;
-      localIx = localIx < 0 ? curPoolLength - 1 : localIx;
-      print(localIx);
-      isNoun ? curIx = localIx : curCaseIx = localIx;
-      setSelection(true, isNoun);
-    } else if (char == 32) markCase();
+    if (nounMovers.values.contains(char)) {
+      moveNoun(char == nounMovers["next"]);
+    } else if (caseMovers.values.contains(char)) {
+      moveCase(char == caseMovers["next"]);
+    }
+    if (char == 32) markCase();
   }
 }

@@ -1,0 +1,73 @@
+td.noun{
+  text-align: right;
+}
+
+$false: red;
+$right: green;
+
+$cases: (nom:#69F59F,gen:#FFFF00,dat:#DC4AF0,acc:#FA3939, loc:#0EF0EC,ins:#4792FC);
+
+@each $case, $color in $cases {
+  td.#{$case} {
+    background: linear-gradient(to right,white,  $color)
+  }
+  .noun.#{$case} {
+    background-color: $color
+  }
+}
+
+input#i{
+    transition-property:background-color;
+    transition-duration: 2s;
+}
+.false{
+    background-color: red;
+}
+.right{
+    background-color: green;
+}
+
+img.memopic{
+  max-height: 100px;
+  max-width: 100px;
+  margin: auto;
+}
+pic-item{
+  margin: 0px;
+}
+.thumbnail{
+  width:120px;
+  height:120px;
+  text-align: center;
+display: table-cell;
+vertical-align: middle;
+}
+
+.falsemarked{
+  border: 4px inset red;
+}
+.rightmarked{
+  border: 4px inset lightgreen;
+}
+
+.empty{
+  background-color: #F6F6F6;
+}
+.verb{
+  border: 1px solid black;
+}
+.pronoun{
+  border: 1px dashed black;
+}
+.adjective{
+  border: 1px dotted black;
+}
+.preposition{
+  border: 3px double black;
+}
+.btn{
+  cursor: pointer;
+}
+.selectedcase{
+  border: 4px double black;
+}

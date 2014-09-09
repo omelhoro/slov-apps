@@ -1,42 +1,58 @@
 <link rel='import' href='packages/polymer/polymer.html'>
 <polymer-element name='word-voc' attributes='wordMap alternatives'>
 <template>
- <link rel="stylesheet" href="/static/css/bootstrap_labels.min.css"> 
+<link rel="stylesheet" href="/static/css/bootstrap_labels.min.css">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
 
 <style>
-.false {
-  background-color: red;
+.next , .switch {
+	cursor: pointer;
+	height: 200px;
 }
-
-.right {
-  background-color: green;
+.next:hover {
+	background-color: orange;
 }
-
-.empty {
-  background-color: #F6F6F6;
+.switch:hover {
+	background-color: blue;
 }
-.input-modus{
-transition-property: hidden;
-transition-duration: 10s;
+.voc-menu{
+  border: 1px solid grey;
+  background-color: lightgrey;
 }
 </style>
-<span>{{wordMap["foreignWord"]}}</span>
-<button class='btn btn-default' on-click={{switchView}}> Switch</button>
-<button class='btn btn-default' on-click={{check}}>Check</button>
-{{alternatives|reset}}
-<div class="input-modus singleinp" >
-  <input class='singleinput' placeholder="translation" size=10 data-sol="{{wordMap['nativeWord']}}">
+	<div class='row voc-menu'>
+
+		<div class='col-lg-3'>
+			<span class='h3 text-center'>{{wordMap["foreignWord"]}}</span>
+		</div>
+
+		<div class='col-lg-4'>
+		<template if='{{isSingleView}}'>
+			<div class="input-modus singleinp">
+				<input class='form-control h3 for-word singleinput' placeholder="translation"
+				  	size=10 data-sol="{{wordMap['nativeWord']}}" on-change={{checkSingle}}>
+ 			</div>
+		</template>
+
+		<template if='{{!isSingleView}}'>
+			<table class="table table-hover input-modus multiinp" on-click='{{checkMulti}}' >
+			<tr template repeat='{{alt in alternatives}}'>
+					<td class="list-group-item h3" data-sol="{{alt==wordMap['nativeWord']}}">
+					{{alt}}</td>
+			</tr>
+			</table>
+			</template>
+			</div>
+<div class='col-lg-4'>
+<div class='row'>
+<div class=col-xs-6>
+		<div class='next'></div>
+</div>
+<div class=col-xs-6>
+		<div class='switch' on-click={{switchView}}></div>
+		</div>
+</div>
 </div>
 
-<div class="input-modus multiinp" hidden>
-  <ul class="list-group">
-    <template repeat='{{alt in alternatives}}'>
-    <li class="list-group-item">
-    <input class='multiinput' type="radio" name='alts'
-      data-sol="{{alt==wordMap['nativeWord']}}" ><label class="">{{alt}}
-    </label>
-      </li>
-    </template>
-  </ul>
-</div>
+	</div>
 </template> <script type='application/dart' src='voc_task.dart'></script> </polymer-element>

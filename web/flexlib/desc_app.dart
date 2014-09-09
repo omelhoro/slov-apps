@@ -7,13 +7,15 @@ import '../globals.dart';
 import '../lib/filter.dart';
 //import '../lib/inpool_label.dart';
 import '../lib/filter-item.dart';
+import '../lib/filter-panel.dart';
+import './desct_table.dart';
 
 @CustomTag('desc-app')
 class DescApp extends Filter {
   List<Map<String, dynamic>> DESCS;
   List<Map<String, dynamic>> subDESCS;
   Map<String, List<List<String>>> FLEXS;
-  @observable List<List<String>> firstTdOrder;
+  @observable List<String> firstTdOrder;
   bool isWordCentric;
   double probabCase = 0.25;
   @observable Map<String, dynamic> curTask;
@@ -26,9 +28,7 @@ class DescApp extends Filter {
   Future reqDb({String src: "/static/data/descApp.json"}) => HttpRequest.getString(src).then(setDb);
 
   setLevel(Event evt) {
-    print((evt.target as SelectElement).value);
-    probabCase = double.parse((evt.target as SelectElement).value);
-
+    probabCase = double.parse((evt.target.value as String));
   }
 
   setDb(String value) {
@@ -45,7 +45,6 @@ class DescApp extends Filter {
     assert(evt.target is ButtonElement);
     ButtonElement b = evt.target;
     isWordCentric = b.classes.contains("wordcentric");
-    //isWordCentric? b.classes.add("active");
     next();
   }
 
@@ -59,7 +58,8 @@ class DescApp extends Filter {
     Random rand = new Random();
     List<dynamic> stemWithFlexions = [];
     List<List<int>> possibleInputs = [];
-    for (var i = 0; i < flx[0].length; i++) {//[1,2,3] [4,5,6] [7,8,9] ->
+    print(probabCase);
+    for (var i = 0; i < flx[0].length; i++) {//[1,2,3] [4,5,6] [7,8,9] -> zipped
       var sublist = [];
       stemWithFlexions.add(sublist);
       for (var j = 0; j < flx.length; j++) if (numerus.contains(j)) {
@@ -74,16 +74,17 @@ class DescApp extends Filter {
     if (isWordCentric) return stemWithFlexions; else {
       int rowIx = rand.nextInt(stemWithFlexions.length);
       List<List<dynamic>> r = stemWithFlexions[rowIx];
-      List<String> caseKeys = caseMap.keys.toList();
+      List<String> caseKeys = caseMap["cats"].keys.toList();
       return [[caseKeys[rowIx], nomStem], r];
     }
   }
-  filter(Event e) {
-    assert(e.target is FilterItem);
-    FilterItem genF = shadowRoot.querySelector("#genus-filter");
-    Set<String> activeGens = genF.activeCats;
-    print(activeGens);
-    subDESCS = activeGens.length > 0 ? (genF.isSubset ? subDESCS : DESCS).where((e) => activeGens.contains(e["genus"])).toList() : [];
+  filterDelegate() {
+    //assert(e.target is FilterItem);
+    FilterPanel p= shadowRoot.querySelector('filter-panel');
+    FilterItem genFilter=p.filters["gen-filter"]; 
+    Set<String> activeGens = genFilter.activeCats;
+
+    subDESCS = activeGens.length > 0 ? (genFilter.isSubset ? subDESCS : DESCS).where((e) => activeGens.contains(e["genus"])).toList() : [];
     subDESCS.shuffle();
     nInPool = subDESCS.length;
   }
@@ -97,7 +98,7 @@ class DescApp extends Filter {
         curTask = DESCS[0];
         nInPool = DESCS.length;
       } finally {
-        firstTdOrder = caseMap.keys.map((e) => [e, caseMap[e]]).toList();
+        firstTdOrder = caseMap["cats"].keys.map((e) => [e, caseMap["cats"][e]]).toList();
         curParadigm = _built_par(curTask);
       }
     } else {
@@ -107,5 +108,12 @@ class DescApp extends Filter {
       curParadigm = taskList.map((e) => e[1]).toList();
       nInPool = subDESCS.length;
     }
+    DescTable tab=(new Element.tag("desct-table") as DescTable)
+      ..curParadigm=curParadigm
+      ..wordData=curTask
+      ..firstTdOrder=firstTdOrder;
+    shadowRoot.querySelector(".desc-table").children.add(tab);
+    shadowRoot.querySelector(".desc-table").children=[tab];
+    shadowRoot.querySelector(".desc-table").children.add(tab);
   }
 }
