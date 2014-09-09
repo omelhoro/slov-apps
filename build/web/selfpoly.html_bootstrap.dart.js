@@ -17741,7 +17741,7 @@ var $$ = {};
       J.get$children$x((receiver.shadowRoot || receiver.webkitShadowRoot).querySelector(".desc-table")).add$1(0, tab);
     }, "call$0", "get$next", 0, 0, 11],
     DescApp$created$0: function(receiver) {
-      W.HttpRequest_getString("/static/data/descApp.json", null, null).then$1(this.get$setDb(receiver));
+      W.HttpRequest_getString("./static/data/descApp.json", null, null).then$1(this.get$setDb(receiver));
     },
     static: {DescApp$created: function(receiver) {
         var t1, t2, t3, t4, t5, t6, t7;
