@@ -22807,7 +22807,7 @@ var $$ = {};
         P.print(receiver._pic_item$__$picPath);
         P.print(parts);
       }
-      t1 = "/static/data/memory/pics/" + H.S(J.$index$asx(receiver._pic_item$__$picMap, "downloaded")) + ".jpg";
+      t1 = "./static/data/memory/pics/" + H.S(J.$index$asx(receiver._pic_item$__$picMap, "downloaded")) + ".jpg";
       receiver._pic_item$__$picPath = this.notifyPropertyChange$3(receiver, C.Symbol_picPath, receiver._pic_item$__$picPath, t1);
     }, "call$1", "get$picMapChanged", 2, 0, 53, 66],
     static: {PicItem$created: function(receiver) {

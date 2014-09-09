@@ -27,7 +27,7 @@ class PicItem extends PolymerElement with ChangeNotifier {
       print(picPath);
       print(parts);
     }
-    picPath="/static/data/memory/pics/${picMap['downloaded']}.jpg";
+    picPath="./static/data/memory/pics/${picMap['downloaded']}.jpg";
       
   }
 
