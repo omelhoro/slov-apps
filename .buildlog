@@ -538,3 +538,23 @@ build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build
 
 build.dart finished [314 ms]
 
+---
+build.dart --machine --changed=web/lib/filter-panel.html
+
+build.dart finished [309 ms]
+
+---
+build.dart --machine --changed=web/lib/filter-item.html
+
+build.dart finished [313 ms]
+
+---
+build.dart --machine --changed=web/lib/inpool_label.html
+
+build.dart finished [299 ms]
+
+---
+build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build/web/appslib/apps_panel.html --...
+
+build.dart finished [321 ms]
+
