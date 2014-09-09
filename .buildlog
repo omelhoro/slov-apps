@@ -513,3 +513,23 @@ build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build
 
 build.dart finished [384 ms]
 
+---
+build.dart --machine --changed=web/flexlib/desc_app.dart
+
+build.dart finished [313 ms]
+
+---
+build.dart --machine --changed=web/flexlib/desc_app.dart
+
+build.dart finished [301 ms]
+
+---
+build.dart --machine --changed=web/flexlib/desc_app.dart
+
+build.dart finished [318 ms]
+
+---
+build.dart --machine --changed=web/flexlib/desct_table.html
+
+build.dart finished [297 ms]
+

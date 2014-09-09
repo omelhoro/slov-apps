@@ -25,7 +25,7 @@ class DescApp extends Filter {
   DescApp.created() : super.created() {
     reqDb();
   }
-  Future reqDb({String src: "/static/data/descApp.json"}) => HttpRequest.getString(src).then(setDb);
+  Future reqDb({String src: "./static/data/descApp.json"}) => HttpRequest.getString(src).then(setDb);
 
   setLevel(Event evt) {
     probabCase = double.parse((evt.target.value as String));
