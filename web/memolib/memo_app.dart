@@ -15,7 +15,7 @@ class MemoApp extends Filter {
     reqDb();
   }
 
-  reqDb() => HttpRequest.getString("/static/data/vocApp.json").then(setDb);
+  reqDb() => HttpRequest.getString("./static/data/vocApp.json").then(setDb);
 
   setDb(String value) {
     assert(value != "");

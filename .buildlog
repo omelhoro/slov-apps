@@ -428,3 +428,43 @@ build.dart --machine --changed=web/excslib/excs_app.dart
 
 build.dart finished [293 ms]
 
+---
+build.dart --machine --changed=web/ctextlib/wordf_app.dart
+
+build.dart finished [324 ms]
+
+---
+build.dart --machine --changed=web/appslib/apps_panel.html
+
+build.dart finished [317 ms]
+
+---
+build.dart --machine --changed=web/flexlib/desc_app.html
+
+build.dart finished [300 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [282 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.dart
+
+build.dart finished [292 ms]
+
+---
+build.dart --machine --changed=web/voclib/voc_app.html
+
+build.dart finished [302 ms]
+
+---
+build.dart --machine --changed=web/voclib/voc_task.html
+
+build.dart finished [288 ms]
+
+---
+build.dart --machine --changed=web/voclib/voc_app.dart
+
+build.dart finished [297 ms]
+
