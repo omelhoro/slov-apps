@@ -24,7 +24,7 @@ class MemoApp extends Filter {
     print(oriDb.length);
     shadowRoot.querySelector(".render").click();
   }
-
+ 
   controlPics() {
     print("${curVisibles[0].picMap['foreignWord']}==${curVisibles[1].picMap['foreignWord']}");
     if (curVisibles[0].picMap['foreignWord'] == curVisibles[1].picMap['foreignWord']) {

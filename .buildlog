@@ -568,3 +568,148 @@ build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build
 
 build.dart finished [306 ms]
 
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [310 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.dart
+
+build.dart finished [295 ms]
+
+---
+build.dart --machine --changed=web/selfpoly.html
+
+build.dart finished [296 ms]
+
+---
+build.dart --machine --changed=web/selfpoly.html
+
+build.dart finished [299 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [330 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [317 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [298 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [314 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [313 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [302 ms]
+
+---
+build.dart --machine --changed=web/memolib/pic_item.html
+
+build.dart finished [349 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [365 ms]
+
+---
+build.dart --machine --changed=lib/selfpoly.css
+
+build.dart finished [304 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [336 ms]
+
+---
+build.dart --machine --removed=lib/selfpoly.css
+
+build.dart finished [297 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [322 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [319 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [404 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [322 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [341 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [327 ms]
+
+---
+build.dart --machine --changed=web/memolib/static/css/bootstrap-theme.css --changed=web/memolib/static/css/boot...
+
+build.dart finished [294 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [314 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [308 ms]
+
+---
+build.dart --machine --changed=static/css/bootstrap-theme.css --changed=static/css/bootstrap-theme.min.css --ch...
+
+build.dart finished [293 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [321 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [314 ms]
+
+---
+build.dart --machine --changed=web/memolib/memo_app.html
+
+build.dart finished [308 ms]
+
+---
+build.dart --machine --changed=web/memolib/static/css/bootstrap-theme.css --changed=web/memolib/static/css/boot...
+
+build.dart finished [308 ms]
+
