@@ -18,6 +18,7 @@ import 'sdk.dart' show DartSdk;
 import 'html.dart' show XmlAttributeNode, XmlTagNode;
 import 'engine.dart' show AnalysisContext, AnalysisEngine, AnalysisException;
 import 'constant.dart' show EvaluationResultImpl;
+import 'resolver.dart';
 import 'utilities_dart.dart';
 
 /**
@@ -1008,6 +1009,13 @@ abstract class ClassElement implements Element {
   bool get isAbstract;
 
   /**
+   * Return `true` if this class is defined by an enum declaration.
+   *
+   * @return `true` if this class is defined by an enum declaration
+   */
+  bool get isEnum;
+
+  /**
    * Return `true` if this class [isProxy], or if it inherits the proxy annotation
    * from a supertype.
    *
@@ -1263,7 +1271,16 @@ class ClassElementImpl extends ElementImpl implements ClassElement {
    *
    * @param name the name of this element
    */
-  ClassElementImpl(Identifier name) : super.forNode(name);
+  ClassElementImpl.forNode(Identifier name) : super.forNode(name);
+
+  /**
+   * Initialize a newly created class element to have the given name.
+   *
+   * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
+   */
+  ClassElementImpl(String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitClassElement(this);
@@ -1465,6 +1482,9 @@ class ClassElementImpl extends ElementImpl implements ClassElement {
   bool get isAbstract => hasModifier(Modifier.ABSTRACT);
 
   @override
+  bool get isEnum => hasModifier(Modifier.ENUM);
+
+  @override
   bool get isOrInheritsProxy => _safeIsOrInheritsProxy(this, new HashSet<ClassElement>());
 
   @override
@@ -1538,6 +1558,15 @@ class ClassElementImpl extends ElementImpl implements ClassElement {
       (constructor as ConstructorElementImpl).enclosingElement = this;
     }
     this._constructors = constructors;
+  }
+
+  /**
+   * Set whether this class is defined by an enum declaration to correspond to the given value.
+   *
+   * @param isEnum `true` if the class is defined by an enum declaration
+   */
+  void set enum2(bool isEnum) {
+    setModifier(Modifier.ENUM, isEnum);
   }
 
   /**
@@ -1875,6 +1904,22 @@ abstract class CompilationUnitElement implements Element, UriReferencedElement {
   LibraryElement get enclosingElement;
 
   /**
+   * Return the enum defined in this compilation unit that has the given name, or `null` if
+   * this compilation unit does not define an enum with the given name.
+   *
+   * @param enumName the name of the enum to be returned
+   * @return the enum with the given name that is defined in this compilation unit
+   */
+  ClassElement getEnum(String enumName);
+
+  /**
+   * Return an array containing all of the enums contained in this compilation unit.
+   *
+   * @return an array containing all of the enums contained in this compilation unit
+   */
+  List<ClassElement> get enums;
+
+  /**
    * Return an array containing all of the top-level functions contained in this compilation unit.
    *
    * @return the top-level functions contained in this compilation unit
@@ -1952,6 +1997,11 @@ class CompilationUnitElementImpl extends UriReferencedElementImpl implements Com
    * compilation unit.
    */
   List<PropertyAccessorElement> _accessors = PropertyAccessorElementImpl.EMPTY_ARRAY;
+
+  /**
+   * An array containing all of the enums contained in this compilation unit.
+   */
+  List<ClassElement> _enums = ClassElementImpl.EMPTY_ARRAY;
 
   /**
    * An array containing all of the top-level functions contained in this compilation unit.
@@ -2040,6 +2090,19 @@ class CompilationUnitElementImpl extends UriReferencedElementImpl implements Com
   LibraryElement get enclosingElement => super.enclosingElement as LibraryElement;
 
   @override
+  ClassElement getEnum(String enumName) {
+    for (ClassElement enumDeclaration in _enums) {
+      if (enumDeclaration.name == enumName) {
+        return enumDeclaration;
+      }
+    }
+    return null;
+  }
+
+  @override
+  List<ClassElement> get enums => _enums;
+
+  @override
   List<FunctionElement> get functions => _functions;
 
   @override
@@ -2103,6 +2166,18 @@ class CompilationUnitElementImpl extends UriReferencedElementImpl implements Com
       (view as AngularViewElementImpl).enclosingElement = this;
     }
     this._angularViews = angularViews;
+  }
+
+  /**
+   * Set the enums contained in this compilation unit to the given enums.
+   *
+   * @param enums enums contained in this compilation unit
+   */
+  void set enums(List<ClassElement> enums) {
+    for (ClassElement enumDeclaration in enums) {
+      (enumDeclaration as ClassElementImpl).enclosingElement = this;
+    }
+    this._enums = enums;
   }
 
   /**
@@ -2216,7 +2291,16 @@ class ConstFieldElementImpl extends FieldElementImpl {
    *
    * @param name the name of this element
    */
-  ConstFieldElementImpl(Identifier name) : super.con1(name);
+  ConstFieldElementImpl.con1(Identifier name) : super.forNode(name);
+
+  /**
+   * Initialize a newly created synthetic field element to have the given name.
+   *
+   * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
+   */
+  ConstFieldElementImpl.con2(String name, int offset) : super(name, offset);
 
   @override
   EvaluationResultImpl get evaluationResult => _result;
@@ -2242,7 +2326,7 @@ class ConstLocalVariableElementImpl extends LocalVariableElementImpl {
    *
    * @param name the name of this element
    */
-  ConstLocalVariableElementImpl(Identifier name) : super(name);
+  ConstLocalVariableElementImpl(Identifier name) : super.forNode(name);
 
   @override
   EvaluationResultImpl get evaluationResult => _result;
@@ -2268,7 +2352,7 @@ class ConstTopLevelVariableElementImpl extends TopLevelVariableElementImpl {
    *
    * @param name the name of this element
    */
-  ConstTopLevelVariableElementImpl(Identifier name) : super.con1(name);
+  ConstTopLevelVariableElementImpl(Identifier name) : super.forNode(name);
 
   @override
   EvaluationResultImpl get evaluationResult => _result;
@@ -2700,7 +2784,7 @@ class DefaultParameterElementImpl extends ParameterElementImpl {
    *
    * @param name the name of this element
    */
-  DefaultParameterElementImpl(Identifier name) : super.con1(name);
+  DefaultParameterElementImpl(Identifier name) : super.forNode(name);
 
   @override
   EvaluationResultImpl get evaluationResult => _result;
@@ -2896,10 +2980,10 @@ abstract class Element {
    * Return a display name for the given element that includes the path to the compilation unit in
    * which the type is defined.
    *
-   * @param type the type for which an extended display name is to be returned
+   * @param shortName the short display name. If null, [getDisplayName] is used.
    * @return a display name that can help distinguish between two types with the same name
    */
-  String get extendedDisplayName;
+  String getExtendedDisplayName(String shortName);
 
   /**
    * Return the kind of element that this is.
@@ -3279,13 +3363,15 @@ abstract class ElementImpl implements Element {
   Element get enclosingElement => _enclosingElement;
 
   @override
-  String get extendedDisplayName {
-    String displayName = this.displayName;
+  String getExtendedDisplayName(String shortName) {
+    if (shortName == null) {
+      shortName = displayName;
+    }
     Source source = this.source;
     if (source != null) {
-      return "${displayName} (${source.fullName})";
+      return "${shortName} (${source.fullName})";
     }
-    return displayName;
+    return shortName;
   }
 
   @override
@@ -3369,6 +3455,15 @@ abstract class ElementImpl implements Element {
 
   @override
   bool get isSynthetic => hasModifier(Modifier.SYNTHETIC);
+
+  /**
+   * Set the enclosing element of this element to the given element.
+   *
+   * @param element the enclosing element of this element
+   */
+  void set enclosingElement(Element element) {
+    _enclosingElement = element as ElementImpl;
+  }
 
   /**
    * Set whether this element is synthetic to correspond to the given value.
@@ -3470,15 +3565,6 @@ abstract class ElementImpl implements Element {
         child.accept(visitor);
       }
     }
-  }
-
-  /**
-   * Set the enclosing element of this element to the given element.
-   *
-   * @param element the enclosing element of this element
-   */
-  void set enclosingElement(Element element) {
-    _enclosingElement = element as ElementImpl;
   }
 
   /**
@@ -3640,6 +3726,14 @@ class ElementKind extends Enum<ElementKind> {
  */
 abstract class ElementLocation {
   /**
+   * Return the path to the element whose location is represented by this object. Clients must not
+   * modify the returned array.
+   *
+   * @return the path to the element whose location is represented by this object
+   */
+  List<String> get components;
+
+  /**
    * Return an encoded representation of this location that can be used to create a location that is
    * equal to this location.
    *
@@ -3686,6 +3780,15 @@ class ElementLocationImpl implements ElementLocation {
     this._components = _decode(encoding);
   }
 
+  /**
+   * Initialize a newly created location from the given components.
+   *
+   * @param components the components of a location
+   */
+  ElementLocationImpl.con3(List<String> components) {
+    this._components = components;
+  }
+
   @override
   bool operator ==(Object object) {
     if (identical(this, object)) {
@@ -3700,25 +3803,15 @@ class ElementLocationImpl implements ElementLocation {
     if (otherComponents.length != length) {
       return false;
     }
-    for (int i = length - 1; i >= 2; i--) {
+    for (int i = 0; i < length; i++) {
       if (_components[i] != otherComponents[i]) {
         return false;
       }
     }
-    if (length > 1 && !_equalSourceComponents(_components[1], otherComponents[1])) {
-      return false;
-    }
-    if (length > 0 && !_equalSourceComponents(_components[0], otherComponents[0])) {
-      return false;
-    }
     return true;
   }
 
-  /**
-   * Return the path to the element whose location is represented by this object.
-   *
-   * @return the path to the element whose location is represented by this object
-   */
+  @override
   List<String> get components => _components;
 
   @override
@@ -3739,13 +3832,7 @@ class ElementLocationImpl implements ElementLocation {
     int result = 1;
     for (int i = 0; i < _components.length; i++) {
       String component = _components[i];
-      int componentHash;
-      if (i <= 1) {
-        componentHash = _hashSourceComponent(component);
-      } else {
-        componentHash = component.hashCode;
-      }
-      result = 31 * result + componentHash;
+      result = 31 * result + component.hashCode;
     }
     return result;
   }
@@ -3799,45 +3886,6 @@ class ElementLocationImpl implements ElementLocation {
       }
       builder.appendChar(currentChar);
     }
-  }
-
-  /**
-   * Return `true` if the given components, when interpreted to be encoded sources with a
-   * leading source type indicator, are equal when the source type's are ignored.
-   *
-   * @param left the left component being compared
-   * @param right the right component being compared
-   * @return `true` if the given components are equal when the source type's are ignored
-   */
-  bool _equalSourceComponents(String left, String right) {
-    // TODO(brianwilkerson) This method can go away when sources no longer have a URI kind.
-    if (left == null) {
-      return right == null;
-    } else if (right == null) {
-      return false;
-    }
-    int leftLength = left.length;
-    int rightLength = right.length;
-    if (leftLength != rightLength) {
-      return false;
-    } else if (leftLength <= 1 || rightLength <= 1) {
-      return left == right;
-    }
-    return javaStringRegionMatches(left, 1, right, 1, leftLength - 1);
-  }
-
-  /**
-   * Return the hash code of the given encoded source component, ignoring the source type indicator.
-   *
-   * @param sourceComponent the component to compute a hash code
-   * @return the hash code of the given encoded source component
-   */
-  int _hashSourceComponent(String sourceComponent) {
-    // TODO(brianwilkerson) This method can go away when sources no longer have a URI kind.
-    if (sourceComponent.length <= 1) {
-      return sourceComponent.hashCode;
-    }
-    return sourceComponent.substring(1).hashCode;
   }
 }
 
@@ -4069,6 +4117,20 @@ abstract class ExecutableElement implements Element {
   FunctionType get type;
 
   /**
+   * Return `true` if this executable element has body marked as being asynchronous.
+   *
+   * @return `true` if this executable element has body marked as being asynchronous
+   */
+  bool get isAsynchronous;
+
+  /**
+   * Return `true` if this executable element has a body marked as being a generator.
+   *
+   * @return `true` if this executable element has a body marked as being a generator
+   */
+  bool get isGenerator;
+
+  /**
    * Return `true` if this executable element is an operator. The test may be based on the
    * name of the executable element, in which case the result will be correct when the name is
    * legal.
@@ -4084,6 +4146,13 @@ abstract class ExecutableElement implements Element {
    * @return `true` if this executable element is a static element
    */
   bool get isStatic;
+
+  /**
+   * Return `true` if this executable element has a body marked as being synchronous.
+   *
+   * @return `true` if this executable element has a body marked as being synchronous
+   */
+  bool get isSynchronous;
 }
 
 /**
@@ -4180,7 +4249,25 @@ abstract class ExecutableElementImpl extends ElementImpl implements ExecutableEl
   List<ParameterElement> get parameters => _parameters;
 
   @override
+  bool get isAsynchronous => hasModifier(Modifier.ASYNCHRONOUS);
+
+  @override
+  bool get isGenerator => hasModifier(Modifier.GENERATOR);
+
+  @override
   bool get isOperator => false;
+
+  @override
+  bool get isSynchronous => !hasModifier(Modifier.ASYNCHRONOUS);
+
+  /**
+   * Set whether this method's body is asynchronous to correspond to the given value.
+   *
+   * @param isAsynchronous `true` if the method's body is asynchronous
+   */
+  void set asynchronous(bool isAsynchronous) {
+    setModifier(Modifier.ASYNCHRONOUS, isAsynchronous);
+  }
 
   /**
    * Set the functions defined within this executable element to the given functions.
@@ -4192,6 +4279,15 @@ abstract class ExecutableElementImpl extends ElementImpl implements ExecutableEl
       (function as FunctionElementImpl).enclosingElement = this;
     }
     this._functions = functions;
+  }
+
+  /**
+   * Set whether this method's body is a generator to correspond to the given value.
+   *
+   * @param isGenerator `true` if the method's body is a generator
+   */
+  void set generator(bool isGenerator) {
+    setModifier(Modifier.GENERATOR, isGenerator);
   }
 
   /**
@@ -4339,10 +4435,19 @@ abstract class ExecutableMember extends Member implements ExecutableElement {
   FunctionType get type => substituteFor(baseElement.type);
 
   @override
+  bool get isAsynchronous => baseElement.isAsynchronous;
+
+  @override
+  bool get isGenerator => baseElement.isGenerator;
+
+  @override
   bool get isOperator => baseElement.isOperator;
 
   @override
   bool get isStatic => baseElement.isStatic;
+
+  @override
+  bool get isSynchronous => baseElement.isSynchronous;
 
   @override
   void visitChildren(ElementVisitor visitor) {
@@ -4478,14 +4583,16 @@ class FieldElementImpl extends PropertyInducingElementImpl implements FieldEleme
    *
    * @param name the name of this element
    */
-  FieldElementImpl.con1(Identifier name) : super.con1(name);
+  FieldElementImpl.forNode(Identifier name) : super.forNode(name);
 
   /**
    * Initialize a newly created synthetic field element to have the given name.
    *
    * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
    */
-  FieldElementImpl.con2(String name) : super.con2(name);
+  FieldElementImpl(String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitFieldElement(this);
@@ -4539,7 +4646,7 @@ class FieldFormalParameterElementImpl extends ParameterElementImpl implements Fi
    *
    * @param name the name of this element
    */
-  FieldFormalParameterElementImpl(Identifier name) : super.con1(name);
+  FieldFormalParameterElementImpl(Identifier name) : super.forNode(name);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitFieldFormalParameterElement(this);
@@ -4585,22 +4692,45 @@ class FieldMember extends VariableMember implements FieldElement {
    * @return the field element that will return the correctly substituted types
    */
   static FieldElement from(FieldElement baseField, InterfaceType definingType) {
-    if (baseField == null || definingType.typeArguments.length == 0) {
-      return baseField;
-    }
-    DartType baseType = baseField.type;
-    if (baseType == null) {
-      return baseField;
-    }
-    List<DartType> argumentTypes = definingType.typeArguments;
-    List<DartType> parameterTypes = definingType.element.type.typeArguments;
-    DartType substitutedType = baseType.substitute2(argumentTypes, parameterTypes);
-    if (baseType == substitutedType) {
+    if (!_isChangedByTypeSubstitution(baseField, definingType)) {
       return baseField;
     }
     // TODO(brianwilkerson) Consider caching the substituted type in the instance. It would use more
     // memory but speed up some operations. We need to see how often the type is being re-computed.
     return new FieldMember(baseField, definingType);
+  }
+
+  /**
+   * Determine whether the given field's type is changed when type parameters from the defining
+   * type's declaration are replaced with the actual type arguments from the defining type.
+   *
+   * @param baseField the base field
+   * @param definingType the type defining the parameters and arguments to be used in the
+   *          substitution
+   * @return true if the type is changed by type substitution.
+   */
+  static bool _isChangedByTypeSubstitution(FieldElement baseField, InterfaceType definingType) {
+    List<DartType> argumentTypes = definingType.typeArguments;
+    if (baseField != null && argumentTypes.length != 0) {
+      DartType baseType = baseField.type;
+      List<DartType> parameterTypes = definingType.element.type.typeArguments;
+      if (baseType != null) {
+        DartType substitutedType = baseType.substitute2(argumentTypes, parameterTypes);
+        if (baseType != substitutedType) {
+          return true;
+        }
+      }
+      // If the field has a propagated type, then we need to check whether the propagated type
+      // needs substitution.
+      DartType basePropagatedType = baseField.propagatedType;
+      if (basePropagatedType != null) {
+        DartType substitutedPropagatedType = basePropagatedType.substitute2(argumentTypes, parameterTypes);
+        if (basePropagatedType != substitutedPropagatedType) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 
   /**
@@ -4631,6 +4761,15 @@ class FieldMember extends VariableMember implements FieldElement {
 
   @override
   bool get isStatic => baseElement.isStatic;
+
+  @override
+  String toString() {
+    JavaStringBuilder builder = new JavaStringBuilder();
+    builder.append(type);
+    builder.append(" ");
+    builder.append(displayName);
+    return builder.toString();
+  }
 
   @override
   InterfaceType get definingType => super.definingType as InterfaceType;
@@ -4758,7 +4897,13 @@ class FunctionElementImpl extends ExecutableElementImpl implements FunctionEleme
   }
 
   @override
-  String get identifier => "${name}@${nameOffset}";
+  String get identifier {
+    String identifier = super.identifier;
+    if (!isStatic) {
+      identifier += "@${nameOffset}";
+    }
+    return identifier;
+  }
 }
 
 /**
@@ -5157,7 +5302,8 @@ class FunctionTypeImpl extends TypeImpl implements FunctionType {
   String get displayName {
     String name = this.name;
     if (name == null || name.length == 0) {
-      // TODO(brianwilkerson) Determine whether function types should ever have an empty name.
+      // Function types have an empty name when they are defined implicitly by either a closure or
+      // as part of a parameter declaration.
       List<DartType> normalParameterTypes = this.normalParameterTypes;
       List<DartType> optionalParameterTypes = this.optionalParameterTypes;
       Map<String, DartType> namedParameterTypes = this.namedParameterTypes;
@@ -5358,6 +5504,8 @@ class FunctionTypeImpl extends TypeImpl implements FunctionType {
       return false;
     } else if (identical(this, type) || type.isDynamic || type.isDartCoreFunction || type.isObject) {
       return true;
+    } else if (type is UnionType) {
+      return (type as UnionTypeImpl).internalUnionTypeIsMoreSpecificThan(this, withDynamic, visitedTypePairs);
     } else if (type is! FunctionType) {
       return false;
     } else if (this == type) {
@@ -5453,6 +5601,16 @@ class FunctionTypeImpl extends TypeImpl implements FunctionType {
     return sRetType.isVoid || (tRetType as TypeImpl).isMoreSpecificThan2(sRetType, withDynamic, visitedTypePairs);
   }
 
+  /**
+   * Return `true` if this type is assignable to the given type. A function type <i>T</i> may
+   * be assigned to a function type <i>S</i>, written <i>T</i> &hArr; <i>S</i>, iff <i>T</i> <:
+   * <i>S</i> (Function Types section of spec). Note that this is more restrictive than the
+   * "may be assigned to" rule for interface types.
+   *
+   *
+   * @param type the type being compared with this type
+   * @return `true` if this type is assignable to the given type
+   */
   @override
   bool isAssignableTo(DartType type) => isSubtypeOf2(type, new HashSet<TypeImpl_TypePair>());
 
@@ -5574,6 +5732,8 @@ class FunctionTypeImpl extends TypeImpl implements FunctionType {
       return false;
     } else if (identical(this, type) || type.isDynamic || type.isDartCoreFunction || type.isObject) {
       return true;
+    } else if (type is UnionType) {
+      return (type as UnionTypeImpl).internalUnionTypeIsSuperTypeOf(this, visitedTypePairs);
     } else if (type is! FunctionType) {
       return false;
     } else if (this == type) {
@@ -6074,6 +6234,9 @@ class HtmlElementImpl extends ElementImpl implements HtmlElement {
       builder.append(source.fullName);
     }
   }
+
+  @override
+  String get identifier => source.encoding;
 }
 
 /**
@@ -7114,6 +7277,8 @@ class InterfaceTypeImpl extends TypeImpl implements InterfaceType {
     //
     if (identical(type, DynamicTypeImpl.instance)) {
       return true;
+    } else if (type is UnionType) {
+      return (type as UnionTypeImpl).internalUnionTypeIsMoreSpecificThan(this, withDynamic, visitedTypePairs);
     } else if (type is! InterfaceType) {
       return false;
     }
@@ -7129,11 +7294,60 @@ class InterfaceTypeImpl extends TypeImpl implements InterfaceType {
       return true;
     } else if (type is TypeParameterType) {
       return false;
+    } else if (type is UnionType) {
+      return (type as UnionTypeImpl).internalUnionTypeIsSuperTypeOf(this, visitedTypePairs);
     } else if (type is FunctionType) {
+      // This implementation assumes transitivity
+      // for function type subtyping on the RHS, but a literal reading
+      // of the spec does not specify this. More precisely: if T <: F1 and F1 <: F2 and
+      // F1 and F2 are function types, then we assume T <: F2.
+      //
+      // From the Function Types section of the spec:
+      //
+      //   If a type I includes an instance method named call(), and the type of call()
+      //   is the function type F, then I is considered to be a subtype of F.
+      //
+      // However, the section on Interface Types says
+      //
+      //   T is a subtype of S, written T <: S, iff [bottom/dynamic]T << S.
+      //
+      // after giving rules for << (pronounced "more specific than"). However, the "only if"
+      // direction of the "iff"
+      // in the definition of <: seems to be contradicted by the special case <: rule
+      // quoted from the Function Types section: I see no rule for << which tells us that
+      // I << F if I has call() at type F.
+      //
+      // After defining <: , the spec then
+      // emphasizes that unlike the relation <<, the relation <: is not transitive in general:
+      //
+      //   Note that <: is not a partial order on types, it is only binary relation on types.
+      //   This is because <: is not transitive. If it was, the subtype rule would have a cycle.
+      //   For example: List <: List<String> and List<int> <: List, but List<int> is not a subtype
+      //   of List<String>. Although <: is not a partial order on types, it does contain a partial
+      //   order, namely <<. This means that, barring raw types, intuition about classical subtype
+      //   rules does apply.
+      //
+      // There is no other occurrence of the word "raw" in relation to types in the spec that I can
+      // find, but presumably it's a reference to
+      //
+      //   http://docs.oracle.com/javase/tutorial/java/generics/rawTypes.html
+      //
+      // so e.g. non-generic types are never raw. As pointed out by paulberry, it's not clear
+      // whether a type like T<int, dynamic> should be considered raw or not. On the one hand, it
+      // doesn't correspond to a "raw"-in-the-Java-sense occurrence of T, which would instead
+      // be T<dynamic, dynamic>; on the other hand, it's treated differently by <: and << when
+      // occurring on the left hand side.
       ClassElement element = this.element;
-      MethodElement callMethod = element.lookUpMethod("call", element.library);
-      if (callMethod != null) {
-        return callMethod.type.isSubtypeOf(type);
+      InheritanceManager manager = new InheritanceManager(element.library);
+      FunctionType callType = manager.lookupMemberType(this, "call");
+      if (callType != null) {
+        // A more literal reading of the spec would give something like
+        //
+        //  return callType.equals(type)
+        //
+        // here, but that causes 101 errors in the external tests
+        // (tools/test.py --mode release --compiler dartanalyzer --runtime none).
+        return callType.isSubtypeOf(type);
       }
       return false;
     } else if (type is! InterfaceType) {
@@ -7264,14 +7478,21 @@ class InterfaceTypeImpl extends TypeImpl implements InterfaceType {
  * Combination of [AngularTagSelectorElementImpl] and [HasAttributeSelectorElementImpl].
  */
 class IsTagHasAttributeSelectorElementImpl extends AngularSelectorElementImpl {
-  final String tagName;
+  String _tagName;
 
-  final String attributeName;
+  String _attributeName;
 
-  IsTagHasAttributeSelectorElementImpl(this.tagName, this.attributeName) : super(null, -1);
+  IsTagHasAttributeSelectorElementImpl(String tagName, String attributeName) : super("${tagName}[${attributeName}]", -1) {
+    this._tagName = tagName;
+    this._attributeName = attributeName;
+  }
 
   @override
-  bool apply(XmlTagNode node) => node.tag == tagName && node.getAttribute(attributeName) != null;
+  bool apply(XmlTagNode node) => node.tag == _tagName && node.getAttribute(_attributeName) != null;
+
+  String get attributeName => _attributeName;
+
+  String get tagName => _tagName;
 }
 
 /**
@@ -7594,7 +7815,17 @@ class LibraryElementImpl extends ElementImpl implements LibraryElement {
    * @param context the analysis context in which the library is defined
    * @param name the name of this element
    */
-  LibraryElementImpl(this.context, LibraryIdentifier name) : super.forNode(name);
+  LibraryElementImpl.forNode(this.context, LibraryIdentifier name) : super.forNode(name);
+
+  /**
+   * Initialize a newly created library element to have the given name.
+   *
+   * @param context the analysis context in which the library is defined
+   * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
+   */
+  LibraryElementImpl(this.context, String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitLibraryElement(this);
@@ -8006,7 +8237,16 @@ class LocalVariableElementImpl extends VariableElementImpl implements LocalVaria
    *
    * @param name the name of this element
    */
-  LocalVariableElementImpl(Identifier name) : super.forNode(name);
+  LocalVariableElementImpl.forNode(Identifier name) : super.forNode(name);
+
+  /**
+   * Initialize a newly created method element to have the given name.
+   *
+   * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
+   */
+  LocalVariableElementImpl(String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitLocalVariableElement(this);
@@ -8131,7 +8371,7 @@ abstract class Member implements Element {
   String get displayName => _baseElement.displayName;
 
   @override
-  String get extendedDisplayName => _baseElement.extendedDisplayName;
+  String getExtendedDisplayName(String shortName) => _baseElement.getExtendedDisplayName(shortName);
 
   @override
   ElementKind get kind => _baseElement.kind;
@@ -8465,75 +8705,103 @@ class Modifier extends Enum<Modifier> {
   static const Modifier ABSTRACT = const Modifier('ABSTRACT', 0);
 
   /**
+   * Indicates that an executable element has a body marked as being asynchronous.
+   */
+  static const Modifier ASYNCHRONOUS = const Modifier('ASYNCHRONOUS', 1);
+
+  /**
    * Indicates that the modifier 'const' was applied to the element.
    */
-  static const Modifier CONST = const Modifier('CONST', 1);
+  static const Modifier CONST = const Modifier('CONST', 2);
 
   /**
    * Indicates that the import element represents a deferred library.
    */
-  static const Modifier DEFERRED = const Modifier('DEFERRED', 2);
+  static const Modifier DEFERRED = const Modifier('DEFERRED', 3);
+
+  /**
+   * Indicates that a class element was defined by an enum declaration.
+   */
+  static const Modifier ENUM = const Modifier('ENUM', 4);
 
   /**
    * Indicates that the modifier 'factory' was applied to the element.
    */
-  static const Modifier FACTORY = const Modifier('FACTORY', 3);
+  static const Modifier FACTORY = const Modifier('FACTORY', 5);
 
   /**
    * Indicates that the modifier 'final' was applied to the element.
    */
-  static const Modifier FINAL = const Modifier('FINAL', 4);
+  static const Modifier FINAL = const Modifier('FINAL', 6);
+
+  /**
+   * Indicates that an executable element has a body marked as being a generator.
+   */
+  static const Modifier GENERATOR = const Modifier('GENERATOR', 7);
 
   /**
    * Indicates that the pseudo-modifier 'get' was applied to the element.
    */
-  static const Modifier GETTER = const Modifier('GETTER', 5);
+  static const Modifier GETTER = const Modifier('GETTER', 8);
 
   /**
    * A flag used for libraries indicating that the defining compilation unit contains at least one
    * import directive whose URI uses the "dart-ext" scheme.
    */
-  static const Modifier HAS_EXT_URI = const Modifier('HAS_EXT_URI', 6);
+  static const Modifier HAS_EXT_URI = const Modifier('HAS_EXT_URI', 9);
 
-  static const Modifier MIXIN = const Modifier('MIXIN', 7);
+  /**
+   * Indicates that a class can validly be used as a mixin.
+   */
+  static const Modifier MIXIN = const Modifier('MIXIN', 10);
 
   /**
    * Indicates that the value of a parameter or local variable might be mutated within the context.
    */
-  static const Modifier POTENTIALLY_MUTATED_IN_CONTEXT = const Modifier('POTENTIALLY_MUTATED_IN_CONTEXT', 8);
+  static const Modifier POTENTIALLY_MUTATED_IN_CONTEXT = const Modifier('POTENTIALLY_MUTATED_IN_CONTEXT', 11);
 
   /**
    * Indicates that the value of a parameter or local variable might be mutated within the scope.
    */
-  static const Modifier POTENTIALLY_MUTATED_IN_SCOPE = const Modifier('POTENTIALLY_MUTATED_IN_SCOPE', 9);
+  static const Modifier POTENTIALLY_MUTATED_IN_SCOPE = const Modifier('POTENTIALLY_MUTATED_IN_SCOPE', 12);
 
-  static const Modifier REFERENCES_SUPER = const Modifier('REFERENCES_SUPER', 10);
+  /**
+   * Indicates that a class contains an explicit reference to 'super'.
+   */
+  static const Modifier REFERENCES_SUPER = const Modifier('REFERENCES_SUPER', 13);
 
   /**
    * Indicates that the pseudo-modifier 'set' was applied to the element.
    */
-  static const Modifier SETTER = const Modifier('SETTER', 11);
+  static const Modifier SETTER = const Modifier('SETTER', 14);
 
   /**
    * Indicates that the modifier 'static' was applied to the element.
    */
-  static const Modifier STATIC = const Modifier('STATIC', 12);
+  static const Modifier STATIC = const Modifier('STATIC', 15);
 
   /**
    * Indicates that the element does not appear in the source code but was implicitly created. For
    * example, if a class does not define any constructors, an implicit zero-argument constructor
    * will be created and it will be marked as being synthetic.
    */
-  static const Modifier SYNTHETIC = const Modifier('SYNTHETIC', 13);
+  static const Modifier SYNTHETIC = const Modifier('SYNTHETIC', 16);
 
-  static const Modifier TYPEDEF = const Modifier('TYPEDEF', 14);
+  /**
+   * Indicates that a class was defined using an alias. TODO(brianwilkerson) This should be renamed
+   * to 'ALIAS'.
+   */
+  static const Modifier TYPEDEF = const Modifier('TYPEDEF', 17);
 
   static const List<Modifier> values = const [
       ABSTRACT,
+      ASYNCHRONOUS,
       CONST,
       DEFERRED,
+      ENUM,
       FACTORY,
       FINAL,
+      GENERATOR,
       GETTER,
       HAS_EXT_URI,
       MIXIN,
@@ -8669,7 +8937,12 @@ class MultiplyDefinedElementImpl implements MultiplyDefinedElement {
   Element get enclosingElement => null;
 
   @override
-  String get extendedDisplayName => displayName;
+  String getExtendedDisplayName(String shortName) {
+    if (shortName != null) {
+      return shortName;
+    }
+    return displayName;
+  }
 
   @override
   ElementKind get kind => ElementKind.ERROR;
@@ -8907,7 +9180,7 @@ class ParameterElementImpl extends VariableElementImpl implements ParameterEleme
    *
    * @param name the name of this element
    */
-  ParameterElementImpl.con1(Identifier name) : super.forNode(name);
+  ParameterElementImpl.forNode(Identifier name) : super.forNode(name);
 
   /**
    * Initialize a newly created parameter element to have the given name.
@@ -8916,10 +9189,20 @@ class ParameterElementImpl extends VariableElementImpl implements ParameterEleme
    * @param nameOffset the offset of the name of this element in the file that contains the
    *          declaration of this element
    */
-  ParameterElementImpl.con2(String name, int nameOffset) : super(name, nameOffset);
+  ParameterElementImpl(String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitParameterElement(this);
+
+  @override
+  ElementImpl getChild(String identifier) {
+    for (ParameterElement parameter in _parameters) {
+      if ((parameter as ParameterElementImpl).identifier == identifier) {
+        return parameter as ParameterElementImpl;
+      }
+    }
+    return null;
+  }
 
   @override
   SourceRange get defaultValueRange {
@@ -9441,7 +9724,16 @@ class PrefixElementImpl extends ElementImpl implements PrefixElement {
    *
    * @param name the name of this element
    */
-  PrefixElementImpl(Identifier name) : super.forNode(name);
+  PrefixElementImpl.forNode(Identifier name) : super.forNode(name);
+
+  /**
+   * Initialize a newly created method element to have the given name.
+   *
+   * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
+   */
+  PrefixElementImpl(String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitPrefixElement(this);
@@ -9568,8 +9860,9 @@ class PropertyAccessorElementImpl extends ExecutableElementImpl implements Prope
    *
    * @param variable the variable with which this access is associated
    */
-  PropertyAccessorElementImpl(PropertyInducingElementImpl variable) : super(variable.name, variable.nameOffset) {
+  PropertyAccessorElementImpl.forVariable(PropertyInducingElementImpl variable) : super(variable.name, variable.nameOffset) {
     this.variable = variable;
+    static = variable.isStatic;
     synthetic = true;
   }
 
@@ -9682,6 +9975,13 @@ class PropertyAccessorElementImpl extends ExecutableElementImpl implements Prope
     builder.append(variable.displayName);
     super.appendTo(builder);
   }
+
+  @override
+  String get identifier {
+    String name = displayName;
+    String suffix = isGetter ? "?" : "=";
+    return "${name}${suffix}";
+  }
 }
 
 /**
@@ -9701,19 +10001,46 @@ class PropertyAccessorMember extends ExecutableMember implements PropertyAccesso
    * @return the property accessor element that will return the correctly substituted types
    */
   static PropertyAccessorElement from(PropertyAccessorElement baseAccessor, InterfaceType definingType) {
-    if (baseAccessor == null || definingType.typeArguments.length == 0) {
-      return baseAccessor;
-    }
-    FunctionType baseType = baseAccessor.type;
-    List<DartType> argumentTypes = definingType.typeArguments;
-    List<DartType> parameterTypes = definingType.element.type.typeArguments;
-    FunctionType substitutedType = baseType.substitute2(argumentTypes, parameterTypes);
-    if (baseType == substitutedType) {
+    if (!_isChangedByTypeSubstitution(baseAccessor, definingType)) {
       return baseAccessor;
     }
     // TODO(brianwilkerson) Consider caching the substituted type in the instance. It would use more
     // memory but speed up some operations. We need to see how often the type is being re-computed.
     return new PropertyAccessorMember(baseAccessor, definingType);
+  }
+
+  /**
+   * Determine whether the given property accessor's type is changed when type parameters from the
+   * defining type's declaration are replaced with the actual type arguments from the defining type.
+   *
+   * @param baseAccessor the base property accessor
+   * @param definingType the type defining the parameters and arguments to be used in the
+   *          substitution
+   * @return true if the type is changed by type substitution.
+   */
+  static bool _isChangedByTypeSubstitution(PropertyAccessorElement baseAccessor, InterfaceType definingType) {
+    List<DartType> argumentTypes = definingType.typeArguments;
+    if (baseAccessor != null && argumentTypes.length != 0) {
+      FunctionType baseType = baseAccessor.type;
+      List<DartType> parameterTypes = definingType.element.type.typeArguments;
+      FunctionType substitutedType = baseType.substitute2(argumentTypes, parameterTypes);
+      if (baseType != substitutedType) {
+        return true;
+      }
+      // If this property accessor is based on a field, that field might have a propagated type.
+      // In which case we need to check whether the propagated type of the field needs substitution.
+      PropertyInducingElement field = baseAccessor.variable;
+      if (!field.isSynthetic) {
+        DartType baseFieldType = field.propagatedType;
+        if (baseFieldType != null) {
+          DartType substitutedFieldType = baseFieldType.substitute2(argumentTypes, parameterTypes);
+          if (baseFieldType != substitutedFieldType) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
   }
 
   /**
@@ -9875,16 +10202,16 @@ abstract class PropertyInducingElementImpl extends VariableElementImpl implement
    *
    * @param name the name of this element
    */
-  PropertyInducingElementImpl.con1(Identifier name) : super.forNode(name);
+  PropertyInducingElementImpl.forNode(Identifier name) : super.forNode(name);
 
   /**
    * Initialize a newly created synthetic element to have the given name.
    *
    * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
    */
-  PropertyInducingElementImpl.con2(String name) : super(name, -1) {
-    synthetic = true;
-  }
+  PropertyInducingElementImpl(String name, int nameOffset) : super(name, nameOffset);
 }
 
 /**
@@ -10316,14 +10643,16 @@ class TopLevelVariableElementImpl extends PropertyInducingElementImpl implements
    *
    * @param name the name of this element
    */
-  TopLevelVariableElementImpl.con1(Identifier name) : super.con1(name);
+  TopLevelVariableElementImpl.forNode(Identifier name) : super.forNode(name);
 
   /**
    * Initialize a newly created synthetic top-level variable element to have the given name.
    *
    * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
    */
-  TopLevelVariableElementImpl.con2(String name) : super.con2(name);
+  TopLevelVariableElementImpl(String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitTopLevelVariableElement(this);
@@ -10412,14 +10741,14 @@ abstract class TypeImpl implements DartType {
   /**
    * Return `true` if this type is assignable to the given type. A type <i>T</i> may be
    * assigned to a type <i>S</i>, written <i>T</i> &hArr; <i>S</i>, iff either <i>T</i> <: <i>S</i>
-   * or <i>S</i> <: <i>T</i>.
+   * or <i>S</i> <: <i>T</i> (Interface Types section of spec).
    *
    * The given set of pairs of types (T1, T2), where each pair indicates that we invoked this method
    * because we are in the process of answering the question of whether T1 is a subtype of T2, is
    * used to prevent infinite loops.
    *
    * @param type the type being compared with this type
-   * @param visitedPairs the set of pairs of types used to prevent infinite loops
+   * @param visitedTypePairs the set of pairs of types used to prevent infinite loops
    * @return `true` if this type is assignable to the given type
    */
   bool isAssignableTo2(DartType type, Set<TypeImpl_TypePair> visitedTypePairs) => isSubtypeOf2(type, visitedTypePairs) || (type as TypeImpl).isSubtypeOf2(this, visitedTypePairs);
@@ -10445,7 +10774,7 @@ abstract class TypeImpl implements DartType {
    *
    * @param type the type being compared with this type
    * @param withDynamic `true` if "dynamic" should be considered as a subtype of any type
-   * @param visitedPairs the set of pairs of types used to prevent infinite loops
+   * @param visitedTypePairs the set of pairs of types used to prevent infinite loops
    * @return `true` if this type is more specific than the given type
    */
   bool isMoreSpecificThan2(DartType type, bool withDynamic, Set<TypeImpl_TypePair> visitedTypePairs) {
@@ -10473,7 +10802,7 @@ abstract class TypeImpl implements DartType {
    * used to prevent infinite loops.
    *
    * @param type the type being compared with this type
-   * @param visitedPairs the set of pairs of types used to prevent infinite loops
+   * @param visitedTypePairs the set of pairs of types used to prevent infinite loops
    * @return `true` if this type is a subtype of the given type
    */
   bool isSubtypeOf2(DartType type, Set<TypeImpl_TypePair> visitedTypePairs) {
@@ -10606,7 +10935,16 @@ class TypeParameterElementImpl extends ElementImpl implements TypeParameterEleme
    *
    * @param name the name of this element
    */
-  TypeParameterElementImpl(Identifier name) : super.forNode(name);
+  TypeParameterElementImpl.forNode(Identifier name) : super.forNode(name);
+
+  /**
+   * Initialize a newly created method element to have the given name.
+   *
+   * @param name the name of this element
+   * @param nameOffset the offset of the name of this element in the file that contains the
+   *          declaration of this element
+   */
+  TypeParameterElementImpl(String name, int nameOffset) : super(name, nameOffset);
 
   @override
   accept(ElementVisitor visitor) => visitor.visitTypeParameterElement(this);
@@ -10642,11 +10980,6 @@ class TypeParameterTypeImpl extends TypeImpl implements TypeParameterType {
    * An empty array of type parameter types.
    */
   static List<TypeParameterType> EMPTY_ARRAY = new List<TypeParameterType>(0);
-
-  /**
-   * The name of the type Type from dart.core.
-   */
-  static String _TYPE_CLASS_NAME = "Type";
 
   /**
    * Return an array containing the type parameter types defined by the given array of type
@@ -10710,11 +11043,6 @@ class TypeParameterTypeImpl extends TypeImpl implements TypeParameterType {
     if (this == s) {
       return true;
     }
-    // S is bottom.
-    //
-    if (s.isBottom) {
-      return true;
-    }
     // S is dynamic.
     //
     if (s.isDynamic) {
@@ -10727,14 +11055,6 @@ class TypeParameterTypeImpl extends TypeImpl implements TypeParameterType {
   bool internalIsSubtypeOf(DartType type, Set<TypeImpl_TypePair> visitedTypePairs) => isMoreSpecificThan2(type, true, new HashSet<TypeImpl_TypePair>());
 
   bool _isMoreSpecificThan(DartType s, Set<DartType> visitedTypes, bool withDynamic, Set<TypeImpl_TypePair> visitedTypePairs) {
-    //
-    // If s is of type Type from dart.core, return true
-    //
-    Element sElement = s.element;
-    LibraryElement sLibrary = sElement != null ? sElement.library : null;
-    if (sLibrary != null && sLibrary.isDartCore && s.name == _TYPE_CLASS_NAME) {
-      return true;
-    }
     //
     // T is a type parameter and S is the upper bound of T.
     //
@@ -10777,6 +11097,203 @@ class TypeParameterTypeImpl extends TypeImpl implements TypeParameterType {
  * do not make sense and will return useless results.
  */
 abstract class UndefinedElement implements Element {
+}
+
+/**
+ * A flat immutable union of `Type`s. Here "flat" means a union type never contains another
+ * union type.
+ */
+abstract class UnionType implements DartType {
+  /**
+   * @return an immutable view of the types in this union type.
+   */
+  Set<DartType> get elements;
+}
+
+/**
+ * In addition to the methods of the `UnionType` interface we add a factory method
+ * `union` for building unions.
+ */
+class UnionTypeImpl extends TypeImpl implements UnionType {
+  /**
+   * Any unions in the `types` will be flattened in the returned union. If there is only one
+   * type after flattening then it will be returned directly, instead of a singleton union.
+   *
+   * @param types the `Type`s to union
+   * @return a `Type` comprising the `Type`s in `types`
+   */
+  static DartType union(List<DartType> types) {
+    Set<DartType> set = new HashSet<DartType>();
+    for (DartType t in types) {
+      if (t is UnionType) {
+        set.addAll(t.elements);
+      } else {
+        set.add(t);
+      }
+    }
+    if (set.length == 0) {
+      throw new IllegalArgumentException("No known use case for empty unions.");
+    } else if (set.length == 1) {
+      return new JavaIterator(set).next();
+    } else {
+      return new UnionTypeImpl(set);
+    }
+  }
+
+  /**
+   * The types in this union.
+   */
+  final Set<DartType> _types;
+
+  /**
+   * This constructor should only be called by the `union` factory: it does not check that its
+   * argument `types` contains no union types.
+   *
+   * @param types
+   */
+  UnionTypeImpl(this._types) : super(null, null);
+
+  @override
+  bool operator ==(Object other) {
+    if (other == null || other is! UnionType) {
+      return false;
+    } else if (identical(this, other)) {
+      return true;
+    } else {
+      return javaSetEquals(_types, (other as UnionType).elements);
+    }
+  }
+
+  @override
+  String get displayName {
+    JavaStringBuilder builder = new JavaStringBuilder();
+    String prefix = "{";
+    for (DartType t in _types) {
+      builder.append(prefix);
+      builder.append(t.displayName);
+      prefix = ",";
+    }
+    builder.append("}");
+    return builder.toString();
+  }
+
+  @override
+  Set<DartType> get elements => _types;
+
+  @override
+  int get hashCode => _types.hashCode;
+
+  @override
+  DartType substitute2(List<DartType> argumentTypes, List<DartType> parameterTypes) {
+    List<DartType> out = new List<DartType>();
+    for (DartType t in _types) {
+      out.add(t.substitute2(argumentTypes, parameterTypes));
+    }
+    return union(new List.from(out));
+  }
+
+  @override
+  void appendTo(JavaStringBuilder builder) {
+    String prefix = "{";
+    for (DartType t in _types) {
+      builder.append(prefix);
+      (t as TypeImpl).appendTo(builder);
+      prefix = ",";
+    }
+    builder.append("}");
+  }
+
+  @override
+  bool internalEquals(Object object, Set<ElementPair> visitedElementPairs) => this == object;
+
+  @override
+  bool internalIsMoreSpecificThan(DartType type, bool withDynamic, Set<TypeImpl_TypePair> visitedTypePairs) {
+    // TODO(collinsn): what version of subtyping do we want?
+    //
+    // The more unsound version: any.
+    /*
+    for (Type t : types) {
+      if (((TypeImpl) t).internalIsMoreSpecificThan(type, withDynamic, visitedTypePairs)) {
+        return true;
+      }
+    }
+    return false;
+    */
+    // The less unsound version: all.
+    for (DartType t in _types) {
+      if (!(t as TypeImpl).internalIsMoreSpecificThan(type, withDynamic, visitedTypePairs)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @override
+  bool internalIsSubtypeOf(DartType type, Set<TypeImpl_TypePair> visitedTypePairs) {
+    // TODO(collinsn): what version of subtyping do we want?
+    //
+    // The more unsound version: any.
+    /*
+    for (Type t : types) {
+      if (((TypeImpl) t).internalIsSubtypeOf(type, visitedTypePairs)) {
+        return true;
+      }
+    }
+    return false;
+    */
+    // The less unsound version: all.
+    for (DartType t in _types) {
+      if (!(t as TypeImpl).internalIsSubtypeOf(type, visitedTypePairs)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * The more-specific-than test for union types on the RHS is uniform in non-union LHSs. So, other
+   * `TypeImpl`s can call this method to implement `internalIsMoreSpecificThan` for
+   * union types.
+   *
+   * @param type
+   * @param visitedTypePairs
+   * @return true if `type` is more specific than this union type
+   */
+  bool internalUnionTypeIsMoreSpecificThan(DartType type, bool withDynamic, Set<TypeImpl_TypePair> visitedTypePairs) {
+    // This implementation does not make sense when [type] is a union type, at least
+    // for the "less unsound" version of [internalIsMoreSpecificThan] above.
+    if (type is UnionType) {
+      throw new IllegalArgumentException("Only non-union types are supported.");
+    }
+    for (DartType t in _types) {
+      if ((type as TypeImpl).internalIsMoreSpecificThan(t, withDynamic, visitedTypePairs)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * The supertype test for union types is uniform in non-union subtypes. So, other `TypeImpl`
+   * s can call this method to implement `internalIsSubtypeOf` for union types.
+   *
+   * @param type
+   * @param visitedTypePairs
+   * @return true if this union type is a super type of `type`
+   */
+  bool internalUnionTypeIsSuperTypeOf(DartType type, Set<TypeImpl_TypePair> visitedTypePairs) {
+    // This implementation does not make sense when [type] is a union type, at least
+    // for the "less unsound" version of [internalIsSubtypeOf] above.
+    if (type is UnionType) {
+      throw new IllegalArgumentException("Only non-union types are supported.");
+    }
+    for (DartType t in _types) {
+      if ((type as TypeImpl).internalIsSubtypeOf(t, visitedTypePairs)) {
+        return true;
+      }
+    }
+    return false;
+  }
 }
 
 /**
@@ -11114,5 +11631,14 @@ class VoidTypeImpl extends TypeImpl implements VoidType {
   bool internalIsMoreSpecificThan(DartType type, bool withDynamic, Set<TypeImpl_TypePair> visitedTypePairs) => isSubtypeOf(type);
 
   @override
-  bool internalIsSubtypeOf(DartType type, Set<TypeImpl_TypePair> visitedTypePairs) => identical(type, this) || identical(type, DynamicTypeImpl.instance);
+  bool internalIsSubtypeOf(DartType type, Set<TypeImpl_TypePair> visitedTypePairs) {
+    if (type is UnionType) {
+      return (type as UnionTypeImpl).internalUnionTypeIsSuperTypeOf(this, visitedTypePairs);
+    }
+    // The only subtype relations that pertain to void are therefore:
+    // void <: void (by reflexivity)
+    // bottom <: void (as bottom is a subtype of all types).
+    // void <: dynamic (as dynamic is a supertype of all types)
+    return identical(type, this) || identical(type, DynamicTypeImpl.instance);
+  }
 }

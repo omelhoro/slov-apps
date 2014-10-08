@@ -2,9 +2,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Slovenian learning apps</title>
-
-
-
+<script src="packages/web_components/platform.js"></script>
+<script src="packages/web_components/dart_support.js"></script>
+<link rel="stylesheet" href="/static/css/selfpoly.css">
 <!--
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
 <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
@@ -23,122 +23,8 @@
 
 
 
-</head>
-<body><script src="packages/web_components/platform.js"></script><script src="packages/web_components/dart_support.js"></script><style>td.noun {
-  text-align: right; }
-
-td.nom {
-  background: linear-gradient(to right, white, #69f59f); }
-
-.noun.nom {
-  background-color: #69f59f; }
-
-td.gen {
-  background: linear-gradient(to right, white, yellow); }
-
-.noun.gen {
-  background-color: yellow; }
-
-td.dat {
-  background: linear-gradient(to right, white, #dc4af0); }
-
-.noun.dat {
-  background-color: #dc4af0; }
-
-td.acc {
-  background: linear-gradient(to right, white, #fa3939); }
-
-.noun.acc {
-  background-color: #fa3939; }
-
-td.loc {
-  background: linear-gradient(to right, white, #0ef0ec); }
-
-.noun.loc {
-  background-color: #0ef0ec; }
-
-td.ins {
-  background: linear-gradient(to right, white, #4792fc); }
-
-.noun.ins {
-  background-color: #4792fc; }
-
-input#i {
-  transition-property: background-color;
-  transition-duration: 2s; }
-
-input {
-  transition-property: background-color;
-  transition-duration: 2s; }
-
-.false {
-  background-color: red; }
-
-.right {
-  background-color: green; }
-
-img.memopic {
-  max-height: 100px;
-  max-width: 100px;
-  margin: auto; }
-
-pic-item {
-  margin: 0px; }
-
-.thumbnail {
-  width: 120px;
-  height: 120px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle; }
-
-.falsemarked {
-  border: 4px inset red; }
-
-.rightmarked {
-  border: 4px inset lightgreen; }
-
-.empty {
-  background-color: #F6F6F6; }
-
-.verb {
-  border: 1px solid black; }
-
-.pronoun {
-  border: 1px dashed black; }
-
-.adjective {
-  border: 1px dotted black; }
-
-.preposition {
-  border: 3px double black; }
-
-.btn {
-  cursor: pointer; }
-
-.selectedcase {
-  border: 4px double black; }
-@font-face {
-  font-family: cool_font;
-  src: url(static/fonts/nexalight.otf);
-}
-html{
-	font-family: cool_font;
-}</style>
-
-
-
-
-
-
-<!-- unminfied for debugging:
-<link rel="import" href="src/js/polymer/layout.html">
-<script src="src/js/polymer/polymer.concat.js"></script>
--->
-
-
-
-<style shim-shadowdom="">
+<link rel="stylesheet" type="text/css" href="packages/polymer/src/build/log_injector.css"></head>
+<body><div hidden=""><style shim-shadowdom="">
 /*******************************
           Flex Layout
 *******************************/
@@ -192,15 +78,23 @@ html /deep/ [layout][wrap-reverse] {
 }
 
 html /deep/ [flex] {
-  -ms-flex: 1;
+  -ms-flex: 1 1 0.000000001px;
   -webkit-flex: 1;
   flex: 1;
+  -webkit-flex-basis: 0.000000001px;
+  flex-basis: 0.000000001px;
+}
+
+html /deep/ [vertical][layout] > [flex][auto-vertical], html /deep/ [vertical][layout]::shadow [flex][auto-vertical] {
+  -ms-flex: 1 1 auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
 }
 
 html /deep/ [flex][auto] {
   -ms-flex: 1 1 auto;
-  -webkit-flex: 1 1 auto;
-  flex: 1 1 auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
 }
 
 html /deep/ [flex][none] {
@@ -289,7 +183,7 @@ html /deep/ [layout][start] {
   align-items: flex-start;
 }
 
-html /deep/ [layout][center] {
+html /deep/ [layout][center], html /deep/ [layout][center-center] {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
@@ -309,7 +203,7 @@ html /deep/ [layout][start-justified] {
   justify-content: flex-start;
 }
 
-html /deep/ [layout][center-justified] {
+html /deep/ [layout][center-justified], html /deep/ [layout][center-center] {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
@@ -322,7 +216,7 @@ html /deep/ [layout][end-justified] {
 }
 
 html /deep/ [layout][around-justified] {
-  -ms-flex-pack: around;
+  -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
   justify-content: space-around;
 }
@@ -407,10 +301,21 @@ html /deep/ [segment], html /deep/ segment {
   border-radius: 5px 5px 5px 5px;
 }
 
-</style><script src="packages/polymer/src/js/polymer/polymer.js"></script><script>
+</style>
+
+<script src="packages/polymer/src/js/polymer/polymer.js"></script>
+
+<script>
 // TODO(sigmund): remove this script tag (dartbug.com/19650). This empty
 // script tag is necessary to work around a bug in Chrome 36.
 </script>
+
+<!-- unminified for debugging:
+<link rel="import" href="src/js/polymer/layout.html">
+<script src="src/js/polymer/polymer.concat.js"></script>
+-->
+
+
 <polymer-element name="filter-tmp"> <template>
 <link rel="stylesheet" href="/static/css/bootstrap_list.min.css">
 
@@ -431,6 +336,7 @@ html /deep/ [segment], html /deep/ segment {
 </template>
 </template>  </polymer-element>
 
+
 <polymer-element name="pic-item"> <template>
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
 <link rel="stylesheet" href="/static/css/selfpoly.css">
@@ -440,7 +346,7 @@ html /deep/ [segment], html /deep/ segment {
 }
 </style>
 <template if="{{isVisible}}"> <template if="{{isPic}}">
-<a class="thumbnail {{picClass}}"> <img class="memopic" src="{{picPath}}" alt="...">
+<a class="thumbnail {{picClass}}"> <img class="memopic" _src="{{picPath}}" alt="...">
 </a></template> <template if="{{!isPic}}"> <a class="thumbnail {{picClass}}">
 <p class="text-center tst">{{picMap['foreignWord']}}</p>
 </a> </template> </template> <template if="{{!isVisible}}"> <a class="thumbnail">
@@ -452,12 +358,14 @@ html /deep/ [segment], html /deep/ segment {
  -->
 </a> </template> 
 </template>  </polymer-element>
+
+
 <polymer-element name="memo-app" extends="filter-tmp">
 <template>
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
 <link rel="stylesheet" href="/static/css/selfpoly.css">
 <style>
-table{
+table{   
 margin:auto;}
 td{
 padding:5px;}
@@ -470,7 +378,7 @@ padding:5px;}
 	</td>
 </tr>
 </tbody></table>
-<!--  
+<!--   
 <template repeat='{{row in rows}}'>
 <div class="row">
 	<template repeat='{{pic in row}}'>
@@ -483,19 +391,6 @@ padding:5px;}
 </template> 
 -->
 </template>  </polymer-element>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -531,6 +426,7 @@ input#i{
 </template> <template if="{{!hid &amp;&amp; stem!=&quot;&quot;}}"> <span>{{stem+""+flx}}</span>
 </template> <template if="{{stem==&quot;&quot;}}"> <span class="empty"></span> </template> </template>  </polymer-element>
 
+
 <polymer-element name="desct-table"> <template>
 <!-- 
 <link rel="stylesheet" href='/static/css/bootstrap_popover.min.css'>
@@ -562,6 +458,7 @@ td {
   </tr>
 </tbody></table>
 </template>  </polymer-element>
+
 
 
 
@@ -598,7 +495,8 @@ transition:visibility .5s;
 </ul>
 </template>
 
-</template>  </polymer-element><polymer-element name="filter-panel"> <template>
+</template>  </polymer-element>
+<polymer-element name="filter-panel"> <template>
 <!-- 
 <link rel="stylesheet" href="/static/css/bootstrap_list.min.css">
  -->
@@ -612,6 +510,7 @@ transition:visibility .5s;
 	</template> </template>
 </div>
 </template>  </polymer-element>
+
 <polymer-element name="inpool-label">
 <!-- 
 <link rel="stylesheet" href="/static/css/bootstrap_buttons.min.css">
@@ -623,7 +522,9 @@ transition:visibility .5s;
 		<!--  <span class='badge'>
     {{nip}}</span>-->
 	</button>
-</label> </template> </polymer-element><polymer-element name="desc-app" extends="filter-tmp">
+</label> </template> </polymer-element>
+
+<polymer-element name="desc-app" extends="filter-tmp">
 <template>
 <link rel="stylesheet" href="/static/css/bootstrap.min.css">
 <!-- 
@@ -662,10 +563,6 @@ transition:visibility .5s;
 
 
 
-
-
-
-
 <polymer-element name="task-excs">
 <template>
 <style>
@@ -689,7 +586,12 @@ span{
 <button on-click="{{checkall}}">Check all</button>
 </template>
 
-</polymer-element><polymer-element name="excs-app" extends="filter-tmp">
+</polymer-element>
+
+
+
+
+<polymer-element name="excs-app" extends="filter-tmp">
 <template>
 <!-- 
 <shadow></shadow>
@@ -701,7 +603,6 @@ span{
 </template>
 
 </polymer-element>
-
 
 
 
@@ -764,7 +665,9 @@ span{
 </div>
 
 	</div>
-</template>  </polymer-element><polymer-element name="voc-app" extends="filter-tmp">
+</template>  </polymer-element>
+
+<polymer-element name="voc-app" extends="filter-tmp">
 <template> <!-- 
 <shadow></shadow>
 -->
@@ -782,13 +685,14 @@ span{
 </template>  </polymer-element>
 
 
-
-
 <polymer-element name="word-form"> <template>
 <!-- <link rel="stylesheet" href='/static/css/bootstrap.min.css'> -->
 <link rel="stylesheet" href="/static/css/selfpoly.css">
 <span id="word" class="{{isSelected0 ? &quot;selected&quot;:&quot;&quot;}}"><content></content></span>
-</template>  </polymer-element><polymer-element name="wordf-app" extends="filter-tmp"> <template>
+</template>  </polymer-element>
+
+
+<polymer-element name="wordf-app" extends="filter-tmp"> <template>
 <link rel="stylesheet" href="/static/css/bootstrap_navbar.min.css">
 <link rel="stylesheet" href="/static/css/bootstrap_popover.min.css">
 <link rel="stylesheet" href="/static/css/bootstrap_table.min.css">
@@ -829,6 +733,7 @@ word-form {
  <filter-panel filtermaplist="{{[textMap,posMap]}}" on-click="{{filter}}"></filter-panel>
 <div id="text"></div>
 </template>  </polymer-element>
+
 
 
 <polymer-element name="marknoun-app" extends="wordf-app">
@@ -880,7 +785,10 @@ word-form {
 	</p>
 	<shadow></shadow>
 </div>
-<!--  <img src='/static/wasd.png' height='100px'/>--> </template>  </polymer-element><polymer-element name="apps-panel"><template>
+<!--  <img src='/static/wasd.png' height='100px'/>--> </template>  </polymer-element>
+
+
+<polymer-element name="apps-panel"><template>
 <!-- 
 <link rel="stylesheet" href='./static/css/bootstrap_navs.min.css'>
  -->
@@ -898,16 +806,21 @@ cursor: pointer;}
   </ul>
 </nav>
 <div id="appfield"></div>
-</template>  </polymer-element>
+</template>  </polymer-element></div>
 <style>
 .container{
     width: 100%;
     max-width: 800px;}
 </style>
 <div class="container">
-  <apps-panel></apps-panel>
+<div class="js-warning alert alert-danger">You need to enable Javascript to view this site.</div>
+  <apps-panel>
+  </apps-panel>
   <div id="apps"></div>
 </div>
+<script type="text/javascript">
+document.querySelector(".js-warning").remove();
+</script>
 
 
 <script type="application/dart" src="selfpoly.html_bootstrap.dart"></script><script src="packages/browser/dart.js"></script></body></html>

@@ -17,7 +17,9 @@ class PolymerExpressions extends BindingDelegate with PolymerEventBindings {
   /// Ideally we would inherit from it, but mixins can't be applied to a type
   /// that forwards to a superclass with a constructor that has optional or
   /// named arguments.
-  final BindingDelegate _delegate;
+  final polymer_expressions.PolymerExpressions _delegate;
+
+  Map<String, Object> get globals => _delegate.globals;
 
   PolymerExpressions({Map<String, Object> globals})
       : _delegate = new polymer_expressions.PolymerExpressions(
@@ -35,6 +37,11 @@ class PolymerExpressions extends BindingDelegate with PolymerEventBindings {
 
   prepareInstancePositionChanged(Element template) =>
       _delegate.prepareInstancePositionChanged(template);
+
+  static final getExpression =
+      polymer_expressions.PolymerExpressions.getExpression;
+  static final getBinding = polymer_expressions.PolymerExpressions.getBinding;
+
 }
 
 /// A mixin for a [BindingDelegate] to add Polymer event support.
@@ -45,6 +52,12 @@ abstract class PolymerEventBindings {
     while (node.parentNode != null) {
       if (node is Polymer && node.eventController != null) {
         return node.eventController;
+      } else if (node is Element) {
+        // If it is a normal element, js polymer element, or dart wrapper to a
+        // js polymer element, then we try js interop.
+        var eventController =
+            new JsObject.fromBrowserObject(node)['eventController'];
+        if (eventController != null) return eventController;
       }
       node = node.parentNode;
     }
@@ -81,21 +94,28 @@ abstract class PolymerEventBindings {
     eventType = translated != null ? translated : eventType;
 
     return (model, node, oneTime) {
-      var handler = getEventHandler(null, node, path);
-      var sub = node.on[eventType].listen(handler);
+      var eventHandler =
+          Zone.current.bindUnaryCallback(getEventHandler(null, node, path));
+      // TODO(jakemac): Remove this indirection if/when JsFunction gets a
+      // simpler constructor that doesn't pass this, http://dartbug.com/20545.
+      var handler = new JsFunction.withThis((_, e) => eventHandler(e));
+      _PolymerGestures.callMethod(
+          'addEventListener', [node, eventType, handler]);
 
       if (oneTime) return null;
-      return new _EventBindable(sub, path);
+      return new _EventBindable(path, node, eventType, handler);
     };
   }
 }
 
 
 class _EventBindable extends Bindable {
-  StreamSubscription _sub;
   final String _path;
+  final Node _node;
+  final String _eventType;
+  final JsFunction _handler;
 
-  _EventBindable(this._sub, this._path);
+  _EventBindable(this._path, this._node, this._eventType, this._handler);
 
   // TODO(rafaelw): This is really pointless work. Aside from the cost
   // of these allocations, NodeBind is going to setAttribute back to its
@@ -106,10 +126,8 @@ class _EventBindable extends Bindable {
   open(callback) => value;
 
   void close() {
-    if (_sub != null) {
-      _sub.cancel();
-      _sub = null;
-    }
+    _PolymerGestures.callMethod(
+        'removeEventListener', [_node, _eventType, _handler]);
   }
 }
 

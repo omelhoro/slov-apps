@@ -29,6 +29,7 @@ class InitMethodAnnotation {
 ///   invoke the initialization method on it (top-level functions annotated with
 ///   [initMethod]).
 Zone initPolymer() {
+  _initializeLogging();
   if (loader.deployMode) {
     startPolymer(loader.initializers, loader.deployMode);
     return Zone.current;
@@ -67,6 +68,8 @@ void startPolymer(List<Function> initializers, [bool deployMode = true]) {
   for (var initializer in initializers) {
     initializer();
   }
+
+  _watchWaitingFor();
 }
 
 /// Configures [initPolymer] making it optimized for deployment to the internet.
@@ -86,19 +89,6 @@ void configureForDeployment(List<Function> initializers) {
 /// * if it has a Dart class, run PolymerDeclaration's register.
 /// * otherwise it is a JS prototype, run polymer-element's normal register.
 void _hookJsPolymer() {
-  // Note: platform.js is not used directly here, but we check that it is loaded
-  // to provide a good error message in Dartium if people forgot to include it.
-  // Otherwise, polymer.js below will fail with a hard to understand error
-  // message.
-  var platform = js.context['Platform'];
-  if (platform == null) {
-    throw new StateError('platform.js, dart_support.js must be loaded at'
-        ' the top of your application, before any other scripts or HTML'
-        ' imports that use polymer. Putting these two script tags at the top of'
-        ' your <head> element should address this issue:'
-        ' <script src="packages/web_components/platform.js"></script> and '
-        ' <script src="packages/web_components/dart_support.js"></script>.');
-  }
   var polymerJs = js.context['Polymer'];
   if (polymerJs == null) {
     throw new StateError('polymer.js must be loaded before polymer.dart, please'
@@ -146,3 +136,57 @@ JsObject _polymerElementProto = () {
   if (proto is Node) proto = new JsObject.fromBrowserObject(proto);
   return proto;
 }();
+
+// Add support for the polymer js style of enabling logging. The global logging
+// level is respected for specified loggers (see http://goo.gl/btfDe1). All
+// other loggers will be set to [Level.OFF]. Logs will also be printed to the
+// console automatically if any are supplied.
+void _initializeLogging() {
+  hierarchicalLoggingEnabled = true;
+  var logFlags = js.context['logFlags'];
+  if (logFlags == null) logFlags = {};
+  var loggers =
+      [_observeLog, _eventsLog, _unbindLog, _bindLog, _watchLog, _readyLog];
+  var polymerLogger = new Logger('polymer');
+
+  // If no loggers specified then disable globally and return.
+  if (!loggers.any((logger) => logFlags[logger.name] == true)) {
+    polymerLogger.level = Level.OFF;
+    return;
+  }
+
+  // Disable the loggers that were not specified.
+  loggers.where((logger) => logFlags[logger.name] != true)
+      .forEach((logger) {logger.level = Level.OFF;});
+
+  // Listen to the polymer logs and print them to the console.
+  polymerLogger.onRecord.listen((rec) {print(rec);});
+}
+
+/// Watches the waitingFor queue and if it fails to make progress then prints
+/// a message to the console.
+void _watchWaitingFor() {
+  int lastWaiting = Polymer.waitingFor.length;
+  int lastAlert;
+  new Timer.periodic(new Duration(seconds: 1), (Timer timer) {
+    var waiting = Polymer.waitingFor;
+    // Done, cancel timer.
+    if (waiting.isEmpty) {
+      timer.cancel();
+      return;
+    }
+    // Made progress, don't alert.
+    if (waiting.length != lastWaiting) {
+      lastWaiting = waiting.length;
+      return;
+    }
+    // Only alert once per waiting state.
+    if (lastAlert == lastWaiting) return;
+    lastAlert = lastWaiting;
+
+    print('No elements registered in a while, but still waiting on '
+        '${waiting.length} elements to be registered. Check that you have a '
+        'class with an @CustomTag annotation for each of the following tags: '
+        '${waiting.map((e) => "'${e.attributes['name']}'").join(', ')}');
+  });
+}

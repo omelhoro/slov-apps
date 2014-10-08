@@ -56,7 +56,7 @@ class JavaFile {
   static final int separatorChar = Platform.pathSeparator.codeUnitAt(0);
   String _path;
   JavaFile(String path) {
-    _path = pathos.absolute(path);
+    _path = path;
   }
   JavaFile.relative(JavaFile base, String child) {
     if (child.isEmpty) {
@@ -84,7 +84,11 @@ class JavaFile {
     if (parent == null) return null;
     return new JavaFile(parent);
   }
-  String getAbsolutePath() => pathos.absolute(_path);
+  String getAbsolutePath() {
+    String path = pathos.absolute(_path);
+    path = pathos.normalize(path);
+    return path;
+  }
   String getCanonicalPath() {
     try {
       return _newFile().resolveSymbolicLinksSync();
@@ -112,7 +116,10 @@ class JavaFile {
   bool isDirectory() {
     return _newDirectory().existsSync();
   }
-  Uri toURI() => pathos.toUri(_path);
+  Uri toURI() {
+    String path = getAbsolutePath();
+    return pathos.toUri(path);
+  }
   String readAsStringSync() => _newFile().readAsStringSync();
   int lastModified() {
     if (!_newFile().existsSync()) return 0;

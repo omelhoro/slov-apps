@@ -38,6 +38,10 @@ class BarbackOptions {
   /// Directory where to generate code, if any.
   final String outDir;
 
+  /// Disregard files that match these filters when copying in non
+  /// transformed files
+  List<String> fileFilter;
+
   /// Whether to print error messages using a json-format that tools, such as
   /// the Dart Editor, can process.
   final bool machineFormat;
@@ -54,7 +58,8 @@ class BarbackOptions {
   BarbackOptions(this.phases, this.outDir, {currentPackage, String packageHome,
       packageDirs, this.transformTests: false, this.machineFormat: false,
       this.followLinks: false,
-      this.packagePhases: const {}})
+      this.packagePhases: const {},
+      this.fileFilter: const []})
       : currentPackage = (currentPackage != null
           ? currentPackage : readCurrentPackageFromPubspec()),
         packageHome = packageHome,
@@ -122,6 +127,10 @@ Map<String, String> readPackageDirsFromPub(
   return map;
 }
 
+bool shouldSkip(List<String> filters, String path) {
+  return filters.any((filter) => path.contains(filter));
+}
+
 /// Return the relative path of each file under [subDir] in [package].
 Iterable<String> _listPackageDir(String package, String subDir,
     BarbackOptions options) {
@@ -131,6 +140,7 @@ Iterable<String> _listPackageDir(String package, String subDir,
   if (!dir.existsSync()) return const [];
   return dir.listSync(recursive: true, followLinks: options.followLinks)
       .where((f) => f is File)
+      .where((f) => !shouldSkip(options.fileFilter, f.path))
       .map((f) => path.relative(f.path, from: packageDir));
 }
 
@@ -287,7 +297,6 @@ Future _emitPackagesDir(BarbackOptions options) {
 
   // Copy all the files we didn't process
   var dirs = options.packageDirs;
-
   return Future.forEach(dirs.keys, (package) {
     return Future.forEach(_listPackageDir(package, 'lib', options), (relpath) {
       var inpath = path.join(dirs[package], relpath);
@@ -337,7 +346,7 @@ String _jsonFormatter(LogEntry entry) {
       ? [{'method': kind, 'params': {'message': entry.message}}]
       : [{'method': kind,
           'params': {
-            'file': span.sourceUrl,
+            'file': span.sourceUrl.toString(),
             'message': entry.message,
             'line': span.start.line + 1,
             'charStart': span.start.offset,
@@ -358,9 +367,8 @@ String _consoleFormatter(LogEntry entry) {
   if (entry.span == null) {
     output.write(entry.message);
   } else {
-    output.write(entry.span.getLocationMessage(entry.message,
-          useColors: useColors,
-          color: levelColor));
+    output.write(entry.span.message(entry.message,
+          color: useColors ? levelColor : null));
   }
   return output.toString();
 }

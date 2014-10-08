@@ -41,6 +41,9 @@ class PolymerDeclaration {
 
   Map<PropertyPath, List<Symbol>> _observe;
 
+  /// Name and expression for each computed property.
+  Map<Symbol, String> _computed = {};
+
   Map<String, Object> _instanceAttributes;
 
   /// A set of properties that should be automatically reflected to attributes.
@@ -110,6 +113,7 @@ class PolymerDeclaration {
     // desugar compound observer syntax, e.g. @ObserveProperty('a b c')
     explodeObservers();
 
+    createPropertyAccessors();
     // install mdv delegate on template
     installBindingDelegate(fetchTemplate());
     // install external stylesheets as if they are inline
@@ -155,8 +159,8 @@ class PolymerDeclaration {
 
   // from declaration/path.js
   void resolveElementPaths(Node node) {
-    if (_Platform == null) return;
-    _Platform['urlResolver'].callMethod('resolveDom', [node]);
+    if (_Polymer == null) return;
+    _Polymer['urlResolver'].callMethod('resolveDom', [node]);
   }
 
   // Dart note: renamed from "addResolvePathApi".
@@ -201,7 +205,7 @@ class PolymerDeclaration {
 
     _getPublishedProperties(type);
 
-    // merge names from 'attributes' attribute
+    // merge names from 'attributes' attribute into the '_publish' object
     var attrs = element.attributes['attributes'];
     if (attrs != null) {
       // names='a b c' or names='a,b,c'
@@ -210,17 +214,21 @@ class PolymerDeclaration {
         // remove excess ws
         attr = attr.trim();
 
-        // do not override explicit entries
+        // if the user hasn't specified a value, we want to use the
+        // default, unless a superclass has already chosen one
         if (attr == '') continue;
 
+        var decl, path;
         var property = smoke.nameToSymbol(attr);
-        var path = new PropertyPath([property]);
-        if (_publish != null && _publish.containsKey(path)) {
-          continue;
+        if (property != null) {
+          path = new PropertyPath([property]);
+          if (_publish != null && _publish.containsKey(path)) {
+            continue;
+          }
+          decl = smoke.getDeclaration(type, property);
         }
 
-        var decl = smoke.getDeclaration(type, property);
-        if (decl == null || decl.isMethod || decl.isFinal) {
+        if (property == null || decl == null || decl.isMethod || decl.isFinal) {
           window.console.warn('property for attribute $attr of polymer-element '
               'name=$name not found.');
           continue;
@@ -448,12 +456,38 @@ class PolymerDeclaration {
     });
     return map;
   }
+
+  void createPropertyAccessors() {
+    // Dart note: since we don't have a prototype in Dart, most of the work of
+    // createPolymerAccessors is done lazily on the first access of properties.
+    // Here we just extract the information from annotations and store it as
+    // properties on the declaration.
+
+    // Dart Note: The js side makes computed properties read only, and does
+    // special logic right here for them. For us they are automatically read
+    // only unless you define a setter for them, so we left that out.
+    var options = const smoke.QueryOptions(includeInherited: true,
+        includeUpTo: HtmlElement, withAnnotations: const [ComputedProperty]);
+    var existing = {};
+    for (var decl in smoke.query(type, options)) {
+      var meta = decl.annotations.firstWhere((e) => e is ComputedProperty);
+      var name = decl.name;
+      var prev = existing[name];
+      // The definition of a child class takes priority.
+      if (prev == null || smoke.isSubclassOf(decl.type, prev.type)) {
+        _computed[name] = meta.expression;
+        existing[name] = decl;
+      }
+    }
+  }
 }
 
 /// maps tag names to prototypes
 final Map _typesByName = new Map<String, Type>();
 
 Type _getRegisteredType(String name) => _typesByName[name];
+
+/// Dart Note: instanceOfType not implemented for dart, its not needed.
 
 /// track document.register'ed tag names and their declarations
 final Map _declarations = new Map<String, PolymerDeclaration>();
@@ -464,7 +498,7 @@ PolymerDeclaration _getDeclaration(String name) => _declarations[name];
 /// Using Polymer's platform/src/ShadowCSS.js passing the style tag's content.
 void _shimShadowDomStyling(DocumentFragment template, String name,
     String extendee) {
-  if (template == null || _ShadowCss == null) return;
+  if (_ShadowCss == null ||!_hasShadowDomPolyfill) return;
 
   _ShadowCss.callMethod('shimStyling', [template, name, extendee]);
 }
@@ -525,3 +559,4 @@ bool _isObserverMethod(Symbol symbol) {
 final _ATTRIBUTES_REGEX = new RegExp(r'\s|,');
 
 final JsObject _Platform = js.context['Platform'];
+final JsObject _Polymer = js.context['Polymer'];

@@ -713,3 +713,73 @@ build.dart --machine --changed=web/memolib/static/css/bootstrap-theme.css --chan
 
 build.dart finished [308 ms]
 
+---
+build.dart --machine --removed=web/memolib/static/css/bootstrap-theme.css --removed=web/memolib/static/css/boot...
+
+build.dart finished [315 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [564 ms]
+
+---
+build.dart --machine --removed=web/static/data/syl_subset.csv
+
+build.dart finished [516 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [42 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [87 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [59 ms]
+
+---
+build.dart --machine --changed=web/selfpoly.html
+
+build.dart finished [66 ms]
+
+---
+build.dart --machine --changed=web/selfpoly.html
+
+build.dart finished [53 ms]
+
+---
+build.dart --machine --changed=web/selfpoly.html
+
+build.dart finished [54 ms]
+
+---
+build.dart --machine --changed=web/selfpoly.html
+
+build.dart finished [47 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [99 ms]
+
+---
+build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build/web/appslib/apps_panel.dart._b...
+
+build.dart finished [63 ms]
+
+---
+build.dart --machine --changed=web/appslib/apps_panel.dart
+
+build.dart finished [45 ms]
+
+---
+build.dart --machine --changed=build/web/appslib/apps_panel.dart --changed=build/web/appslib/apps_panel.dart._b...
+
+build.dart finished [58 ms]
+

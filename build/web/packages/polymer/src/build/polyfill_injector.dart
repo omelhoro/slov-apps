@@ -11,6 +11,7 @@ import 'package:barback/barback.dart';
 import 'package:html5lib/dom.dart' show
     Document, DocumentFragment, Element, Node;
 import 'package:html5lib/parser.dart' show parseFragment;
+import 'package:code_transformers/messages/build_logger.dart';
 import 'common.dart';
 
 /// Ensures that any scripts and polyfills needed to run a polymer application
@@ -32,8 +33,12 @@ class PolyfillInjector extends Transformer with PolymerTransformer {
   }
 
   Future apply(Transform transform) {
-    return readPrimaryAsHtml(transform).then((document) {
-      bool webComponentsFound = false;
+    var logger = new BuildLogger(transform,
+        convertErrorsToWarnings: !options.releaseMode,
+        detailsUri: 'http://goo.gl/5HPeuP');
+    return readPrimaryAsHtml(transform, logger).then((document) {
+      bool dartSupportFound = false;
+      bool platformJsFound = false;
       Element dartJs;
       final dartScripts = <Element>[];
 
@@ -41,8 +46,10 @@ class PolyfillInjector extends Transformer with PolymerTransformer {
         var src = tag.attributes['src'];
         if (src != null) {
           var last = src.split('/').last;
-          if (_webComponentsJS.hasMatch(last)) {
-            webComponentsFound = true;
+          if (_platformJS.hasMatch(last)) {
+            platformJsFound = true;
+          } else if (_dartSupportJS.hasMatch(last)) {
+            dartSupportFound = true;
           } else if (last == 'dart.js') {
             dartJs = tag;
           }
@@ -69,15 +76,12 @@ class PolyfillInjector extends Transformer with PolymerTransformer {
       // fixing our tests: even if content_shell supports Dart VM, we'll still
       // test the compiled JS code.
       if (options.directlyIncludeJS) {
-        // If using CSP add the "precompiled" extension
-        final csp = options.contentSecurityPolicy ? '.precompiled' : '';
-
         // Replace all other Dart script tags with JavaScript versions.
         for (var script in dartScripts) {
           final src = script.attributes['src'];
           if (src.endsWith('.dart')) {
             script.attributes.remove('type');
-            script.attributes['src'] = '$src$csp.js';
+            script.attributes['src'] = '$src.js';
             // TODO(sigmund): we shouldn't need 'async' here. Remove this
             // workaround for dartbug.com/19653.
             script.attributes['async'] = '';
@@ -94,10 +98,9 @@ class PolyfillInjector extends Transformer with PolymerTransformer {
       }
 
       var suffix = options.releaseMode ? '.js' : '.concat.js';
-      if (!webComponentsFound) {
-        _addScriptFirst('web_components/dart_support.js');
-
-        // platform.js should come before all other scripts.
+      if (!dartSupportFound) _addScriptFirst('web_components/dart_support.js');
+      // platform.js should come before all other scripts.
+      if (!platformJsFound && options.injectPlatformJs) {
         _addScriptFirst('web_components/platform$suffix');
       }
 
@@ -107,5 +110,5 @@ class PolyfillInjector extends Transformer with PolymerTransformer {
   }
 }
 
-final _webComponentsJS = new RegExp(r'platform.*\.js',
-    caseSensitive: false);
+final _platformJS = new RegExp(r'platform.*\.js', caseSensitive: false);
+final _dartSupportJS = new RegExp(r'dart_support.js', caseSensitive: false);

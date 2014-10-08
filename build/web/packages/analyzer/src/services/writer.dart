@@ -4,7 +4,7 @@
 
 library source_writer;
 
-
+import 'dart:math' as math;
 
 class Line {
 
@@ -84,63 +84,107 @@ class SimpleLineBreaker extends LinePrinter {
     var buf = new StringBuffer();
     var chunks = breakLine(line);
     for (var i = 0; i < chunks.length; ++i) {
+      var chunk = chunks[i];
       if (i > 0) {
-        buf.write(indent(chunks[i], line.indentLevel));
+        buf.write(indent(chunk, chunk.indent));
       } else {
-        buf.write(chunks[i]);
+        buf.write(chunk);
       }
     }
     return buf.toString();
   }
 
-  String indent(Chunk chunk, int level) =>
-      '\n' + indenter(level + 2) + chunk.toString();
+  String indent(Chunk chunk, int level) {
+    return '\n' + indenter(level) + chunk.toString();
+  }
 
   List<Chunk> breakLine(Line line) {
-
-    var tokens = preprocess(line.tokens);
-
-    var chunks = <Chunk>[];
-
-    // The current unbroken line
-    var current = new Chunk(maxLength: maxLength);
-
-    // A tentative working chunk that will either start a new line or get
-    // absorbed into 'current'
-    var work = new Chunk(maxLength: maxLength);
-
-    tokens.forEach((tok) {
-
-      if (goodStart(tok, work)) {
-        if (current.fits(work)) {
-          current.add(work);
-        } else {
-          if (current.length > 0) {
-            chunks.add(current);
+    List<LineToken> tokens = preprocess(line.tokens);
+    List<Chunk> chunks = <Chunk>[new Chunk(line.indentLevel, maxLength, tokens)];
+    // try SINGLE_SPACE_WEIGHT
+    {
+      Chunk chunk = chunks[0];
+      if (chunk.length > maxLength) {
+        for (int i = 0; i < tokens.length; i++) {
+          LineToken token = tokens[i];
+          if (token is SpaceToken && token.breakWeight == SINGLE_SPACE_WEIGHT) {
+            var beforeChunk = chunk.subChunk(chunk.indent, 0, i);
+            var restChunk = chunk.subChunk(chunk.indent + 2, i + 1);
+            // check if 'init' in 'var v = init;' fits a line
+            if (restChunk.length < maxLength) {
+              return [beforeChunk, restChunk];
+            }
+            // check if 'var v = method(' in 'var v = method(args)' does not fit
+            int weight = chunk.findMinSpaceWeight();
+            if (chunk.getLengthToSpaceWithWeight(weight) > maxLength) {
+              chunks = [beforeChunk, restChunk];
+            }
+            // done anyway
+            break;
           }
-          current = work;
-        }
-        work = new Chunk(start: tok, maxLength: maxLength - current.length);
-      } else {
-        if (work.fits(tok)) {
-          work.add(tok);
-        } else {
-          if (!isAllWhitespace(work) || isLineStart(current)) {
-            current.add(work);
-          } else if (current.length > 0) {
-            chunks.add(current);
-            current = new Chunk(maxLength: maxLength);
-          }
-          work = new Chunk(maxLength: maxLength);
-          work.add(tok);
         }
       }
-
-    });
-
-    current.add(work);
-    if (current.length > 0) {
-      chunks.add(current);
+    }
+    // other spaces
+    while (true) {
+      List<Chunk> newChunks = <Chunk>[];
+      bool hasChanges = false;
+      for (Chunk chunk in chunks) {
+        tokens = chunk.tokens;
+        if (chunk.length > maxLength) {
+          if (chunk.hasAnySpace()) {
+            int weight = chunk.findMinSpaceWeight();
+            int newIndent = chunk.indent;
+            if (weight == DEFAULT_SPACE_WEIGHT) {
+              int start = 0;
+              int length = 0;
+              for (int i = 0; i < tokens.length; i++) {
+                LineToken token = tokens[i];
+                if (token is SpaceToken && token.breakWeight == weight &&
+                    i < tokens.length - 1) {
+                  LineToken nextToken = tokens[i + 1];
+                  if (length + token.length + nextToken.length > maxLength) {
+                    newChunks.add(chunk.subChunk(newIndent, start, i));
+                    newIndent = chunk.indent + 2;
+                    start = i + 1;
+                    length = 0;
+                    continue;
+                  }
+                }
+                length += token.length;
+              }
+              if (start < tokens.length) {
+                newChunks.add(chunk.subChunk(newIndent, start));
+              }
+            } else {
+              List<LineToken> part = [];
+              int start = 0;
+              for (int i = 0; i < tokens.length; i++) {
+                LineToken token = tokens[i];
+                if (token is SpaceToken && token.breakWeight == weight) {
+                  newChunks.add(chunk.subChunk(newIndent, start, i));
+                  newIndent = chunk.indent + 2;
+                  start = i + 1;
+                }
+              }
+              if (start < tokens.length) {
+                newChunks.add(chunk.subChunk(newIndent, start));
+              }
+            }
+          } else {
+            newChunks.add(chunk);
+          }
+        } else {
+          newChunks.add(chunk);
+        }
+        if (newChunks.length > chunks.length) {
+          hasChanges = true;
+        }
+      }
+      if (!hasChanges) {
+        break;
+      }
+      chunks = newChunks;
     }
     return chunks;
   }
@@ -150,7 +194,7 @@ class SimpleLineBreaker extends LinePrinter {
     var tokens = <LineToken>[];
     var curr;
 
-    tok.forEach((token){
+    tok.forEach((token) {
       if (token is! SpaceToken) {
         if (curr == null) {
           curr = token;
@@ -182,15 +226,6 @@ class SimpleLineBreaker extends LinePrinter {
 
   static LineToken merge(LineToken first, LineToken second) =>
       new LineToken(first.value + second.value);
-
-  bool isAllWhitespace(Chunk chunk) => isWhitespace(chunk.buffer.toString());
-
-  bool isLineStart(chunk) => chunk.length == 0 && chunk.start == LINE_START;
-
-  /// Test whether this token is a good start for a new working chunk
-  bool goodStart(LineToken tok, Chunk workingChunk) =>
-      tok is SpaceToken && tok.breakWeight >= workingChunk.start.breakWeight;
-
 }
 
 /// Test if this [string] contains only whitespace characters
@@ -200,8 +235,10 @@ bool isWhitespace(String string) => string.codeUnits.every(
 /// Special token indicating a line start
 final LINE_START = new SpaceToken(0);
 
-const DEFAULT_SPACE_WEIGHT = 0;
-const UNBREAKABLE_SPACE_WEIGHT = -1;
+const DEFAULT_SPACE_WEIGHT = UNBREAKABLE_SPACE_WEIGHT - 1;
+/// The weight of a space after '=' in variable declaration or assignment
+const SINGLE_SPACE_WEIGHT = UNBREAKABLE_SPACE_WEIGHT - 2;
+const UNBREAKABLE_SPACE_WEIGHT = 100000000;
 
 /// Simple non-breaking printer
 class SimpleLinePrinter extends LinePrinter {
@@ -220,38 +257,68 @@ class SimpleLinePrinter extends LinePrinter {
 /// Describes a piece of text in a [Line].
 abstract class LineText {
   int get length;
-  void addTo(Chunk chunk);
 }
 
 
 /// A working piece of text used in calculating line breaks
-class Chunk implements LineText {
+class Chunk {
+  final int indent;
+  final int maxLength;
+  final List<LineToken> tokens = <LineToken>[];
 
-  final StringBuffer buffer = new StringBuffer();
+  Chunk(this.indent, this.maxLength, [List<LineToken> tokens]) {
+    this.tokens.addAll(tokens);
+  }
 
-  int maxLength;
-  SpaceToken start;
+  int get length {
+    return tokens.fold(0, (len, token) => len + token.length);
+  }
 
-  Chunk({this.start, this.maxLength}) {
-    if (start == null) {
-      start = LINE_START;
+  int getLengthToSpaceWithWeight(int weight) {
+    int length = 0;
+    for (LineToken token in tokens) {
+      if (token is SpaceToken && token.breakWeight == weight) {
+        break;
+      }
+      length += token.length;
     }
+    return length;
   }
 
-  bool fits(LineText text) => length + text.length <= maxLength;
-
-  int get length => start.value.length + buffer.length;
-
-  void add(LineText text) {
-    text.addTo(this);
+  bool fits(LineToken a, LineToken b) {
+    return length + a.length + a.length <= maxLength;
   }
 
-  String toString() => buffer.toString();
-
-  void addTo(Chunk chunk) {
-    chunk.buffer.write(start.value);
-    chunk.buffer.write(buffer.toString());
+  void add(LineToken token) {
+    tokens.add(token);
   }
+
+  bool hasInitializerSpace() {
+    return tokens.any((token) {
+      return token is SpaceToken && token.breakWeight == SINGLE_SPACE_WEIGHT;
+    });
+  }
+
+  bool hasAnySpace() {
+    return tokens.any((token) => token is SpaceToken);
+  }
+
+  int findMinSpaceWeight() {
+    int minWeight = UNBREAKABLE_SPACE_WEIGHT;
+    for (var token in tokens) {
+      if (token is SpaceToken) {
+        minWeight = math.min(minWeight, token.breakWeight);
+      }
+    }
+    return minWeight;
+  }
+
+  Chunk subChunk(int indentLevel, int start, [int end]) {
+    List<LineToken> subTokens = tokens.sublist(start, end);
+    return new Chunk(indentLevel, maxLength, subTokens);
+  }
+
+  String toString() => tokens.join();
 }
 
 
@@ -264,10 +331,6 @@ class LineToken implements LineText {
   String toString() => value;
 
   int get length => lengthLessNewlines(value);
-
-  void addTo(Chunk chunk) {
-    chunk.buffer.write(value);
-  }
 
   int lengthLessNewlines(String str) =>
       str.endsWith('\n') ? str.length - 1 : str.length;

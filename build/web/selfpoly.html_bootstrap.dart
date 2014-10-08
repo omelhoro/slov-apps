@@ -3,23 +3,41 @@ library app_bootstrap;
 import 'package:polymer/polymer.dart';
 
 import 'lib/filter.dart' as i0;
+import 'package:polymer/src/build/log_injector.dart';
 import 'memolib/pic_item.dart' as i1;
+import 'package:polymer/src/build/log_injector.dart';
 import 'memolib/memo_app.dart' as i2;
+import 'package:polymer/src/build/log_injector.dart';
 import 'flexlib/flex_inp.dart' as i3;
+import 'package:polymer/src/build/log_injector.dart';
 import 'flexlib/desct_table.dart' as i4;
+import 'package:polymer/src/build/log_injector.dart';
 import 'lib/filter-item.dart' as i5;
+import 'package:polymer/src/build/log_injector.dart';
 import 'lib/filter-panel.dart' as i6;
+import 'package:polymer/src/build/log_injector.dart';
 import 'lib/inpool_label.dart' as i7;
+import 'package:polymer/src/build/log_injector.dart';
 import 'flexlib/desc_app.dart' as i8;
+import 'package:polymer/src/build/log_injector.dart';
 import 'excslib/excs_task.dart' as i9;
+import 'package:polymer/src/build/log_injector.dart';
 import 'excslib/excs_app.dart' as i10;
+import 'package:polymer/src/build/log_injector.dart';
 import 'voclib/voc_task.dart' as i11;
+import 'package:polymer/src/build/log_injector.dart';
 import 'voclib/voc_app.dart' as i12;
+import 'package:polymer/src/build/log_injector.dart';
 import 'ctextlib/word_form.dart' as i13;
+import 'package:polymer/src/build/log_injector.dart';
 import 'ctextlib/wordf_app.dart' as i14;
+import 'package:polymer/src/build/log_injector.dart';
 import 'ctextlib/marknoun_app.dart' as i15;
+import 'package:polymer/src/build/log_injector.dart';
 import 'appslib/apps_panel.dart' as i16;
+import 'package:polymer/src/build/log_injector.dart';
 import 'selfpoly.html.0.dart' as i17;
+import 'package:polymer/src/build/log_injector.dart';
 import 'package:smoke/smoke.dart' show Declaration, PROPERTY, METHOD;
 import 'package:smoke/static.dart' show useGeneratedCode, StaticConfiguration;
 import 'lib/filter.dart' as smoke_0;
@@ -199,7 +217,7 @@ void main() {
           #lemma: const Declaration(#lemma, String, kind: PROPERTY, annotations: const [smoke_2.reflectable, smoke_1.published]),
           #tonal: const Declaration(#tonal, String, kind: PROPERTY, annotations: const [smoke_2.reflectable, smoke_1.published]),
         },
-        smoke_16.WordfApp: const {},
+        smoke_16.WordfApp: {},
         smoke_12.ExcsApp: {
           #curTask: const Declaration(#curTask, Map, kind: PROPERTY, annotations: const [smoke_2.reflectable, smoke_2.observable]),
           #nInPool: const Declaration(#nInPool, int, kind: PROPERTY, annotations: const [smoke_2.reflectable, smoke_2.observable]),
@@ -334,6 +352,7 @@ void main() {
         #wordData: r'wordData',
         #wordMap: r'wordMap',
       }));
+  new LogInjector().injectLogsFromUrl('selfpoly.html._buildLogs');
   configureForDeployment([
       () => Polymer.register('filter-tmp', i0.Filter),
       () => Polymer.register('pic-item', i1.PicItem),
