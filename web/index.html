@@ -34,8 +34,13 @@
     max-width: 800px;}
 </style>
 <div class='container'>
-  <apps-panel></apps-panel>
+<div class='js-warning alert alert-danger'>You need to enable Javascript to view this site.</div>
+  <apps-panel>
+  </apps-panel>
   <div id='apps'></div>
 </div>
+<script type="text/javascript" >
+document.querySelector(".js-warning").remove();
+</script>
 </body>
 </html>
