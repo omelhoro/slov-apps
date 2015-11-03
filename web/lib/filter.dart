@@ -4,7 +4,7 @@ import '../globals.dart';
 import 'dart:html';
 
 @CustomTag("filter-tmp")
-abstract class Filter extends PolymerElement {
+class Filter extends PolymerElement {
   static String locale="en";
   Map<String,Map<String,dynamic>> lesCats=getLang(locale, LESLABELS) ;
   Map<String,Map<String,dynamic>> posMap=getLang(locale, POSLABELS) ;
