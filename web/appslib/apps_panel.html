@@ -13,11 +13,15 @@
 <link rel="stylesheet" href='/static/css/bootstrap.min.css'>
 <link rel="stylesheet" href='/static/css/selfpoly.css'>
 <style>
+  .navbar {
+    margin-bottom: 0px;
+  }
+
 .item{
 cursor: pointer;}
 </style>
-<nav>
-  <ul class="nav nav-pills">
+<nav class="navbar navbar-default">
+  <ul class="navbar-nav nav">
     <template repeat="{{app in apps.keys}}">
     <li class='item {{curApp==app ? "active": ""}}' on-click='{{renderApp}}'
       data-apptagname='{{app}}'><a>{{apps[app]}}</a></li>
