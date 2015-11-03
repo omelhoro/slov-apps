@@ -1,4 +1,4 @@
 .buildlog
 ./packages/
 ./web/packages/
-./build/
+build/
