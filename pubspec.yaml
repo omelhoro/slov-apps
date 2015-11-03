@@ -5,6 +5,8 @@ dependencies:
   browser: any
   dquery: any
   polymer: '>=0.13.0'
+  shelf: any
+  shelf_static: any
 transformers:
 - polymer:
-    entry_points: web/selfpoly.html
+    entry_points: web/index.html

@@ -9,6 +9,10 @@ packages:
     description: args
     source: hosted
     version: "0.12.0+2"
+  async:
+    description: async
+    source: hosted
+    version: "1.4.0"
   barback:
     description: barback
     source: hosted
@@ -21,6 +25,10 @@ packages:
     description: browser
     source: hosted
     version: "0.10.0+2"
+  charcode:
+    description: charcode
+    source: hosted
+    version: "1.1.0"
   code_transformers:
     description: code_transformers
     source: hosted
@@ -29,6 +37,14 @@ packages:
     description: collection
     source: hosted
     version: "1.0.0"
+  convert:
+    description: convert
+    source: hosted
+    version: "1.0.1"
+  crypto:
+    description: crypto
+    source: hosted
+    version: "0.9.1"
   csslib:
     description: csslib
     source: hosted
@@ -41,6 +57,10 @@ packages:
     description: html5lib
     source: hosted
     version: "0.12.0"
+  http_parser:
+    description: http_parser
+    source: hosted
+    version: "1.1.0"
   intl:
     description: intl
     source: hosted
@@ -49,6 +69,10 @@ packages:
     description: logging
     source: hosted
     version: "0.9.2"
+  mime:
+    description: mime
+    source: hosted
+    version: "0.9.3"
   observe:
     description: observe
     source: hosted
@@ -69,6 +93,14 @@ packages:
     description: pool
     source: hosted
     version: "1.0.1"
+  shelf:
+    description: shelf
+    source: hosted
+    version: "0.6.4+1"
+  shelf_static:
+    description: shelf_static
+    source: hosted
+    version: "0.2.3+1"
   smoke:
     description: smoke
     source: hosted
@@ -93,6 +125,10 @@ packages:
     description: template_binding
     source: hosted
     version: "0.12.1"
+  typed_data:
+    description: typed_data
+    source: hosted
+    version: "1.1.1"
   utf:
     description: utf
     source: hosted
