@@ -1,6 +1,6 @@
 # slov-apps
 This app should enhance learning Slovenian.
-You can try it on: http://ifisher.pythonanywhere.com/projects/slovdesc
+You can try it on: https://langapps.fischerops.com
 
 Some material is taken from http://www.slowenisch.uni-hamburg.de/
 ## Features
