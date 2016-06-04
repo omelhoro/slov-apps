@@ -4,8 +4,8 @@ services:
     image: omelhoro1/slovene-lessons
     container_name: slovene-lessons
     restart: unless-stopped
-    ports:
-      - "5000:5000"
+    # ports:
+    #   - "5000:5000"
     environment:
       - VIRTUAL_HOST=slovene-lessons.igor-fischer.rocks
       - LETSENCRYPT_HOST=slovene-lessons.igor-fischer.rocks
