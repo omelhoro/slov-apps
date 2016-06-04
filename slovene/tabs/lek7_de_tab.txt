@@ -1,0 +1,76 @@
+tab--1
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">SINGULAR</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">DUAL</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">PLURAL</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">1. oseba</span><br><span class="dbst_tabtexts">1. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">mene / me</span><br><span class="dbst_tabtexts">mich</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">naju</span><br><span class="dbst_tabtexts">uns (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">nas</span><br><span class="dbst_tabtexts">uns</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">2. oseba</span><br><span class="dbst_tabtexts">2. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">tebe / te</span><br><span class="dbst_tabtexts">dich</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">vaju</span><br><span class="dbst_tabtexts">euch (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">vas</span><br><span class="dbst_tabtexts">euch / Sie</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">3. oseba</span><br><span class="dbst_tabtexts">3. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">njega / ga (ihn)<br>njo / jo (sie)<br>ono / ga (es)</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">njiju / ju</span><br><span class="dbst_tabtexts">sie (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">njih / jih</span><br><span class="dbst_tabtexts">sie</span></td>
+						</tr><tr>
+						</tr></tbody>
+tab--2
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">SINGULAR</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">DUAL</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">PLURAL</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">1. oseba</span><br><span class="dbst_tabtexts">1. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">mene / me</span><br><span class="dbst_tabtexts">mich</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">naju</span><br><span class="dbst_tabtexts">uns (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">nas</span><br><span class="dbst_tabtexts">uns</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">2. oseba</span><br><span class="dbst_tabtexts">2. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">tebe / te</span><br><span class="dbst_tabtexts">dich</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">vaju</span><br><span class="dbst_tabtexts">euch (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">vas</span><br><span class="dbst_tabtexts">euch / Sie</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">3. oseba</span><br><span class="dbst_tabtexts">3. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">njega / ga (ihn)<br>njo / jo (sie)<br>ono / ga (es)</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">njiju / ju</span><br><span class="dbst_tabtexts">sie (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">njih / jih</span><br><span class="dbst_tabtexts">sie</span></td>
+						</tr><tr>
+						</tr></tbody>

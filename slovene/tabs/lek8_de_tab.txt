@@ -1,0 +1,153 @@
+tab--1
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">Singular</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">Dual</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">Plural</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">MOŠKI SPOL</span><br><span class="dbst_tabtexts">Maskulinum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">-u</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">ŽENSKI SPOL</span><br><span class="dbst_tabtexts">Femininum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">-i</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ah<br>-eh</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ah<br> -eh</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">SREDNJI SPOL</span><br><span class="dbst_tabtexts">Neutrum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">-u</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+						</tr></tbody>
+					
+tab--2
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">Singular</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">Dual</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">Maskulinum</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">MOŠKI SPOL</span><br><span class="dbst_tabtexts">Maskulinum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">pri študent-u</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri študent-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri študent-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">ŽENSKI SPOL</span><br><span class="dbst_tabtexts">Femininum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">na univerz-i<br>v noč-i</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">na univerz-ah<br>v noč-eh</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">na univerz-ah<br>v noč-eh</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">SREDNJI SPOL</span><br><span class="dbst_tabtexts">Neutrum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">v mest-u</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">v mest-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">v mest-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+						</tr></tbody>
+tab--3
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">Singular</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">Dual</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">Plural</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">MOŠKI SPOL</span><br><span class="dbst_tabtexts">Maskulinum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">-em</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">ŽENSKI SPOL</span><br><span class="dbst_tabtexts">Femininum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">-i</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">SREDNJI SPOL</span><br><span class="dbst_tabtexts">Neutrum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">-em</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+						</tr></tbody>
+tab--4
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">Singular</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">Dual</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">Plural</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">MOŠKI SPOL</span><br><span class="dbst_tabtexts">Maskulinum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">lep-em</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">lep-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">lep-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">ŽENSKI SPOL</span><br><span class="dbst_tabtexts">Femininum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">lep-i</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">lep-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">lep-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">SREDNJI SPOL</span><br><span class="dbst_tabtexts">Neutrum</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">lep-em</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">lep-ih</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">lep-ih</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+						</tr></tbody>

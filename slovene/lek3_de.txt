@@ -1,0 +1,148 @@
+s_intro
+Topic:0
+In der dritten Lektion werden die Possessivpronomina und der Numerus des Substantivs behandelt. Als neue Wortart lernen Sie das Adjektiv kennen. Sie erhalten außerdem einen ersten Eindruck von Sloweniens Hauptstadt Ljubljana.
+
+s_text
+Topic:Môja sôba
+To je môja sôba. Je velíka in prostórna. Na lévi je béla modêrna omára, na désni sta stàr stòl in nôva míza. Míza je rjáva. Stòl je rumèn. Zgôraj so políce. Políce so tánke. Tam so módro ôkno, zelêne róže in debéle knjíge. Knjíge so stáre. Ôkno je velíko. Môja sôba je lépa. Kákšna pa je tvôja sôba?
+
+Topic:Ljubljána
+	Petra: 	Tó je Ljubljána!
+	Ana: 	Jòj, kakó lépo mésto!
+	Petra: 	Ja, in ní velíko. Tó sta Kongrésni tŕg in Univêrza.
+	Ana: 	Káj pa je tó?
+	Petra: 	Tó je bánka. Ljubljánska bánka.
+	Ana: 	O, modêrna je. Káj pa je tá velíka síva stávba?
+	Petra: 	Filozófska fakultéta. Tó je môja fakultéta.
+	Ana: 	Je tó muzèj?
+	Petra: 	Ne, tó je galeríja. Národna galeríja. In tàm zádaj je Modêrna galeríja.
+	Ana: 	Káj pa je tó?
+	Petra: 	Tó je réka Ljubljánica.
+	Ana: 	Jòj, kakó lépe híše!
+	Petra: 	Tó je stára Ljubljána; tàm sta méstna híša in Stári tŕg, na désni pa je Górnji tŕg. Prázen je.
+	Ana: 	Kakó tó?
+	Petra: 	Tàm so samó stanovánja, êna kitájska restavrácija in dvá bára. 
+	
+s_grammar
+Topic:Substantiv Numerus
+Man unterscheidet zwischen Singular (ednina), Dual (dvojina) und Plural (množina). Dual und Plural werden mit Hilfe von Endungen gebildet. Singular wird gebraucht, wenn es sich um genau eine Person oder einen Gegenstand handelt, der Dual steht bei zwei und Plural bei drei oder mehr Personen bzw. Gegenständen. Dabei ist zu beachten, dass der Dual nur für zufällige Paare (z.B. zwei Hefte liegen auf dem Tisch), nicht aber für natürliche Paare (z.B. paarige Körperteile, Zwillinge, Eltern) verwendet wird. Bei natürlichen Paaren steht der Dual nur dann, wenn betont werden soll, dass es sich unerwarteter Weise um beide Teile handelt.
+
+Topic:Adjektiv
+Adjektive weisen im Nominativ Singular ähnliche Endungen wie Substantive auf:
+- Auslaut auf Konsonant bei den männlichen Adjektiven,
+- Endung auf -a (und nur auf -a!) bei den weiblichen sowie
+- Endungen auf -o oder -e bei den sächlichen Substantiven.
+Die meisten Wörterbücher geben nur die männliche Form an, aus der man selber die weibliche sowie sächliche bildet. Dabei können die folgenden Veränderungen auftreten:
+- Die meisten der männlichen Adjektive besitzen in der Endsilbe im Nominativ Singular ein flüchtiges e, das in der weiblichen und sächlichen Form entfällt.
+
+Topic:Possesivpronomen
+Wie bei den Adjektiven, die im Auslaut auf c, č, j, š oder ž enden, tritt auch bei den Possessivpronomen im Neutrum statt -o die Endung -e auf: moje, tvoje, naše, vaše im Unterschied zu njegovo, njeno, najino usw.
+To je moj avto. Das ist mein Auto. / To je najin avto. Das ist unser (beider) Auto.
+To je moje stanovanje. Das ist meine Wohnung. / To je najino stanovanje. Das ist unsere (beider) Wohnung.
+
+s_exercises
+Topic:Textverständnis
+To je moja soba. Je _velika . 
+Na levi je _rjava omara, na desni sta stol in miza.
+Miza je _velika . 
+Stol je _rumen. Zgoraj so police. 	
+Police so _stare . Tam so okno, rože in knjige.
+Knjige so _stare .
+Okno je _veliko .
+Moja soba je _lepa . Kakšna pa je tvoja soba?
+
+Topic:Possesivpronomen
+Moja soba je lepa. Kakšna pa je ____________ (ti) soba? Kakšna pa je tvoja soba?
+Naša hiša je stara. Kakšna pa je _vaša (vi) hiša?
+_Moja (jaz) telefonska številka je 01 2526 579.
+_Najino (midva) stanovanje je majhno.
+Kakšno pa je _vajino (vidva) stanovanje?
+_Njen (ona) naslov je Kaiser-Friedrich-Ufer 8, Hamburg.
+_Njihove (oni) rože so zelene.
+Kakšne pa so _tvoje (ti) rože?
+Naše (mi) mesto je staro.
+Kakšno pa je _vaše (vi) mesto?
+_Njegove (on) knjige so zanimive.
+Kakšne pa so _njune (onadva) knjige?
+
+Topic:Diktat
+_To_je_moja_soba .
+_Je_velika_in_prostorna .
+_Na_levi_je_bela_moderna_omara .
+_Miza_je_rjava .
+_Stol_je_rumen .
+_Zgoraj_so_police .
+_Police_so_tanke .
+_Knjige_so_stare .
+_Okno_je_veliko .
+_Moja_soba_je_lepa .
+_Kakšna_pa_je_tvoja_soba .
+
+s_vocab
+Topic:0
+- filozófska fakultéta 			Philosophische Fakultät
+- Kongrésni tŕg 			- Kongressplatz
+- méstna híša 			- Rathaus
+- Modêrna galeríja 			- Galerie für die zeitgenössische Kunst
+- na désni 			- rechts
+- na lévi 			- links
+- Národna galeríja 			- Nationalgalerie
+- Stári tŕg 			- Altmarkt
+- tàm zádaj 			dahinten
+bár (-a) 	Substantiv 	m 	Bar
+bél -a, -o 	Adjektiv 		weiß
+béž (auch beige)(unveränderlich) 	Adjektiv 		beige
+čigáv -a, -o 	Interrogativpronom 		wessen
+dêbel debéla, -o 	Adjektiv 		dick
+désna (-e) 	Substantiv 	f 	rechte Seite
+filozófski -a, -o 	Adjektiv 		philosophisch
+híša (-e) 	Substantiv 	f 	Haus
+jòj 	Interjektion 		oh
+káj, čésa 	Fragepronomen 		was
+kakó 	Fragepronomen 		wie
+kákšen -šna, -o 	Interrogativpronom 		wie, was für ein
+kitájski -a, -o 	Adjektiv 		chinesisch
+knjíga (-e) 	Substantiv 	f 	Buch
+lép -a, -o 	Adjektiv 		schön
+léva (-e) 	Substantiv 	f 	linke Seite
+líla (unveränderlich) 	Adjektiv 		lila
+májhen -hna, -o 	Adjektiv 		klein
+méstni -a, -o 	Adjektiv 		Stadt-
+mésto (-a) 	Substantiv 	n 	Stadt
+míza (-e) 	Substantiv 	f 	Tisch
+móder -dra, -o 	Adjektiv 		blau
+modêren -rna, -o 	Adjektiv 		modern
+mój, môja , -e 	Possessivpronomen 		mein
+národen -dna, -o 	Adjektiv 		national
+nòv, nôva, -o 	Adjektiv 		neu
+odpŕt, -a, -o 	Adjektiv 		offen, geöffnet
+ôkno (-a) 	Substantiv 	n 	Fenster
+omára (-e) 	Substantiv 	f 	Schrank
+pésnik (-a) 	Substantiv 	m 	Dichter
+pocéni (unveränderlich) 	Adjektiv 		billig, preiswert
+políca (-e) 	Substantiv 	f 	Regal
+prázen -zna, -o 	Adjektiv 		leer
+prostóren -rna, -o 	Adjektiv 		geräumig
+rdèč, rdéča, -e 	Adjektiv 		rot
+réka (-e) 	Substantiv 	f 	Fluss
+restavrácija (-e) 	Substantiv 	f 	Restaurant
+rjàv, rjáva, -o 	Adjektiv 		braun
+róza (unveränderlich) 	Adjektiv 		rosa
+róža (-e) 	Substantiv 	f 	Blume
+rumèn, rumêna, -o 	Adjektiv 		gelb
+samó 	Adverb 		nur
+sív -a, -o 	Adjektiv 		grau
+sôba (-e) 	Substantiv 	f 	Zimmer
+stanovánje (-a) 	Substantiv 	n 	Wohnung
+stàr, stára, -o 	Adjektiv 		alt
+stávba (-e) 	Substantiv 	f 	Gebäude
+stòl (-a) 	Substantiv 	m 	Stuhl
+tŕg (-a) 	Substantiv 	m 	Platz, Markt
+tá, tá, tó 	Demonstrativpronomen 		das
+tàm 	Adverb 		dort
+tánek -nka, -o 	Adjektiv 		dünn
+tvój, tvôja, -e 	Possessivpronomen 		dein
+vêlik, velíka, -o 	Adjektiv 		groß
+zádaj 	Adverb 		hinten
+zelèn, zelêna, -o 	Adjektiv 		grün
+zgôraj 	Adverb 		oben

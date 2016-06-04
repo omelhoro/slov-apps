@@ -1,0 +1,108 @@
+s_intro
+Topic:0
+In Lektion 7 lernen Sie die Akkusativformen der Personalpronomina kennen. Sie erhalten darüber hinaus einen Überblick über reflexive Personal- und Possessivpronomina. Thematisch dreht sich diese Lektion um den Geburtstag.
+
+s_text
+Topic:Geburtstag
+Dúšica praznúje rôjstni dán - Vsè nájboljše za rôjstni dán!
+Dúšica je dánes stára 45 lét. Na zabávo povábi prijátelje. Grêgor píše vabíla in sprašúje: "Máma, ali povábimo Marjáno?" "Sevéda jo povábimo." "Káj pa Míro in Pávla?" "Túdi njíju povábimo." "Pa stáre stárše?" "Túdi ôni prídejo. Iskàt jih grémo na ávtobusno postájo." "Pa Martína?" "O, dôbro, da me nanj spômniš. Takój ga poklíčem, da ne pozábim." "Káj pa Bórisa?" sprašúje Grêgor dálje. "Njêga poznám bólj slabó. Káj mísliš, naj ga povábimo?" "Sevéda," právi Grêgor.
+Vsì prídejo obiskát Dúšico. Zánjo imájo lépa daríla. Dúšica imá zeló ráda rumêne vŕtnice. Takój jih dá v vázo. "Kakó lepó, da vsì míslite náme!" se zahváli. "Vsáko léto se spômnite náme." "Túdi tí se védno spômniš na nás! Veséli smo, da te poznámo." Dúšica imà ráda svôjo družíno in svôje prijátelje. Túdi Dúško imà rád svôjo žêno in otrôka svôjo mámo. Vsì se imájo rádi!
+
+s_grammar
+Topic:Personalpronomen
+html<table>
+1-table--tab--table
+</table>html
+In allen Personen Singular sowie in der 3. Person Dual und Plural verfügt das (slowenische) Personalpronomen im Akkusativ über zwei Formen: eine betonte (lange) und eine unbetonte (enklitische). Die betonten (langen) Formen werden nur dann verwendet, wenn eine Person besonders hervorgehoben werden soll.
+Betont: Njega poznam bolj slabo. – Ihn kenne ich nicht so gut.
+Unbetont: Poznam ga bolj slabo. – Ich kenne ihn nicht so gut.
+Üblicherweise werden die unbetonten (enklitischen) Formen benutzt. Bei Ihrer Verwendung ist darauf zu achten, dass sie im Satz immer an zweiter Stelle, d.h. nach der ersten betonten Einheit, stehen müssen (enklitischer Satz).
+Beispiele:
+Seveda jo povabimo. – Natürlich laden wir sie ein.
+Iskat jih gremo na avtobusno postajo. – Wir holen sie von der Bushaltestelle ab.
+Takoj ga pokličem. – Ich rufe ihn sofort an.
+
+Topic:Pronomen reflexiv
+Das reflexive Personalpronomen hat keine Form für den ersten Fall (Nominativ). Für den Akkusativ gibt es für alle Personen, unabhängig von Numerus und Geschlecht, nur eine betonte und eine unbetonte Form: 
+html<table>
+2-table--tab--table
+</table>html
+sebe / se
+Beispiel:
+Vsi se imajo radi. – Alle haben sich gern.
+Das reflexive Possessivpronomen wird verwendet, wenn das Subjekt im Satz zugleich der Besitzer ist. Auch hier gibt es keine Nominativform. Die Formen für Akkusativ lauten:
+Beispiele:
+Dušica ima rada svojo družino in svoje prijatelje. – Dušica hat ihre Familie und ihre Freunde gern.
+Tudi Gregor ima rad svojo mamo. – Auch Gregor mag seine Mutter.
+
+s_exercises
+Topic:Akk Subst/Adj
+
+Iskat  _jih  (oni)  gremo na avtobusno postajo.  
+Iskat  _te (ti)  gremo na avtobusno postajo.  
+Iskat  _vas (vi)  gremo na avtobusno postajo.  
+Iskat  _jih (oni)  gremo na avtobusno postajo.  
+Iskat  _ga (on)  gremo na avtobusno postajo.  
+Iskat  _vaju (vedve)  gremo na avtobusno postajo.  
+Iskat  _jo (ona)  gremo na avtobusno postajo.  
+Iskat  _ju (onidve)  gremo na avtobusno postajo.  
+Iskat  _vaju (vidva)  gremo na avtobusno postajo.  
+Iskat  _jih (one)  gremo na avtobusno postajo.
+
+Topic:Akk/Pronomen
+Beispiel:
+(Boris) Kaj misliš, naj ga povabimo?
+(Urška) Kaj misliš, naj _jo povabimo?
+(Mira in Pavel) Kaj misliš, naj _ju povabimo?
+(Martin) Kaj misliš, naj _ga povabimo?
+(stari starši) Kaj misliš, naj _jih povabimo?
+(Marjana) Kaj misliš, naj _jo povabimo?
+
+s_vocab
+Topic:0
+avtobusna postaja 			Bushaltestelle, Busbahnhof
+avtobusni, -a, -o 	Adjektiv 		Bus- (in Komposita)
+da 	Konjunktion 		dass
+dan (dneva) 	Substantiv 	m 	Tag
+danes 	Adverb 		heute
+darilo (-a) 	Substantiv 	n 	Geschenk
+dati, da 	Verb, pf 		geben
+dobro 	Adverb 		gut
+družina (-e) 	Substantiv 	f 	Familie
+hčerka (-e) 	Substantiv 	f 	Tochter
+iti, gre/iti iskat 	Verb, pf / impf 		gehen/holen
+lepo 	Adverb 		schön
+misliti, -i 	Verb, impf 		denken
+mož (-a) 	Substantiv 	m 	Ehemann
+na 	Präposition +Akk 		auf, an
+oče (-eta) 	Substantiv 	m 	Vater
+obiskati, obišče (+Akk.) 	Verb, pf 		besuchen
+otrok (-a) 	Substantiv 	m 	Kind
+pisati, piše 	Verb, impf 		schreiben
+poklicati, -kliče 	Verb, pf 		anrufen
+postaja (-e) 	Substantiv 	f 	Haltestelle
+povabiti, -i 	Verb, pf 		einladen
+pozabiti, -i 	Verb, pf 		vergessen
+poznati, -zna 	Verb, impf 		kennen
+praviti, -i 	Verb, impf / pf 		sagen
+prijatelj (-a) 	Substantiv 	m 	Freund
+priti, pride 	Verb, pf 		kommen
+rojstni, -a,-o 	Adjektiv 		Geburts-
+rojstni dan 			Geburtstag
+seveda 	Adverb 		natürlich
+sin (-a) (Pl. sinovi) 	Substantiv 	m 	Sohn
+slabo 	Adverb 		schlecht
+spomniti, -i (na+Akk) 	Verb, pf 		erinnern an
+spraševati, -šuje 	Verb, impf 		fragen
+stari starši 			Großeltern
+starši (-ev) 	Substantiv 	m, Pl. 	Eltern
+vabilo (-a) 	Substantiv 	n 	Einladung
+vaza (-e) 	Substantiv 	f 	Vase
+vedno 	Adverb 		immer
+vesel, -a,-o 	Adjektiv 		froh
+vrtnica (-e) 	Substantiv 	f 	Rose
+vsi 	Pronom 		alle
+za 	Präposition (+Akk) 		für, hinter
+zabava (-e) 	Substantiv 	f 	Fest, Party
+zahvaliti se, -i se 	Verb, pf 		danken
+žena (-e) 	Substantiv 	f 	Ehefrau

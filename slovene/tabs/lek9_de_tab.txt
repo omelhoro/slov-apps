@@ -1,0 +1,115 @@
+tab--1
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">SINGULAR</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">DUAL</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">PLURAL</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">1. oseba</span><br><span class="dbst_tabtexts">1. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">pri meni</span><br><span class="dbst_tabtexts">bei mir</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri naju</span><br><span class="dbst_tabtexts">be uns (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri nas</span><br><span class="dbst_tabtexts">bei uns</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">2. oseba</span><br><span class="dbst_tabtexts">2. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">pri tebi</span><br><span class="dbst_tabtexts">bei dir</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri vaju</span><br><span class="dbst_tabtexts">bei euch (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri vas</span><br><span class="dbst_tabtexts">bei euch / bei Ihnen</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">3. oseba</span><br><span class="dbst_tabtexts">3. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">pri njem / njej / njem</span><br><span class="dbst_tabtexts">bei ihm / ihr / ihm</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri njiju</span><br><span class="dbst_tabtexts">bei ihnen (zwei)</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">pri njih</span><br><span class="dbst_tabtexts">bei ihnen</span></td>
+						</tr><tr>
+						</tr></tbody>
+						
+tab--2
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext"></span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">SINGULAR</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">DUAL</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">PLURAL</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">1. oseba</span><br><span class="dbst_tabtexts">1. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">sem</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">sva</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">smo</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">2. oseba</span><br><span class="dbst_tabtexts">2. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">si</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">sta</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">ste</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">3. oseba</span><br><span class="dbst_tabtexts">3. Person</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">je</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">sta</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">so</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+						</tr></tbody>
+tab--3
+<tbody><tr>
+						<td align="center" width="20%"><span class="dbst_tabtext">spol</span><br><span class="dbst_tabtexts">Genus</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">EDNINA</span><br><span class="dbst_tabtexts">SINGULAR</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">DVOJINA</span><br><span class="dbst_tabtexts">DUAL</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">MNOŽINA</span><br><span class="dbst_tabtexts">PLURAL</span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">MOŠKI SPOL</span><br><span class="dbst_tabtexts">MASKULINUM</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">bil</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">bila</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">bili</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">ŽENSKI SPOL</span><br><span class="dbst_tabtexts">FEMININUM</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">bila</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">bili</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">bile</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">SREDNJI SPOL</span><br><span class="dbst_tabtexts">NEUTRUM</span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="20%"><span class="dbst_tabtext">bilo</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">bili</span><br><span class="dbst_tabtexts"></span></td>
+				   <!-- Typ : Tabelle -->
+						<td align="center" width="30%"><span class="dbst_tabtext">bila</span><br><span class="dbst_tabtexts"></span></td>
+						</tr><tr>
+						</tr></tbody>

@@ -1,0 +1,67 @@
+s_intro
+Topic:0
+Gehen Sie auf die Reise, ob mit Anna nach Slowenien oder dem slowenischen Schriftsteller Matjaž Pikalo nach Hamburg! Ganz nebenbei lernen Sie die Personalpronomina im Lokativ kennen. Darüber hinaus ist ein Grammatikkapitel den Vergangenheitsformen des slowenischen Verbs gewidmet.
+
+s_text
+Topic:Annas Ferien
+
+Topic:Pikalo in Hamburg
+
+Létos jeséni sem bíl v Hámburgu. Tjà me je povabila Mónika. Ôna učí slovénščino na univêrzi. Študênti so prevájali môja besedíla v némščino. Prevájanje je zeló zahtévno délo. Svôje délo so oprávili odlíčno. Z vesêljem sem jih obiskàl na predávanju. Na predávanju sem brál svôje pésmi in zgódbe.
+Mój úrnik je bil zeló zapôlnjen. Kljúb tému sem imél nékaj prôstega čása. Bíl sem v zgodovínskem muzêju na razstávi. Prikázan je bíl čás, ko so v Hámburgu nastópali Beatlesi. Dimítrij me je pêljal v pristaníšče. Vídel sem zanimíve híše, ki so jih včásih uporábljali za skladíšča. Dimítrij mi je povédal, da jih zdàj vêčkrat uporábijo za fílmske kulíse. V pristaníšču je bilà zeló velíka in lúksuzna pótniška ládja – Queen Elizabeth. V néki tŕgovini sem si kúpil mornársko jákno, pa túdi mornársko tórbo. Po potépanju po pristaníšču sva postála láčna. Jédla sva zeló okúsno ríbjo málico.
+Mónika in študênti so me peljáli v Cafe Paris. Tja so nekóč zahájali umétniki. Oglédali smo si túdi híšo Číle. To je zeló zanimíva híša, saj imà obliko ládje. V méstni híši sem si oglédal razstávo, ko so bilì v Hámburgu Francózi. Tó je biló v čásu Napóleona. Na kôncu sem imél še nastòp v Pony báru. Na njêm sem igràl na harmóniko in prepéval svôje pésmi.
+
+s_grammar
+Topic:Pronomen Lokativ
+<b>Mestnik</b>
+html
+<table>
+1-table--tab--table
+</table>html
+
+Topic:Verb Perfect
+Das Perfekt wird aus den Präsensformen von biti und dem Partizip Perfekt Aktiv (L-Partizip) zusammengesetzt.
+Sedanji čas glagola biti – Die Präsensform des Verbs biti (sein):
+html
+<table>
+2-table--tab--table
+</table>html
+
+
+Pretekli deležnik glagola – Partizip Perfekt Aktiv (L- Partizip)
+html
+<table>
+3-table--tab--table
+</table>html
+
+Partizip Perfekt Aktiv wird aus dem Infinitiv gebildet. Dem Infinitivstamm wird der Suffix -l zugefügt.
+
+bi-ti – bi-l
+prežive-ti – prežive-l
+pokaza-ti – pokaza-l
+povabi-ti – povabi-l
+prevaja-ti – prevaja-l
+
+Das Partizip Perfekt Aktiv verändert seine Formen nach Genus und Numerus (vgl. biti – bil, bila, bilo, bili usw.)
+
+Einige Verben bilden das Partizip Perfekt Aktiv unregelmäßig:
+
+jesti – jedel, jedla, -o – essen
+iti – šel, šla, -o – gehen
+priti – prišel, -šla, -o – kommen
+
+s_exercises
+Topic:Verb Perfekt
+html<ol>
+<li>biti</li>
+<li>iti</li>
+<li>videti</li>
+<li>preživeti</li>
+<li>iti</li>
+</ol>html
+ Anna 	je bila 	na obisku pri babici in dedku.
+1) Anna _je_bila na obisku pri babici in dedku. 	
+2) Anna _je_šla na izlet. 	
+3) Na izletu _je_videla znamenitosti. 	
+4) Dva tedna _je_preživela v Ljubljani. 	
+5) Včasih _je_šla na kavo.
