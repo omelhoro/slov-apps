@@ -1,4 +1,4 @@
-FROM google/dart-runtime:1.8.0
+FROM google/dart-runtime:1.16
 
 RUN pub build
 
