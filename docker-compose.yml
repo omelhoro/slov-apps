@@ -1,5 +1,6 @@
 version: '2'
 services:
+
   slovene-lessons:
     image: omelhoro1/slovene-lessons
     container_name: slovene-lessons
@@ -11,6 +12,7 @@ services:
       - "traefik.port=5000"
     networks:
       - proxy-tier
+
 networks:
   proxy-tier:
     external: true
