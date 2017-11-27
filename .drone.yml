@@ -9,7 +9,7 @@ pipeline:
       branch: master
 
   deploy:
-    image: omelhoro1/drone-rsync
+    image: drillster/drone-rsync
     user: captain
     hosts: [ "software-unchained.com" ]
     port: 22
