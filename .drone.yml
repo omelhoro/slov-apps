@@ -11,7 +11,7 @@ pipeline:
   deploy:
     image: omelhoro1/drone-rsync
     user: captain
-    hosts: [ "igor-fischer.rocks" ]
+    hosts: [ "software-unchained.com" ]
     port: 22
     target: /tmp/slovene-lessons-${DRONE_COMMIT}/
     include:

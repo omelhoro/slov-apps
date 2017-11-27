@@ -8,8 +8,7 @@ services:
     # ports:
     #   - "5000:5000"
     labels:
-      - "traefik.frontend.rule=Host:langapps.igor-fischer.rocks,langapps.fischerops.com"
-      - "traefik.port=5000"
+      - "traefik.frontend.rule=Host:langapps.igor-fischer.rocks,langapps.fischerops.com,slovene-lessons.software-unchained.com"
     networks:
       - proxy-tier
 
