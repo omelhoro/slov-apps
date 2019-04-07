@@ -4,10 +4,9 @@ services:
     image: omelhoro1/slovene-lessons
     container_name: slovene-lessons
     restart: unless-stopped
-    # ports:
-    #   - "5000:5000"
     labels:
-      - "traefik.frontend.rule=Host:langapps.fischerops.com,slovene-lessons.software-unchained.com"
+      - traefik.frontend.rule=Host:langapps.fischerops.com,slovene-lessons.software-unchained.com
+      - traefik.enable=true
     networks:
       - proxy-tier
 
