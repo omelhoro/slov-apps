@@ -1,6 +1,5 @@
-version: '2'
+version: "2"
 services:
-
   slovene-lessons:
     image: omelhoro1/slovene-lessons
     container_name: slovene-lessons
@@ -8,7 +7,7 @@ services:
     # ports:
     #   - "5000:5000"
     labels:
-      - "traefik.frontend.rule=Host:langapps.igor-fischer.rocks,langapps.fischerops.com,slovene-lessons.software-unchained.com"
+      - "traefik.frontend.rule=Host:langapps.fischerops.com,slovene-lessons.software-unchained.com"
     networks:
       - proxy-tier
 
